@@ -8,10 +8,11 @@ export default function Home() {
           Blue Smoke
           <br />
           <span>Designer and Techie</span>
+          <br />
+          Nomads
         </h1>
-        <h2>Nomads</h2>
       </div>
-      <div className="home-content">
+      <div className="content">
         <div className="posts">
           <article>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -55,29 +56,16 @@ export default function Home() {
         </div>
         <div className="sidebar">
           <div className="popular">
-            <ol class="list-group">
-              <li>Latest Posts</li>
-              <li>Announcements</li>
-              <li>Calendars</li>
-              <li>etc</li>
-              <li>etc</li>
-            </ol>
-            <p>See More Posts</p>
+            Most Popular Articles{" "}
+            <span className="coming-soon">Coming Soon!</span>
           </div>
           <div className="topics">
-            <p>item</p>
-            <p>item</p>
-            <p>item</p>
-            <p>item</p>
-            <p>item</p>
-            <p>item</p>
-            <p>item</p>
-            <p>item</p>
-            <p>item</p>
-            <p>item</p>
+            Popular Topics
+            <br />
+            <span className="coming-soon">Coming Soon!</span>
           </div>
           <div className="newsletter">
-            <p>Stay Informed</p>
+            <span>Stay Informed</span>
             <p>Enter you email below to join our newsletter</p>
             <input />
             <button>Sign Up</button>
@@ -87,7 +75,7 @@ export default function Home() {
             <div
               class="fb-page"
               data-href="https://www.facebook.com/bluesmokemedia/"
-              data-tabs="timeline"
+              data-tabs=""
               data-width=""
               data-height=""
               data-small-header="false"
@@ -106,29 +94,29 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="about">
-          <div className="authors">
-            <h5>Authors</h5>
-            <p>author1</p>
-            <p>author2</p>
-          </div>
-          <div className="category">
-            <h5>Category</h5>
-            <p>branding</p>
-            <p>social media</p>
-            <p>website design</p>
-          </div>
-          <div className="tags">
-            <p>tag1</p>
-            <p>tag2</p>
-            <p>tag3</p>
-            <p>tag4</p>
-            <p>tag5</p>
-          </div>
-        </div>
-        <div className="comments">COMMENTS</div>
-        <div className="new-articles">NEW ARTICLES MAPPED</div>
       </div>
+
+      <div className="about">
+        <div className="authors">
+          <h3>Authors</h3>
+          <p>author1</p>
+          <p>author2</p>
+        </div>
+        <div className="category">
+          <h3>Category</h3>
+          <p>branding</p>
+          <p>social media</p>
+          <p>website design</p>
+        </div>
+        <div className="tags">
+          <h3>Tags</h3>
+          <p>tag1</p>
+          <p>tag2</p>
+          <p>tag3</p>
+        </div>
+      </div>
+      <div className="comments">COMMENTS</div>
+      <div className="new-articles">NEW ARTICLES MAPPED</div>
     </div>
   );
 }

@@ -1,0 +1,47 @@
+@import "../Utils/Mixins/Mixins.scss";
+footer {
+  background: lightskyblue;
+  .wrapper {
+    width: 75%;
+    .top {
+      display: flex;
+      justify-content: flex-start;
+      text-align: left;
+      div {
+        width: 33.333%;
+        h3 {
+          font-weight: 700;
+        }
+      }
+      .about {
+        span {
+          color: $orange;
+        }
+        p {
+          width: 80%;
+        }
+      }
+      .newsletter {
+        div {
+          display: flex;
+          height: 2em;
+          width: 100%;
+          input {
+            border: 1px solid blue;
+            background: lightskyblue;
+          }
+          button {
+            color: goldenrod;
+            background: blue;
+            border: none;
+          }
+        }
+      }
+    }
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

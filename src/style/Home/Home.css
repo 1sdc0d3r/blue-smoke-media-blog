@@ -1,0 +1,75 @@
+.home h1 {
+  color: #04227a;
+  text-shadow: 2px 2px 3px black;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+.home h1 span {
+  color: #ee3e0e;
+}
+
+.home .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .content .posts {
+  margin: 0 2em;
+}
+
+.home .content .sidebar {
+  border: 1px solid black;
+}
+
+.home .content .sidebar div {
+  border: 1px solid black;
+}
+
+.home .content .sidebar .coming-soon {
+  color: #ee3e0e;
+  font-weight: 900;
+}
+
+.home .content .sidebar .popular {
+  padding: 2em 1em;
+}
+
+.home .content .sidebar .topics {
+  padding: 2em 1em;
+}
+
+.home .content .sidebar .newsletter {
+  padding: 1em;
+}
+
+.home .content .sidebar .newsletter p {
+  color: #ee3e0e;
+  font-weight: 600;
+  text-align: left;
+}
+
+.home .content .sidebar .facebook {
+  text-align: left;
+  padding: 0 1em 1em;
+}
+
+.home .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background: white;
+}
+
+.home .about div {
+  margin-right: 2em;
+  width: 20%;
+}
+
+.home .about div h3 {
+  margin-bottom: 0;
+  color: #ee3e0e;
+}
+/*# sourceMappingURL=Home.css.map */

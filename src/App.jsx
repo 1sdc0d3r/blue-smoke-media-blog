@@ -3,6 +3,7 @@ import "./style/_main.css";
 import Header from "./components/Header";
 import HeaderCta from "./components/Header-CTA";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
         <Header />
         <HeaderCta />
       </header>
-      <body className="wrapper">
+      <section className="wrapper">
         <Home />
-      </body>
+      </section>
+      <Footer />
     </div>
   );
 }

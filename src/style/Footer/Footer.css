@@ -1,0 +1,65 @@
+footer {
+  background: lightskyblue;
+}
+
+footer .wrapper {
+  width: 75%;
+}
+
+footer .wrapper .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
+}
+
+footer .wrapper .top div {
+  width: 33.333%;
+}
+
+footer .wrapper .top div h3 {
+  font-weight: 700;
+}
+
+footer .wrapper .top .about span {
+  color: #ee3e0e;
+}
+
+footer .wrapper .top .about p {
+  width: 80%;
+}
+
+footer .wrapper .top .newsletter div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2em;
+  width: 100%;
+}
+
+footer .wrapper .top .newsletter div input {
+  border: 1px solid blue;
+  background: lightskyblue;
+}
+
+footer .wrapper .top .newsletter div button {
+  color: goldenrod;
+  background: blue;
+  border: none;
+}
+
+footer .wrapper .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=Footer.css.map */
