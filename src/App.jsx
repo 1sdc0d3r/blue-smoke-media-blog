@@ -11,7 +11,9 @@ function App() {
         <Header />
         <HeaderCta />
       </header>
-      <Home />
+      <body className="wrapper">
+        <Home />
+      </body>
     </div>
   );
 }
