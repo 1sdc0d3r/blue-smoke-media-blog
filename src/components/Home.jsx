@@ -15,43 +15,26 @@ export default function Home() {
       <div className="content">
         <div className="posts">
           <article>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Necessitatibus tempore quis, et animi voluptate placeat. Mollitia,
-            recusandae in et aspernatur nesciunt sapiente laudantium! Libero,
-            quaerat. Placeat corporis ab repellat debitis? Lorem ipsum dolor,
-            sit amet consectetur adipisicing elit. Necessitatibus tempore quis,
-            et animi voluptate placeat. Mollitia, recusandae in et aspernatur
-            nesciunt sapiente laudantium! Libero, quaerat. Placeat corporis ab
-            repellat debitis?Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Necessitatibus tempore quis, et animi voluptate placeat.
-            Mollitia, recusandae in et aspernatur nesciunt sapiente laudantium!
-            Libero, quaerat. Placeat corporis ab repellat debitis?
+            <h2>
+              <span>Best practices:</span> How to market yourself like a
+              corporation.
+            </h2>
+            <h5>Got a favorite brand?</h5>
+            <p>
+              Something that inspires confidence his is the best value? Most of
+              use would answer yes. THere is a specific toothpaste you seek, or
+              brand of trash bags you avoid.{" "}
+            </p>
           </article>
           <article>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Necessitatibus tempore quis, et animi voluptate placeat. Mollitia,
             recusandae in et aspernatur nesciunt sapiente laudantium! Libero,
-            quaerat. Placeat corporis ab repellat debitis? Lorem ipsum dolor,
-            sit amet consectetur adipisicing elit. Necessitatibus tempore quis,
-            et animi voluptate placeat. Mollitia, recusandae in et aspernatur
-            nesciunt sapiente laudantium! Libero, quaerat. Placeat corporis ab
-            repellat debitis?Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Necessitatibus tempore quis, et animi voluptate placeat.
-            Mollitia, recusandae in et aspernatur nesciunt sapiente laudantium!
-            Libero, quaerat. Placeat corporis ab repellat debitis?
+            quaerat. Placeat corporis ab repellat debitis?
           </article>
           <article>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Necessitatibus tempore quis, et animi voluptate placeat. Mollitia,
             recusandae in et aspernatur nesciunt sapiente laudantium! Libero,
-            quaerat. Placeat corporis ab repellat debitis? Lorem ipsum dolor,
-            sit amet consectetur adipisicing elit. Necessitatibus tempore quis,
-            et animi voluptate placeat. Mollitia, recusandae in et aspernatur
-            nesciunt sapiente laudantium! Libero, quaerat. Placeat corporis ab
-            repellat debitis?Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Necessitatibus tempore quis, et animi voluptate placeat.
-            Mollitia, recusandae in et aspernatur nesciunt sapiente laudantium!
-            Libero, quaerat. Placeat corporis ab repellat debitis?
+            quaerat. Placeat corporis ab repellat debitis?
           </article>
         </div>
         <div className="sidebar">
