@@ -50,6 +50,11 @@
   text-align: left;
 }
 
+.home .content .sidebar .newsletter #newsletter-message {
+  color: #ee3e33;
+  font-size: 0.8em;
+}
+
 .home .content .sidebar .facebook {
   text-align: left;
   padding: 0 1em 1em;

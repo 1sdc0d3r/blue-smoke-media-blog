@@ -1,6 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function Home() {
+  useEffect(() => {
+    const email = document.querySelector("input[name='email']");
+    email.addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        // enter key
+        document.querySelector("button[type='submit']").click();
+      }
+    });
+    return () => {
+      email.removeEventListener("keyup");
+    };
+  }, []);
+  // useEffect(() => {
+  //   const message = document.getElementById("newsletter-message");
+  // });
+  const [newsletterMessage, setNewsletterMessage] = useState("");
+
   return (
     <div className="home">
       <div>
@@ -48,10 +66,15 @@ export default function Home() {
             <span className="coming-soon">Coming Soon!</span>
           </div>
           <div className="newsletter">
-            <span>Stay Informed</span>
-            <p>Enter you email below to join our newsletter</p>
-            <input />
-            <button>Sign Up</button>
+            <p>
+              Enter your email below to join our <span>Inside Look</span> to
+              help you compete with the big guys!
+            </p>
+            <span id="newsletter-message">{newsletterMessage}</span>
+            <input type="text" name="email" placeholder="email" />
+            <button type="submit" onClick={() => registerEmail()}>
+              Sign Up
+            </button>
           </div>
           <div className="facebook">
             <p>Like us on facebook</p>
@@ -102,9 +125,17 @@ export default function Home() {
       <div className="new-articles">NEW ARTICLES MAPPED</div>
     </div>
   );
+
+  function registerEmail() {
+    const email = document.querySelector("input[name='email']").value;
+    axios
+      .post("http://localhost:3000/api", { email: email })
+      .then((res) => setNewsletterMessage(res.data.message))
+      .catch((err) => console.log(err));
+  }
 }
 
-/* 
+/*
  {posts.map((post) => {
           return (
             <div className="post">
