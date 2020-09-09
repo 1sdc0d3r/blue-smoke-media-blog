@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import bigGuys from "../assets/competing-with-the-big-guys.jpg";
+import socialMedia from "../assets/Social-media-changes-every-small-business-should-know- about.jpeg";
+import invertedCommas from "../assets/inverted-commas.png";
 
 export default function Home() {
   useEffect(() => {
@@ -19,46 +22,140 @@ export default function Home() {
   // });
   const [newsletterMessage, setNewsletterMessage] = useState("");
 
+  const newArticles = [
+    {
+      title: "About Paris that has never been revealed....",
+      img: bigGuys,
+      tags: ["magic", "life", "work"],
+      author: "Yulia Purple",
+      date: "Dec 12, 2020",
+    },
+    {
+      title: "About Paris that has never been revealed....",
+      img: bigGuys,
+      tags: ["magic", "life", "work"],
+      author: "Yulia Purple",
+      date: "Dec 12, 2020",
+    },
+    {
+      title: "About Paris that has never been revealed....",
+      img: bigGuys,
+      tags: ["magic", "life", "work"],
+      author: "Yulia Purple",
+      date: "Dec 12, 2020",
+    },
+    {
+      title: "About Paris that has never been revealed....",
+      img: bigGuys,
+      tags: ["magic", "life", "work"],
+      author: "Yulia Purple",
+      date: "Dec 12, 2020",
+    },
+  ];
+
   return (
     <div className="home">
       <div>
         <h1>
           Blue Smoke
           <br />
-          <span>Designer and Techie</span>
+          <span className="orange">Designer and Techie</span>
           <br />
           Nomads
         </h1>
       </div>
       <div className="content">
         <div className="posts">
-          <article>
+          <section>
             <h2>
-              <span>Best practices:</span> How to market yourself like a
-              corporation.
+              Best practices:
+              <span className="orange">
+                {" "}
+                How to market yourself like a corporation.
+              </span>
             </h2>
-            <h5>Got a favorite brand?</h5>
+            <h4>Got a favorite brand?</h4>
             <p>
-              Something that inspires confidence his is the best value? Most of
-              use would answer yes. THere is a specific toothpaste you seek, or
-              brand of trash bags you avoid.{" "}
+              Something that inspires the confidence that _____ is the best
+              value? Most of us would answer yes. There is a specific toothpaste
+              you seek, or brand of trash bags you avoid. Out of so many choices
+              in this age of options- How did you grow this relationship? Of all
+              the toothpastes in the world, why did you walk over to that one?
+              Aside from the dollar in your wallet that serves as your ballot-
+              this is a pretty one-sided affinity. How did this loyalty begin?
+              More importantly, how can you use the same tools to inspire
+              confidence that you are the best choice out of a stack of resumes?
             </p>
-          </article>
-          <article>
-            Necessitatibus tempore quis, et animi voluptate placeat. Mollitia,
-            recusandae in et aspernatur nesciunt sapiente laudantium! Libero,
-            quaerat. Placeat corporis ab repellat debitis?
-          </article>
-          <article>
-            Necessitatibus tempore quis, et animi voluptate placeat. Mollitia,
-            recusandae in et aspernatur nesciunt sapiente laudantium! Libero,
-            quaerat. Placeat corporis ab repellat debitis?
-          </article>
+            <h4>Let’s talk about how they did it</h4>
+            <p>
+              {" "}
+              Corporations are people is probably not a new concept to you.
+              Collective ownership not bound to a single lifetime started with
+              an argument of a wealthy robber baron who wanted his business to
+              exploit the 14th amendment. Here is a bit on the dubious journey
+              from business to personhood if you want to{" "}
+              <span className="orange">learn more.</span> As ridiculous as the
+              idea started, it was successful.{" "}
+            </p>
+            <p className="author">Ramona Lucius, (August, 2020)</p>
+            <button>Read More</button>
+          </section>
+          <img src={invertedCommas} alt="inverted commas" id="commas" />
+          <section>
+            Decisions to buy or not to buy from a company have increasingly less
+            to do with place, packaging, or promotion and almost everything to
+            do with how much your friends, family, and even strangers provide
+            online assurance that the product or service is worth the cost.”
+            <br />
+            <p className="author"> — Elaine Cheng</p>
+          </section>
+          <section>
+            <h2>
+              1. Social Media:{" "}
+              <span className="orange">
+                Why It Is 100% Essential (and How to Use It Well).
+              </span>
+            </h2>
+            <p>
+              In today’s society, word of mouth IS digital. Think about the
+              questions you constantly ask about products, services or
+              businesses; your customers are asking the SAME questions.
+              Addressing these common points of confusion could be your key to
+              converting casual website visitors into new clients. The biggest
+              question of all though, is whether potential customers will WANT
+              to visit your website based on your social media presence. So,
+              start or join a conversation, and participate with the idea in
+              mind that you can achieve a significant influence. Take a hold and
+              grow your brand by taking hold of your social media presence!
+            </p>
+            <p className="author">Constance Beebe, (August, 2020)</p>
+            <button>Read More</button>
+          </section>
+          <img src={bigGuys} alt="img" />
+          <section>
+            <h2>
+              2. Competing
+              <span className="orange"> with the Big Guys!</span>
+            </h2>
+            <p>
+              When starting a business or web site on the Internet, it is often
+              easy to become intimidated by large companies or web sites
+              offering similar services to you. While you may not be able to
+              match the million dollar advertising budgets, or employee numbers
+              of your competitors, there are many things you can do to make your
+              business or web site stand out from the rest. The aim of this
+              article is to provide you with an approach, and the motivation to
+              take on those competitors you never thought you could match!
+            </p>
+            <p className="author">Constance Beebe, (August, 2020)</p>
+            <button>Read More</button>
+          </section>
+          <img src={socialMedia} alt="img" />
         </div>
+        {/* //! SIDEBAR */}
         <div className="sidebar">
           <div className="popular">
-            Most Popular Articles{" "}
-            <span className="coming-soon">Coming Soon!</span>
+            Most Popular divs <span className="coming-soon">Coming Soon!</span>
           </div>
           <div className="topics">
             Popular Topics
@@ -105,24 +202,32 @@ export default function Home() {
       <div className="about">
         <div className="authors">
           <h3>Authors</h3>
-          <p>author1</p>
-          <p>author2</p>
+          <p>Ramona Lucius</p>
+          <p>Constance Beebe</p>
         </div>
         <div className="category">
           <h3>Category</h3>
-          <p>branding</p>
-          <p>social media</p>
-          <p>website design</p>
+          <p>Branding</p>
+          <p>Social Media</p>
+          <p>Website Design</p>
         </div>
         <div className="tags">
           <h3>Tags</h3>
-          <p>tag1</p>
-          <p>tag2</p>
-          <p>tag3</p>
+          <p>Strategic Social Media Marketing</p>
+          <p>Affordable Custom Website Design</p>
+          <p>Consumer Loyalty</p>
+          <p>Typography</p>
         </div>
       </div>
-      <div className="comments">COMMENTS</div>
-      <div className="new-articles">NEW ARTICLES MAPPED</div>
+      <div className="comments">
+        <div>
+          <h2>Comments</h2>
+          <button onClick={() => addComment}>Add Your Comment</button>
+        </div>
+      </div>
+      <div className="new-articles">
+        {newArticles?.map((e) => newArticle(e))}
+      </div>
     </div>
   );
 
@@ -134,7 +239,9 @@ export default function Home() {
       .catch((err) => console.log(err));
   }
 }
-
+function addComment() {
+  console.log("comment");
+}
 /*
  {posts.map((post) => {
           return (
@@ -147,10 +254,24 @@ export default function Home() {
                   by {post.author} · {post.date}
                 </span>
                 <p>
-                  {post.snippet} <a href={`/article/${post.id}`}>Read More.</a>
+                  {post.snippet} <a href={`/div/${post.id}`}>Read More.</a>
                 </p>
               </div>
             </div>
           );
         })}
 */
+function newArticle(article) {
+  return (
+    <div className="new-article">
+      <img src={article.img} alt="post url" />
+      <div className="text">
+        <p>{article.tags?.map((e, i) => (i == 0 ? e : `, ${e}`))}</p>
+        <h3>{article.title}</h3>
+        <p>
+          by {article.author} · {article.date}
+        </p>
+      </div>
+    </div>
+  );
+}

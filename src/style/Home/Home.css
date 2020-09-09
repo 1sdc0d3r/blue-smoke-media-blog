@@ -1,12 +1,17 @@
+.home {
+  text-align: left;
+}
+
+.home .orange {
+  color: #ee3e0e;
+}
+
 .home h1 {
   color: #04227a;
   text-shadow: 2px 2px 3px black;
   font-size: 2.5em;
   letter-spacing: 2px;
-}
-
-.home h1 span {
-  color: #ee3e0e;
+  text-align: center;
 }
 
 .home .content {
@@ -17,6 +22,47 @@
 
 .home .content .posts {
   margin: 0 2em;
+}
+
+.home .content .posts section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3em;
+}
+
+.home .content .posts section h4 {
+  margin: 0.5em auto 0.7em;
+}
+
+.home .content .posts section .author {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-style: italic;
+}
+
+.home .content .posts section button {
+  width: 20%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background: #04227a;
+  color: #1e92f6;
+  border-radius: 10%;
+  padding: 0.5em 0.25em;
+  font-weight: 700;
+}
+
+.home .content .posts img {
+  width: 100%;
+}
+
+.home .content .posts #commas {
+  width: 15%;
+  margin-bottom: 0.5em;
 }
 
 .home .content .sidebar {
@@ -76,5 +122,35 @@
 .home .about div h3 {
   margin-bottom: 0;
   color: #ee3e0e;
+}
+
+.home .new-articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.home .new-articles .new-article {
+  border: 2px solid red;
+  width: 27%;
+  margin: 1em;
+}
+
+.home .new-articles .new-article img {
+  width: 100%;
+}
+
+.home .new-articles .new-article .text {
+  width: 90%;
+  margin: auto;
+}
+
+.home .new-articles .new-article .text h3 {
+  margin: 0;
 }
 /*# sourceMappingURL=Home.css.map */

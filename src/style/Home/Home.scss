@@ -1,19 +1,49 @@
 @import "../Utils/Mixins/Mixins.scss";
 
 .home {
+  text-align: left;
+  .orange {
+    color: $orange;
+  }
   h1 {
     color: $royalBlue;
     text-shadow: 2px 2px 3px black;
     font-size: 2.5em;
     letter-spacing: 2px;
-    span {
-      color: $orange;
-    }
+    text-align: center;
   }
   .content {
     display: flex;
     .posts {
       margin: 0 2em;
+      section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3em;
+        h4 {
+          margin: 0.5em auto 0.7em;
+        }
+        .author {
+          align-self: flex-end;
+          font-style: italic;
+        }
+        button {
+          width: 20%;
+          align-self: flex-end;
+          background: $royalBlue;
+          color: $lightBlue;
+          border-radius: 10%;
+          padding: 0.5em 0.25em;
+          font-weight: 700;
+        }
+      }
+      img {
+        width: 100%;
+      }
+      #commas {
+        width: 15%;
+        margin-bottom: 0.5em;
+      }
     }
     .sidebar {
       border: 1px solid black;
@@ -58,6 +88,30 @@
       h3 {
         margin-bottom: 0;
         color: $orange;
+      }
+    }
+  }
+  .comments {
+  }
+  .new-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .new-article {
+      border: 2px solid red;
+      width: 27%;
+      margin: 1em;
+      img {
+        width: 100%;
+      }
+      .text {
+        // display: flex;
+        // flex-direction: column;
+        width: 90%;
+        margin: auto;
+        h3 {
+          margin: 0;
+        }
       }
     }
   }
