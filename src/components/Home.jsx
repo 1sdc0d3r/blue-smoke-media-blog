@@ -100,16 +100,20 @@ export default function Home() {
             <p className="author">Ramona Lucius, (August, 2020)</p>
             <button>Read More</button>
           </section>
-          <img src={invertedCommas} alt="inverted commas" id="commas" />
           <section>
-            Decisions to buy or not to buy from a company have increasingly less
-            to do with place, packaging, or promotion and almost everything to
-            do with how much your friends, family, and even strangers provide
-            online assurance that the product or service is worth the cost.”
+            <img src={invertedCommas} alt="inverted commas" id="commas" />
+            <p>
+              Decisions to buy or not to buy from a company have increasingly
+              less to do with place, packaging, or promotion and almost
+              everything to do with how much your friends, family, and even
+              strangers provide online assurance that the product or service is
+              worth the cost.”
+            </p>
             <br />
             <p className="author"> — Elaine Cheng</p>
           </section>
           <section>
+            <img src={socialMedia} alt="img" />
             <h2>
               1. Social Media:{" "}
               <span className="orange">
@@ -131,8 +135,8 @@ export default function Home() {
             <p className="author">Constance Beebe, (August, 2020)</p>
             <button>Read More</button>
           </section>
-          <img src={bigGuys} alt="img" />
           <section>
+            <img src={bigGuys} alt="img" />
             <h2>
               2. Competing
               <span className="orange"> with the Big Guys!</span>
@@ -150,7 +154,6 @@ export default function Home() {
             <p className="author">Constance Beebe, (August, 2020)</p>
             <button>Read More</button>
           </section>
-          <img src={socialMedia} alt="img" />
         </div>
         {/* //! SIDEBAR */}
         <div className="sidebar">
@@ -164,11 +167,10 @@ export default function Home() {
           </div>
           <div className="newsletter">
             <p>
-              Enter your email below to join our <span>Inside Look</span> to
-              help you compete with the big guys!
+              Get a <span>Inside Look</span> to help compete with the big guys!
             </p>
             <span id="newsletter-message">{newsletterMessage}</span>
-            <input type="text" name="email" placeholder="email" />
+            <input type="text" name="email" placeholder="Enter Your Email" />
             <button type="submit" onClick={() => registerEmail()}>
               Sign Up
             </button>

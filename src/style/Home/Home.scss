@@ -2,13 +2,14 @@
 
 .home {
   text-align: left;
+
   .orange {
     color: $orange;
   }
   h1 {
     color: $royalBlue;
     text-shadow: 2px 2px 3px black;
-    font-size: 2.5em;
+    font-size: 2.8em;
     letter-spacing: 2px;
     text-align: center;
   }
@@ -16,6 +17,7 @@
     display: flex;
     .posts {
       margin: 0 2em;
+
       section {
         display: flex;
         flex-direction: column;
@@ -41,12 +43,16 @@
         width: 100%;
       }
       #commas {
-        width: 15%;
+        width: 10%;
         margin-bottom: 0.5em;
       }
     }
     .sidebar {
-      border: 1px solid black;
+      // border: 1px solid black;
+      @include breakpoint(xxs, xs, s, m) {
+        display: none;
+      }
+
       div {
         border: 1px solid black;
       }
@@ -62,6 +68,9 @@
       }
       .newsletter {
         padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         p {
           color: $orange;
           font-weight: 600;
@@ -70,6 +79,12 @@
         #newsletter-message {
           color: #ee3e33;
           font-size: 0.8em;
+        }
+        input {
+          margin-bottom: 0.5em;
+        }
+        button {
+          margin: auto;
         }
       }
       .facebook {

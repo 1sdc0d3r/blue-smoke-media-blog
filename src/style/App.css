@@ -7,3 +7,28 @@
   width: 75%;
   margin: auto;
 }
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 360px) {
+  .wrapper {
+    width: 98%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .wrapper {
+    width: 98%;
+  }
+}
+/*# sourceMappingURL=App.css.map */
