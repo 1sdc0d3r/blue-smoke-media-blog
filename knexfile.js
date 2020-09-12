@@ -12,6 +12,7 @@ module.exports = {
     seeds: {
       directory: "./database/seeds"
     },
+    useNullAsDefault: true
   },
 
   testing: {
@@ -30,7 +31,8 @@ module.exports = {
         // runs after a connection is made to the sqlite engine
         conn.run("PRAGMA foreign_keys = ON", done); // turn on FK enforcement
       }
-    }
+    },
+    useNullAsDefault: true
   },
 
   staging: {
@@ -50,7 +52,8 @@ module.exports = {
     },
     migrations: {
       tableName: 'knex_migrations'
-    }
+    },
+    useNullAsDefault: true
   },
 
   production: {
@@ -68,5 +71,6 @@ module.exports = {
     migrations: {
       tableName: 'knex_migrations'
     }
-  }
+  },
+  useNullAsDefault: true
 };
