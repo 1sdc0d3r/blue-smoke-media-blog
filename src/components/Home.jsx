@@ -21,6 +21,7 @@ export default function Home() {
   //   const message = document.getElementById("newsletter-message");
   // });
   const [newsletterMessage, setNewsletterMessage] = useState("");
+  const API_URL = "https://blue-smoke-newsletter.herokuapp.com/";
 
   const newArticles = [
     {
@@ -234,10 +235,17 @@ export default function Home() {
   );
 
   function registerEmail() {
-    const email = document.querySelector("input[name='email']").value;
+    const email = document.querySelector("input[name='email']");
     axios
-      .post("http://localhost:3000/api", { email: email })
-      .then((res) => setNewsletterMessage(res.data.message))
+      .post(`${API_URL}api`, { email: email.value })
+      .then((res) => {
+        setNewsletterMessage(res.data.message);
+        if (res.data.message.includes("Successfully"))
+          setTimeout(() => {
+            email.value = "";
+            setNewsletterMessage("");
+          }, 2000);
+      })
       .catch((err) => console.log(err));
   }
 }
