@@ -1,13 +1,13 @@
 const router = require("express").Router();
 
 //* ROUTES
-// const authRouter = require("./routes/authRouter");
+const articleRouter = require("./routes/articleRouter");
 
 //* MIDDLEWARE
 // const restricted = require("./middleware/restricted");
 
 
-// router.use("/auth", authRouter);
+router.use("/", articleRouter);
 
 router.use("/", (req, res) => {
   res.status(200).json({

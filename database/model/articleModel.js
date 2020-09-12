@@ -22,12 +22,13 @@ function getArticleById(id) {
     })
 }
 
-function updateArticle(article) {
-    return db("Articles").update(article).where({
-        id: article.id
-    })
-}
+function updateArticle(id, article) {
+    return db("Articles").update(article)
+        .where({
+            id
+        })
 
+}
 
 function removeArticle(id) {
     return db("Articles").where({
