@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "knex": "^0.21.5",
+    "mysql": "^2.18.1",
+    "sqlite3": "^5.0.0"
+  },
+  "name": "blog-blue-smoke-media",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1sdc0d3r/blue-smoke-media-blog.git"
+  },
+  "author": "1sdc0d3r",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1sdc0d3r/blue-smoke-media-blog/issues"
+  },
+  "homepage": "https://github.com/1sdc0d3r/blue-smoke-media-blog#readme",
+  "description": ""
+}
