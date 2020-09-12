@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import bigGuys from "../assets/competing-with-the-big-guys.jpg";
 import socialMedia from "../assets/Social-media-changes-every-small-business-should-know- about.jpeg";
@@ -13,13 +14,8 @@ export default function Home() {
         document.querySelector("button[type='submit']").click();
       }
     });
-    return () => {
-      email.removeEventListener("keyup");
-    };
   }, []);
-  // useEffect(() => {
-  //   const message = document.getElementById("newsletter-message");
-  // });
+
   const [newsletterMessage, setNewsletterMessage] = useState("");
   const API_URL = "https://blue-smoke-newsletter.herokuapp.com/";
 
@@ -99,7 +95,7 @@ export default function Home() {
               idea started, it was successful.{" "}
             </p>
             <p className="author">Ramona Lucius, (August, 2020)</p>
-            <button>Read More</button>
+            <Link to="/article/1">Read More</Link>
           </section>
           <section>
             <img src={invertedCommas} alt="inverted commas" id="commas" />
@@ -134,7 +130,7 @@ export default function Home() {
               grow your brand by taking hold of your social media presence!
             </p>
             <p className="author">Constance Beebe, (August, 2020)</p>
-            <button>Read More</button>
+            <Link to="/article/2">Read More</Link>
           </section>
           <section>
             <img src={bigGuys} alt="img" />
@@ -153,7 +149,7 @@ export default function Home() {
               take on those competitors you never thought you could match!
             </p>
             <p className="author">Constance Beebe, (August, 2020)</p>
-            <button>Read More</button>
+            <Link to="/article/3">Read More</Link>
           </section>
         </div>
         {/* //! SIDEBAR */}

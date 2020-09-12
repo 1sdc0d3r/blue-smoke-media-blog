@@ -1,0 +1,18 @@
+@import "./Utils/Mixins/Mixins.scss";
+
+.App {
+  text-align: center;
+  background: #f6f6f6;
+
+  .wrapper {
+    width: 75%;
+    margin: auto;
+
+    @include breakpoint(s, m) {
+      width: 90%;
+    }
+    @include breakpoint(xxs, xs) {
+      width: 98%;
+    }
+  }
+}
