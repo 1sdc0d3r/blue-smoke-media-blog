@@ -4,7 +4,7 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: './dev.sqlite3'
+      filename: './database/dev.sqlite3'
     },
     migrations: {
       directory: "./database/migrations"
@@ -34,26 +34,23 @@ module.exports = {
     },
     useNullAsDefault: true
   },
-
+  // todo process.env file not working
   staging: {
     client: 'mysql',
     connection: {
-      host: process.env.DB_HOST,
-      user: process.env.DB_USER,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_NAME
-    },
-    migrations: {
-      directory: "./database/migrations"
+      host: '70.32.23.16',
+      user: process.env.DB_USER || 'bluesmok',
+      password: process.env.DB_PASSWORD || '22;YHv1rKE5g.p',
+      database: process.env.DB_NAME || 'bluesmok_blog',
+      port: process.env.DB_PORT || 3306
     },
     pool: {
       min: 2,
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations'
-    },
-    useNullAsDefault: true
+      directory: "./database/migrations"
+    }
   },
 
   production: {
