@@ -12,7 +12,7 @@ function validateEmail(req, res, next) {
     if (email.includes("@") & email.includes(".")) {
         db.checkExistingEmails(email).then(([user]) => {
             if (user) {
-                res.status(400).json({
+                res.status(203).json({
                     message: "This email is already subscribed."
                 })
             } else {
@@ -20,7 +20,7 @@ function validateEmail(req, res, next) {
             }
         }).catch(err => res.status(500).json(err))
     } else {
-        res.status(400).json({
+        res.status(203).json({
             message: "Please provide a valid email."
         })
     }

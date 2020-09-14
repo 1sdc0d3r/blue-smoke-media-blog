@@ -10,7 +10,11 @@ router.post("/", validateEmail, (req, res) => {
     email
   } = req.body;
 
-  db.insertEmail(email).then(resp => res.status(200).json(resp)).catch(err => res.status(500).json(err))
+  db.insertEmail(email).then(resp => {
+    res.status(200).json(
+      resp
+    )
+  }).catch(err => res.status(500).json(err))
 });
 
 router.get("/", (req, res) => {
