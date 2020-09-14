@@ -1,13 +1,13 @@
 const router = require("express").Router();
-const blogDb = require("../../../database/model/emailModel");
+const blogDb = require("../../../database/model/blogModel");
 
 const {
-  validateArticle,
-} = require("../middleware/articleMiddleware");
+  validateArticle
+} = require("../middleware/blogMiddleware");
 
 router.post("/", validateArticle, (req, res) => {
-  const article = req.body
-  blogDb.insert(article).then(resp => res.status(200).json(resp)).catch(err => res.status(500).json({
+  const article = req.body;
+  blogDb.insertArticle(article).then(resp => res.status(200).json(resp)).catch(err => res.status(500).json({
     err
   }))
 });

@@ -1,22 +1,27 @@
 const router = require("express").Router();
 const db = require("../../../database/model/emailModel");
 
-router.post("/", (req, res) => {
-  let email = req.body;
-  db.insertEmail(email)
-  res.status(200).json(email)
+const {
+  validateEmail
+} = require("../middleware/emailMiddleware")
+
+router.post("/", validateEmail, (req, res) => {
+  const {
+    email
+  } = req.body;
+
+  db.insertEmail(email).then(resp => res.status(200).json(resp)).catch(err => res.status(500).json(err))
 });
 
 router.get("/", (req, res) => {
-  const list = db.getEmails()
-  res.status(200).json(list)
+  db.getEmails().then(list => res.status(200).json(list)).catch(err => res.status(500).json(err))
 })
 
 router.delete("/:id", (req, res) => {
   const {
-    email
+    id
   } = req.params;
-  db.removeEmail(email).then(resp => res.status(200).json(resp)).catch(err => res.status(500).json(err))
+  db.removeEmail(id).then(resp => res.status(200).json(resp)).catch(err => res.status(500).json(err))
 })
 
 

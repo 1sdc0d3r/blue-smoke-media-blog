@@ -10,7 +10,8 @@ router.use("/email", emailRouter);
 
 router.use("/", (req, res) => {
   res.status(200).json({
-    api: "api-router: up"
+    api: "api-router: up",
+    message: "No API routing"
   })
 });
 

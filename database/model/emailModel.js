@@ -1,13 +1,13 @@
-const db = require("../../../newsletter-blue-smoke-media/database/database-config");
+const db = require("../database-config.js")
 
 module.exports = {
     checkExistingEmails,
-    insert,
+    insertEmail,
     getEmails,
     removeEmail
 }
 
-function insert(email) {
+function insertEmail(email) {
     return db("Emails").insert({
         email
     })
@@ -18,13 +18,13 @@ function getEmails() {
 }
 
 function checkExistingEmails(email) {
-    return db("Emails").select('email').where({
+    return db("Emails").where({
         email
     })
 }
 
-function removeEmail(email) {
+function removeEmail(id) {
     return db("Emails").where({
-        email
+        id
     }).del();
 }
