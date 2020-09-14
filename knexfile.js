@@ -8,6 +8,7 @@ module.exports = {
     },
     migrations: {
       directory: "./database/migrations"
+
     },
     seeds: {
       directory: "./database/seeds"
@@ -67,7 +68,7 @@ module.exports = {
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations'
+      directory: "./database/migrations"
     }
   }
 };
