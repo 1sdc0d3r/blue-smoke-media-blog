@@ -1,13 +1,12 @@
 const router = require("express").Router();
 
 //* ROUTES
-const articleRouter = require("./routes/articleRouter");
-
-//* MIDDLEWARE
-// const restricted = require("./middleware/restricted");
+const blogRouter = require("./routes/blogRouter");
+const emailRouter = require("./routes/emailRouter");
 
 
-router.use("/", articleRouter);
+router.use("/blog", blogRouter);
+router.use("/email", emailRouter);
 
 router.use("/", (req, res) => {
   res.status(200).json({

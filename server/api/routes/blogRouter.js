@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const articleDb = require("../../../database/model/articleModel");
+const blogDb = require("../../../database/model/emailModel");
 
 const {
   validateArticle,
@@ -7,13 +7,13 @@ const {
 
 router.post("/", validateArticle, (req, res) => {
   const article = req.body
-  articleDb.insert(article).then(resp => res.status(200).json(resp)).catch(err => res.status(500).json({
+  blogDb.insert(article).then(resp => res.status(200).json(resp)).catch(err => res.status(500).json({
     err
   }))
 });
 
 router.get("/", (req, res) => {
-  articleDb.getArticles().then(resp => res.status(200).json(resp)).catch(err => res.status(500).json({
+  blogDb.getArticles().then(resp => res.status(200).json(resp)).catch(err => res.status(500).json({
     err
   }))
 })
@@ -22,7 +22,7 @@ router.get("/:id", (req, res) => {
   const {
     id
   } = req.params
-  articleDb.getArticleById(id).then(resp => res.status(200).json(
+  blogDb.getArticleById(id).then(resp => res.status(200).json(
     resp.length ? resp : {
       message: "No Article Found"
     }
@@ -35,7 +35,7 @@ router.get("/:id", (req, res) => {
   const {
     id
   } = req.params
-  articleDb.getArticleById(id).then(resp => res.status(200).json(
+  blogDb.getArticleById(id).then(resp => res.status(200).json(
     resp.length ? resp : {
       message: "No Article Found"
     }
@@ -50,7 +50,7 @@ router.put("/:id", (req, res) => {
   } = req.params
   const article = req.body
   console.log(id, article)
-  articleDb.updateArticle(id, article).then(resp => res.status(200).json(resp)).catch(err => res.status(500).json({
+  blogDb.updateArticle(id, article).then(resp => res.status(200).json(resp)).catch(err => res.status(500).json({
     err
   }))
 })
@@ -59,7 +59,7 @@ router.delete("/:id", (req, res) => {
   const {
     id
   } = req.params
-  articleDb.removeArticle(id).then(resp => res.status(200).json(resp)).catch(err => res.status(500).json({
+  blogDb.removeArticle(id).then(resp => res.status(200).json(resp)).catch(err => res.status(500).json({
     err
   }))
 })
