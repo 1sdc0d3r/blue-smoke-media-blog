@@ -5,11 +5,11 @@
     "helmet": "^4.1.1",
     "knex": "^0.21.5",
     "mysql": "^2.18.1",
+    "dotenv": "^8.2.0",
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4",
-    "dotenv": "^8.2.0"
+    "nodemon": "^2.0.4"
   },
   "name": "blog-blue-smoke-media",
   "version": "1.0.0",
