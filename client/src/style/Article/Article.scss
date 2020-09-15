@@ -1,0 +1,39 @@
+@import "../Utils/Mixins/Mixins.scss";
+
+article {
+  text-align: left;
+  img {
+    width: 100%;
+  }
+  .category {
+    text-align: left;
+    color: grey;
+  }
+  h2 {
+    font-size: 1.7em;
+    margin-bottom: 0;
+  }
+  .author {
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 25%;
+    padding: 0;
+    .btn {
+      width: 20%;
+    }
+    @include breakpoint(xxs, xs, s, m) {
+      width: 40%;
+    }
+    li {
+      a {
+        width: 75%;
+      }
+    }
+  }
+  .content {
+    line-height: 1.3em;
+  }
+}

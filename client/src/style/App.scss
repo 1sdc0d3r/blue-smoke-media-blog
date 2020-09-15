@@ -7,12 +7,26 @@
   .wrapper {
     width: 75%;
     margin: auto;
-
+    h1 {
+      color: $royalBlue;
+      text-shadow: 2px 2px 3px black;
+      font-size: 3em;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+    .orange {
+      color: $orange;
+    }
+    @include breakpoint(l, xl, xxl) {
+      font-size: 1.5em;
+    }
     @include breakpoint(s, m) {
       width: 90%;
+      font-size: 1.3em;
     }
     @include breakpoint(xxs, xs) {
       width: 98%;
+      font-size: 1.1em;
     }
   }
 }

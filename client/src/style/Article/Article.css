@@ -1,0 +1,66 @@
+article {
+  text-align: left;
+}
+
+article img {
+  width: 100%;
+}
+
+article .category {
+  text-align: left;
+  color: grey;
+}
+
+article h2 {
+  font-size: 1.7em;
+  margin-bottom: 0;
+}
+
+article ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25%;
+  padding: 0;
+}
+
+article ul .btn {
+  width: 20%;
+}
+
+@media (max-width: 360px) {
+  article ul {
+    width: 40%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  article ul {
+    width: 40%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  article ul {
+    width: 40%;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  article ul {
+    width: 40%;
+  }
+}
+
+article ul li a {
+  width: 75%;
+}
+
+article .content {
+  line-height: 1.3em;
+}
+/*# sourceMappingURL=Article.css.map */

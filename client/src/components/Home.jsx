@@ -54,13 +54,13 @@ export default function Home() {
 
   return (
     <div className="home">
-      <div>
-        <h1>
-          Blue Smoke Media
-          <br />
-          <span className="orange">Nomads</span>
-        </h1>
-      </div>
+      {/* <div> */}
+      <h1>
+        Blue Smoke Media
+        <br />
+        <span className="orange">Nomads</span>
+      </h1>
+      {/* </div> */}
       <div className="content">
         <div className="posts">
           <section>
