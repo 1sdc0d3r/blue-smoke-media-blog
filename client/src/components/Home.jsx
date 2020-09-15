@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import * as emailjs from "emailjs-com";
 import bigGuys from "../assets/competing-with-the-big-guys.jpg";
 import socialMedia from "../assets/Social-media-changes-every-small-business-should-know- about.jpeg";
 import invertedCommas from "../assets/inverted-commas.png";
@@ -55,11 +56,9 @@ export default function Home() {
     <div className="home">
       <div>
         <h1>
-          Blue Smoke
+          Blue Smoke Media
           <br />
-          <span className="orange">Designer and Techie</span>
-          <br />
-          Nomads
+          <span className="orange">Nomads</span>
         </h1>
       </div>
       <div className="content">
@@ -169,6 +168,7 @@ export default function Home() {
             </p>
             <span id="newsletter-message">{newsletterMessage}</span>
             <input type="text" name="email" placeholder="Enter Your Email" />
+            <input name="antiSpam" type="text" style={{ display: "none" }} />
             <button type="submit" onClick={() => registerEmail()}>
               Sign Up
             </button>
@@ -233,7 +233,26 @@ export default function Home() {
 
   function registerEmail() {
     const email = document.querySelector("input[name='email']");
-    axios
+    const antiSpam = document.querySelector("input[name='antiSpam']");
+    const templateParams = {
+      reply_to: email.value,
+      from_name: "blog subscriber",
+      message_subject: "Blog Subscriber",
+      message_html: email.value,
+    };
+    console.log(email.value, !antiSpam.value);
+    if (!email.value.includes("@") & !email.value.includes(".")) {
+      setNewsletterMessage("Please provide a valid email.");
+    } else if (!antiSpam.value) {
+      console.log("SENT");
+      emailjs.send(
+        "service_kys3ouv",
+        "template_fd7rhre",
+        templateParams,
+        "user_AKrWjfONfbrIagrKBIYq0"
+      );
+    }
+    /* //todo axios
       .post(`${API_URL}/api/email`, { email: email.value })
       .then((res) => {
         if (res.status === 200) {
@@ -244,7 +263,7 @@ export default function Home() {
           }, 2000);
         } else setNewsletterMessage(res.data.message);
       })
-      .catch((err) => console.log(err));
+    .catch((err) => console.log(err));*/
   }
 }
 function addComment() {
