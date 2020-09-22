@@ -12,25 +12,36 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 3em;
+        h2 {
+          margin-top: 0;
+        }
         h4 {
-          margin: 0.5em auto 0.7em;
+          margin: 1em auto 0em;
+          font-size: 1.3em;
+          // text-decoration: underline;
         }
         .author {
           align-self: flex-end;
           font-style: italic;
         }
-        button {
-          width: 20%;
-          align-self: flex-end;
+        a {
+          width: -webkit-max-content;
+          width: -moz-max-content;
+          width: max-content;
           background: $royalBlue;
           color: $lightBlue;
-          border-radius: 10%;
-          padding: 0.5em 0.25em;
+          border-radius: 0.5em;
+          padding: 0.2em 0.5em;
           font-weight: 700;
+          text-decoration: none;
+          &:hover {
+            color: $green;
+          }
         }
       }
       img {
         width: 100%;
+        margin-bottom: 0.75em;
       }
       #commas {
         width: 10%;

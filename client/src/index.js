@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import * as serviceWorker from "./serviceWorker";
 import {
-  HashRouter as Router
+  BrowserRouter as Router
 } from "react-router-dom";
 
 ReactDOM.render( <
@@ -14,8 +14,8 @@ ReactDOM.render( <
   <
   App / >
   <
-  /Router> <
-  /React.StrictMode>,
+  /Router> < /
+  React.StrictMode > ,
   document.getElementById("root")
 );
 

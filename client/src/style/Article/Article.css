@@ -13,7 +13,7 @@ article .category {
 
 article h2 {
   font-size: 1.7em;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 article ul {
@@ -62,5 +62,10 @@ article ul li a {
 
 article .content {
   line-height: 1.3em;
+}
+
+#loading {
+  font-size: 2em;
+  color: #020723;
 }
 /*# sourceMappingURL=Article.css.map */

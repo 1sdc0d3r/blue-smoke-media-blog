@@ -73,6 +73,7 @@ export default function Home() {
             </h2>
             <h4>Got a favorite brand?</h4>
             <p>
+              {/* //todo _____?? */}
               Something that inspires the confidence that _____ is the best
               value? Most of us would answer yes. There is a specific toothpaste
               you seek, or brand of trash bags you avoid. Out of so many choices
@@ -94,7 +95,7 @@ export default function Home() {
               <span className="orange">learn more.</span> As ridiculous as the
               idea started, it was successful.{" "}
             </p>
-            <p className="author">Ramona Lucius, (August, 2020)</p>
+            <p className="author">— Ramona Lucius, (August, 2020)</p>
             <Link to="/article/1">Read More</Link>
           </section>
           <section>
@@ -107,12 +108,12 @@ export default function Home() {
               worth the cost.”
             </p>
             <br />
-            <p className="author"> — Elaine Cheng</p>
+            <p className="author">— Elaine Cheng</p>
           </section>
           <section>
             <img src={socialMedia} alt="img" />
             <h2>
-              1. Social Media:{" "}
+              Social Media:{" "}
               <span className="orange">
                 Why It Is 100% Essential (and How to Use It Well).
               </span>
@@ -129,13 +130,13 @@ export default function Home() {
               mind that you can achieve a significant influence. Take a hold and
               grow your brand by taking hold of your social media presence!
             </p>
-            <p className="author">Constance Beebe, (August, 2020)</p>
+            <p className="author">— Constance Beebe, (August, 2020)</p>
             <Link to="/article/2">Read More</Link>
           </section>
           <section>
             <img src={bigGuys} alt="img" />
             <h2>
-              2. Competing
+              Competing
               <span className="orange"> with the Big Guys!</span>
             </h2>
             <p>
@@ -148,7 +149,7 @@ export default function Home() {
               article is to provide you with an approach, and the motivation to
               take on those competitors you never thought you could match!
             </p>
-            <p className="author">Constance Beebe, (August, 2020)</p>
+            <p className="author">— Constance Beebe, (August, 2020)</p>
             <Link to="/article/3">Read More</Link>
           </section>
         </div>

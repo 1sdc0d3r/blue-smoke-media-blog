@@ -1,22 +1,27 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import posts from "../data";
+import axios from "axios";
 import twitter from "../assets/Twitter.png";
 import facebook from "../assets/faceBook.png";
 import linkedIn from "../assets/linkedIn_social_media_button.png";
-import MailOutlineRoundedIcon from "@material-ui/icons/MailOutlineRounded";
 
 export default function Article({ history }) {
   const { id } = useParams();
-  const [post, setPost] = useState({});
-  //todo change URL to proper url
+  const [post, setPost] = useState();
+  //todo change URL to proper url (SOCIAL MEDIA SHARING)
   const encodedURL = encodeURI(
     `https://www.bluesmokemedia.com${history.location.pathname}`
   );
-
   useEffect(() => {
-    setPost(posts.find((e) => e.id == id));
+    axios
+      .get(`http://localhost:5000/api/blog/${id}`)
+      .then((res) => {
+        console.log(res.data);
+        setPost(res.data[0]);
+      })
+      .catch((err) => console.log(err));
   }, []);
+
   return (
     <>
       <h1>
@@ -67,7 +72,7 @@ export default function Article({ history }) {
           {/* //todo category tags here */}
         </article>
       ) : (
-        <p>loading...</p>
+        <p id="loading">No Article Found</p>
       )}
     </>
   );
