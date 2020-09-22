@@ -67,7 +67,6 @@ export default function Home() {
             <h2>
               Best practices:
               <span className="orange">
-                {" "}
                 How to market yourself like a corporation.
               </span>
             </h2>
@@ -84,7 +83,7 @@ export default function Home() {
               More importantly, how can you use the same tools to inspire
               confidence that you are the best choice out of a stack of resumes?
             </p>
-            <h4>Let’s talk about how they did it</h4>
+            <h4>Let’s talk about how they did it.</h4>
             <p>
               {" "}
               Corporations are people is probably not a new concept to you.
@@ -92,6 +91,7 @@ export default function Home() {
               an argument of a wealthy robber baron who wanted his business to
               exploit the 14th amendment. Here is a bit on the dubious journey
               from business to personhood if you want to{" "}
+              {/* //todo learn more link */}
               <span className="orange">learn more.</span> As ridiculous as the
               idea started, it was successful.{" "}
             </p>

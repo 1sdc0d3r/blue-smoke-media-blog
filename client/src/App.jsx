@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Article from "./components/Article";
 import Navigation from "./components/Navigation";
+import Search from "./components/Search";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/article/:id" component={Article} />
+          <Route path="/search" component={Search} />
         </Switch>
       </section>
       <Footer />

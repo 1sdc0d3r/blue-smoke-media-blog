@@ -15,10 +15,7 @@ export default function Article({ history }) {
   useEffect(() => {
     axios
       .get(`http://localhost:5000/api/blog/${id}`)
-      .then((res) => {
-        console.log(res.data);
-        setPost(res.data[0]);
-      })
+      .then((res) => setPost(res.data[0]))
       .catch((err) => console.log(err));
   }, []);
 
@@ -54,7 +51,6 @@ export default function Article({ history }) {
               </a>
             </li>
             <li>
-              {/* //todo LINKEDIN ICON */}
               <a
                 href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodedURL}`}
                 target="_blank"
