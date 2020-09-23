@@ -4,8 +4,8 @@ const blogDb = require("../../../database/model/blogModel");
 const {
   validateArticle
 } = require("../middleware/blogMiddleware");
-
-router.post("/", validateArticle, (req, res) => {
+//todo validate article
+router.post("/", (req, res) => {
   const article = req.body;
   blogDb.insertArticle(article).then(resp => res.status(200).json(resp)).catch(err => res.status(500).json({
     err
