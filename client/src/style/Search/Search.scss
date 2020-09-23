@@ -1,0 +1,9 @@
+@import "../Utils/Mixins/Mixins.scss";
+
+.search {
+  color: $green;
+  position: relative;
+  ul {
+    position: absolute;
+  }
+}

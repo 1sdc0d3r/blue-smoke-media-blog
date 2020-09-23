@@ -2,12 +2,10 @@
 
 .home {
   text-align: left;
-
   .content {
     display: flex;
     .posts {
       margin: 0 2em;
-
       section {
         display: flex;
         flex-direction: column;
@@ -28,6 +26,7 @@
           width: -webkit-max-content;
           width: -moz-max-content;
           width: max-content;
+          // align-self: flex-end;
           background: $royalBlue;
           color: $lightBlue;
           border-radius: 0.5em;
@@ -53,7 +52,6 @@
       @include breakpoint(xxs, xs, s, m) {
         display: none;
       }
-
       div {
         border: 1px solid black;
       }

@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,OAAO,CAAC;EACN,KAAK,ECKC,OAAO;EDJb,QAAQ,EAAE,QAAQ;CAInB;;AAND,AAGE,OAHK,CAGL,EAAE,CAAC;EACD,QAAQ,EAAE,QAAQ;CACnB",
+    "sources": [
+        "Search.scss",
+        "../Utils/Mixins/Mixins.scss",
+        "../Utils/Breakpoints/Breakpoints.scss"
+    ],
+    "names": [],
+    "file": "Search.css"
+}

@@ -58,21 +58,20 @@ export default function Home() {
       <h1>
         Blue Smoke Media
         <br />
-        <span className="orange">Nomads</span>
+        <span className="orange">Nomad Techies</span>
       </h1>
       {/* </div> */}
       <div className="content">
         <div className="posts">
           <section>
             <h2>
-              Best practices:
+              Best practices:{" "}
               <span className="orange">
                 How to market yourself like a corporation.
               </span>
             </h2>
             <h4>Got a favorite brand?</h4>
             <p>
-              {/* //todo _____?? */}
               Something that inspires the confidence that _____ is the best
               value? Most of us would answer yes. There is a specific toothpaste
               you seek, or brand of trash bags you avoid. Out of so many choices
@@ -91,7 +90,7 @@ export default function Home() {
               an argument of a wealthy robber baron who wanted his business to
               exploit the 14th amendment. Here is a bit on the dubious journey
               from business to personhood if you want to{" "}
-              {/* //todo learn more link */}
+              {/* //todo learn more link to contact page */}
               <span className="orange">learn more.</span> As ridiculous as the
               idea started, it was successful.{" "}
             </p>
