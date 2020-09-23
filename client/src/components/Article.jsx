@@ -17,7 +17,7 @@ export default function Article({ history }) {
       .get(`http://localhost:5000/api/blog/${id}`)
       .then((res) => setPost(res.data[0]))
       .catch((err) => console.log(err));
-  }, []);
+  }, [id]);
 
   return (
     <>

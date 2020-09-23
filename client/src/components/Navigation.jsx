@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, withRouter } from "react-router-dom";
 import Search from "./Search";
 
-export default function Navigation(props) {
+export default function Navigation() {
   const dropArrow = (
     <svg
       style={{
@@ -12,16 +12,14 @@ export default function Navigation(props) {
         color: "#7ff76f",
       }}
     >
-      <polygon points="5,5 13,15 20,5" />
+      <polygon points="5,5 13,15 20,5" fill="#7ff76f" />
     </svg>
   );
   return (
     <nav className="main-nav">
-      <div className="dropdown">
-        <NavLink to="/" className="nav-item">
-          Home
-        </NavLink>
-      </div>
+      <NavLink to="/" className="nav-item">
+        Home
+      </NavLink>
       <a
         href="#blog"
         target="_blank"
@@ -31,10 +29,7 @@ export default function Navigation(props) {
         Our Website
       </a>
       <div className="dropdown">
-        <button className="drop-btn nav-item">
-          Categories
-          {dropArrow}
-        </button>
+        <button className="drop-btn nav-item">Categories{dropArrow}</button>
         <div className="dropdown-content">
           <ul>
             <li>Ad-Copywriting</li>
@@ -46,8 +41,6 @@ export default function Navigation(props) {
             <li>Digital Graphic Design</li>
             <li>E-Commerce Website Development</li>
             <li>Organic SEO</li>
-          </ul>
-          <ul>
             <li>Printed Media Graphic Design</li>
             <li>Reputation Management</li>
             <li>Search Engine Optimization (SEO)</li>
@@ -59,7 +52,6 @@ export default function Navigation(props) {
           </ul>
         </div>
       </div>
-
       {/* todo direct to contact on website */}
       <NavLink to="/contact" className="nav-item">
         Contact
