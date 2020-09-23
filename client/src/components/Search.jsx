@@ -15,18 +15,22 @@ export default function Search() {
   }, []);
   // todo fix when empty
   useEffect(() => {
-    setFiltered(
-      posts.filter((e) => {
-        for (var key in e) {
-          if (excludedKeys.indexOf(key) == -1) {
-            if (e[key].toString().toLowerCase().includes(query)) {
-              console.log(key, e);
-              return e;
+    if (query) {
+      setFiltered(
+        posts.filter((e) => {
+          for (var key in e) {
+            if (excludedKeys.indexOf(key) == -1) {
+              if (e[key].toString().toLowerCase().includes(query)) {
+                // console.log(key, e);
+                return e;
+              }
             }
           }
-        }
-      })
-    );
+        })
+      );
+    } else {
+      setFiltered([]);
+    }
   }, [query]);
 
   return (

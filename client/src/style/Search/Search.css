@@ -5,5 +5,12 @@
 
 .search ul {
   position: absolute;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.search ul li {
+  border: 2px solid black;
 }
 /*# sourceMappingURL=Search.css.map */

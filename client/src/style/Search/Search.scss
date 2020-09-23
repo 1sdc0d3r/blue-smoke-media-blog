@@ -5,5 +5,11 @@
   position: relative;
   ul {
     position: absolute;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    li {
+      border: 2px solid black;
+    }
   }
 }
