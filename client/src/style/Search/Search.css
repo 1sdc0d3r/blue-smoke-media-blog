@@ -24,10 +24,6 @@
   transition: all 0.2s ease-out;
 }
 
-.search input:not(:focus) ~ ul {
-  display: none;
-}
-
 .search ul {
   position: absolute;
   list-style: none;

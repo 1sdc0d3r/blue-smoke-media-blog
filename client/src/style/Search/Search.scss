@@ -17,15 +17,14 @@
     &:not(:focus) {
       transition: all 0.2s ease-out;
     }
-    &:not(:focus) ~ ul {
-      display: none;
-    }
+    // &:not(:focus) ~ ul {
+    //   display: none;
+    // }
   }
   ul {
     position: absolute;
     list-style: none;
     width: 200%;
-    // width: 100%;
     top: 75%;
     left: 50%;
     transform: translate(-50%, 0);

@@ -9,6 +9,7 @@ export default function Search() {
   const [filtered, setFiltered] = useState([]);
   const excludedKeys = ["id", "imageUrl", "imageAlt"];
   const resultsList = document.querySelector(".search ul");
+
   useEffect(() => {
     axios
       .get("http://localhost:5000/api/blog")
@@ -42,10 +43,16 @@ export default function Search() {
         type="text"
         placeholder="Search..."
         onChange={(evt) => setQuery(evt.target.value.toLowerCase())}
+        onFocus={() =>
+          (document.querySelector(".search ul").style.display = "block")
+        }
       />
       <ul>
         {filtered.map((e) => (
-          <Link to={`/article/${e.id}`}>
+          <Link
+            to={`/article/${e.id}`}
+            onClick={() => (resultsList.style.display = "none")}
+          >
             <li key={e.id}>
               <h4>{e.title}</h4>
               <span>{e.author}</span>
@@ -53,7 +60,6 @@ export default function Search() {
             </li>
           </Link>
         ))}
-        <li id="no-results">No Results Found...</li>
       </ul>
     </div>
   );

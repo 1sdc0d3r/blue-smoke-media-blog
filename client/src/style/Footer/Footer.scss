@@ -1,47 +1,136 @@
 @import "../Utils/Mixins/Mixins.scss";
 footer {
-  background: lightskyblue;
+  background: $darkBlue;
+  color: goldenrod;
   .wrapper {
-    width: 75%;
+    width: 70%;
     .top {
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-between;
       text-align: left;
-      div {
-        width: 33.333%;
-        h3 {
-          font-weight: 700;
-        }
-      }
       .about {
+        h3 {
+          color: $lightBlue;
+          margin-bottom: 0;
+        }
         span {
           color: $orange;
         }
         p {
           width: 80%;
+          font-weight: 700;
         }
       }
       .newsletter {
+        width: 30%;
+        h4 {
+          color: $lightBlue;
+          margin-bottom: 0.5em;
+        }
+        .ctct-form {
+          .ctct-form-footer,
+          .ctct-gdpr-text,
+          .ctct-form-required,
+          .ctct-form-text,
+          .g-recaptcha,
+          #gdpr_text {
+            display: none;
+          }
+          .ctct-form-custom {
+            display: flex;
+            width: 100%;
+          }
+          .ctct-form-defaults {
+            height: auto;
+            padding: 0;
+            background: inherit;
+          }
+          .ctct-form-element {
+            // height: 3em;
+            background: $darkBlue;
+            border: 2px solid $royalBlue;
+            border-right: 0;
+            color: goldenrod;
+          }
+          .ctct-form-button {
+            padding: 0 0.125em;
+            font-size: 1em;
+            height: 3em;
+            width: 40%;
+            border-radius: 0;
+          }
+          h2 {
+            color: goldenrod;
+            font-size: 1.5em;
+          }
+        }
+
         div {
           display: flex;
           height: 2em;
           width: 100%;
+
           input {
-            border: 1px solid blue;
-            background: lightskyblue;
+            border: 2px solid $royalBlue;
+            background: $darkBlue;
+            width: 70%;
+            color: goldenrod;
+            font-weight: 600;
+            font-size: 1em;
+            &::-webkit-input-placeholder {
+              color: goldenrod;
+            }
+            &::-moz-placeholder {
+              color: goldenrod;
+            }
+            &:-ms-input-placeholder {
+              color: goldenrod;
+            }
+            &::-ms-input-placeholder {
+              color: goldenrod;
+            }
+            &::placeholder {
+              color: goldenrod;
+            }
           }
           button {
             color: goldenrod;
-            background: blue;
+            background: $royalBlue;
             border: none;
+            width: 30%;
+            font-size: 0.9em;
+            font-weight: 900;
           }
+        }
+      }
+      .follow {
+        padding: 0.5em 0.25em;
+        p {
+          color: $lightBlue;
+          font-weight: 700;
+        }
+        .icons {
+          display: flex;
+          justify-content: space-between;
         }
       }
     }
     .bottom {
+      // width: 95%;
+      margin: auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      p {
+        margin-right: 3%;
+      }
+      div {
+        a {
+          text-decoration: none;
+          color: goldenrod;
+          padding: 0 0.25em;
+        }
+      }
     }
   }
 }
