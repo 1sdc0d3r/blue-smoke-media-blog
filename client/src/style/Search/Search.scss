@@ -17,14 +17,15 @@
     &:not(:focus) {
       transition: all 0.2s ease-out;
     }
-  }
-  input:not(:focus) ~ ul {
-    display: none;
+    &:not(:focus) ~ ul {
+      display: none;
+    }
   }
   ul {
     position: absolute;
     list-style: none;
     width: 200%;
+    // width: 100%;
     top: 75%;
     left: 50%;
     transform: translate(-50%, 0);
@@ -37,6 +38,7 @@
     li {
       border-bottom: 1px solid #000;
       color: $lightBlue;
+      // width: 200%;
       &:hover {
         color: $royalBlue;
       }

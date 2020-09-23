@@ -3,15 +3,12 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 export default function Search() {
-  const [queryType, setQueryType] = useState("");
+  // const [queryType, setQueryType] = useState("");
   const [query, setQuery] = useState();
-  const [posts, setPosts] = useState([]);
+  // const [posts, setPosts] = useState([]);
   const [filtered, setFiltered] = useState([]);
   const excludedKeys = ["id", "imageUrl", "imageAlt"];
-  // const noResults = () => {
-  // setFiltered([]);
   const resultsList = document.querySelector(".search ul");
-  // };
   useEffect(() => {
     axios
       .get("http://localhost:5000/api/blog")
@@ -56,6 +53,7 @@ export default function Search() {
             </li>
           </Link>
         ))}
+        <li id="no-results">No Results Found...</li>
       </ul>
     </div>
   );
