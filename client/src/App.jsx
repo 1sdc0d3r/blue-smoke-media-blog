@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import "./style/core.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -20,7 +20,9 @@ function App() {
           <Route path="/" component={Home} exact />
           <Route path="/article/:id" component={ArticleView} />
           <Route path="/articles" component={Articles} />
-          <Route path="/search" component={Search} />
+          <Route path="/category/:category" component={Articles} />
+          <Route path="/tag/:tag" component={Articles} />
+          <Redirect to="/" />
         </Switch>
       </section>
       <Footer />

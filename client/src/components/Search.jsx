@@ -33,7 +33,7 @@ export default function Search() {
         }
       })
       .catch((err) => console.log(err));
-    console.log(filtered);
+    // console.log(filtered);
   }, [query]);
 
   return (
@@ -48,15 +48,21 @@ export default function Search() {
         }
       />
       <ul>
+        {/* todo set dropdown limit w/ scroll */}
         {filtered.map((e) => (
           <Link
             to={`/article/${e.id}`}
             onClick={() => (resultsList.style.display = "none")}
           >
             <li key={e.id}>
-              <h4>{e.title}</h4>
-              <span>{e.author}</span>
-              <p>{e.snippet.split(" ").splice(0, 20).join(" ")}...</p>
+              <img src={e.imageUrl} alt={e.imageAlt} />
+              <div className="content">
+                <h4>{e.title}</h4>
+                <span className="info">
+                  {e.author} {e.date}
+                </span>
+                <p>{e.snippet.split(" ").splice(0, 15).join(" ")}...</p>
+              </div>
             </li>
           </Link>
         ))}

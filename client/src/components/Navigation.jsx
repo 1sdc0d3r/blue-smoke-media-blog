@@ -21,7 +21,7 @@ export default function Navigation() {
         Home
       </NavLink>
       <a
-        href="#blog"
+        href="https://bluesmokedigitalandprintedmedia.com/"
         target="_blank"
         rel="noopener noreferrer"
         className="nav-item"

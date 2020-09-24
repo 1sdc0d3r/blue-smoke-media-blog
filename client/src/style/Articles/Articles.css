@@ -27,13 +27,25 @@
 
 .articles ul li .content {
   padding-left: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .articles ul li .content h2 {
   margin: 0;
 }
 
-.articles ul li .content p {
+.articles ul li .content .snippet {
   text-align: left;
+}
+
+.articles ul li .content .info {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 /*# sourceMappingURL=Articles.css.map */

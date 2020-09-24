@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import twitter from "../assets/Twitter.png";
 import facebook from "../assets/faceBook.png";
@@ -28,43 +28,56 @@ export default function Article({ history }) {
       </h1> */}
       {post ? (
         <article>
-          <img src={post.imageUrl} alt={post.imageAlt} />
-          <p className="category">{post.category}</p>
+          <img
+            src={post.imageUrl}
+            alt={post.imageAlt}
+            className="primary-img"
+          />
           <h2>{post.title}</h2>
-          <p className="author">
-            {post.author} / {post.date}
-          </p>
-          <ul>
-            <li>
-              <a
-                href={`https://facebook.com/sharer/sharer.php?u=${encodedURL}`}
-              >
-                <img src={facebook} alt="facebook icon" />
-              </a>
-            </li>
-            <li>
-              <a
-                href={`https://twitter.com/intent/tweet?text=${encodedURL}`}
-                data-size="large"
-              >
-                <img src={twitter} alt="twitter icon" />
-              </a>
-            </li>
-            <li>
-              <a
-                href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodedURL}`}
-                target="_blank"
-              >
-                <img src={linkedIn} alt="LinkedIn icon" />
-              </a>
-            </li>
-            <li>
-              <a href={`mailto:?subject=${post.title}&body=${encodedURL}`}>
-                mail img
-              </a>
-            </li>
-          </ul>
           <p className="content">{post.content}</p>
+          <p className="info">
+            {post.author} • {post.date}
+          </p>
+          <div className="share-info">
+            <ul>
+              Share:
+              <li>
+                <a
+                  href={`https://facebook.com/sharer/sharer.php?u=${encodedURL}`}
+                >
+                  <img src={facebook} alt="facebook icon" className="icon" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`https://twitter.com/intent/tweet?text=${encodedURL}`}
+                  data-size="large"
+                >
+                  <img src={twitter} alt="twitter icon" className="icon" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodedURL}`}
+                  target="_blank"
+                >
+                  <img src={linkedIn} alt="LinkedIn icon" className="icon" />
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:?subject=${post.title}&body=${encodedURL}`}>
+                  mail img
+                </a>
+              </li>
+            </ul>
+            <p className="tags">
+              {/* todo link to tags */}
+              {post.tags.split(",").map((e) => (
+                <Link to={`/tag/${e}`}>{e} </Link>
+              ))}
+            </p>
+          </div>
+
           {/* //todo category tags here */}
         </article>
       ) : (
