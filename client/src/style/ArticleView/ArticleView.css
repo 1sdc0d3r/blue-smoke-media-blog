@@ -3,7 +3,7 @@ article {
 }
 
 article img {
-  width: 100%;
+  width: 40%;
 }
 
 article .category {
@@ -68,4 +68,4 @@ article .content {
   font-size: 2em;
   color: #020723;
 }
-/*# sourceMappingURL=Article.css.map */
+/*# sourceMappingURL=ArticleView.css.map */

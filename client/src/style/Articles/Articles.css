@@ -1,0 +1,39 @@
+.articles h1 {
+  margin: 0.5em auto 0.75em;
+}
+
+.articles ul {
+  list-style: none;
+}
+
+.articles ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.articles ul li {
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5em;
+  margin-bottom: 2em;
+}
+
+.articles ul li img {
+  width: 22%;
+  min-width: 8em;
+}
+
+.articles ul li .content {
+  padding-left: 0.5em;
+}
+
+.articles ul li .content h2 {
+  margin: 0;
+}
+
+.articles ul li .content p {
+  text-align: left;
+}
+/*# sourceMappingURL=Articles.css.map */

@@ -94,7 +94,7 @@
   background: #020723;
   color: white;
   padding: 0.15em 0.65em 0.5em;
-  opacity: 0.9;
+  opacity: 0.95;
   min-width: -webkit-min-content;
   min-width: -moz-min-content;
   min-width: min-content;
@@ -132,6 +132,7 @@
   min-width: -webkit-min-content;
   min-width: -moz-min-content;
   min-width: min-content;
+  cursor: pointer;
 }
 
 .main-nav .dropdown .dropdown-content ul li:hover {

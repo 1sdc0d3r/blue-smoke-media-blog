@@ -28,6 +28,9 @@ export default function Navigation() {
       >
         Our Website
       </a>
+      <NavLink to="/articles" className="nav-item">
+        Articles
+      </NavLink>
       <div className="dropdown">
         <button className="drop-btn nav-item">Categories{dropArrow}</button>
         <div className="dropdown-content">

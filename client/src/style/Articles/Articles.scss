@@ -1,0 +1,31 @@
+.articles {
+  h1 {
+    margin: 0.5em auto 0.75em;
+  }
+  ul {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    li {
+      border: 2px solid black;
+      display: flex;
+      padding: 0.5em;
+      margin-bottom: 2em;
+      img {
+        width: 22%;
+        min-width: 8em;
+      }
+      .content {
+        padding-left: 0.5em;
+        h2 {
+          margin: 0;
+        }
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

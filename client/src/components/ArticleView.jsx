@@ -21,11 +21,11 @@ export default function Article({ history }) {
 
   return (
     <>
-      <h1>
+      {/* <h1>
         Blue Smoke Media
         <br />
         <span className="orange">Nomads</span>
-      </h1>
+      </h1> */}
       {post ? (
         <article>
           <img src={post.imageUrl} alt={post.imageAlt} />
