@@ -139,12 +139,12 @@ export default function Home() {
               <span className="orange"> with the Big Guys!</span>
             </h2>
             <p>
-              When starting a business or web site on the Internet, it is often
-              easy to become intimidated by large companies or web sites
-              offering similar services to you. While you may not be able to
-              match the million dollar advertising budgets, or employee numbers
-              of your competitors, there are many things you can do to make your
-              business or web site stand out from the rest. The aim of this
+              When starting a business or website on the Internet, it is often
+              easy to become intimidated by large companies or websites offering
+              similar services to you. While you may not be able to match the
+              million dollar advertising budgets, or employee numbers of your
+              competitors, there are many things you can do to make your
+              business or website stand out from the rest. The aim of this
               article is to provide you with an approach, and the motivation to
               take on those competitors you never thought you could match!
             </p>
