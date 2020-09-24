@@ -1,24 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, withRouter } from "react-router-dom";
 import axios from "axios";
 
-export default function Articles() {
+export default withRouter(function Articles({ location }) {
   const [articles, setArticles] = useState([]);
-  const { category, tag } = useParams();
+  const [query] = useState(Object.entries(useParams())[0]);
   useEffect(() => {
+    // console.log("QUERY", query);
+    console.log({ location });
     axios
       .get("http://localhost:5000/api/blog")
       .then(({ data }) => {
-        if (category) {
+        if (query) {
           setArticles(
             data
-              .filter((e) => e.category == category)
-              .sort((a, b) => b.date - a.date)
-          );
-        } else if (tag) {
-          setArticles(
-            data
-              .filter((e) => e.tags.includes(tag))
+              .filter((e) => {
+                return e[query[0]]
+                  .toLowerCase()
+                  .includes(query[1].toLowerCase());
+              })
               .sort((a, b) => b.date - a.date)
           );
         } else {
@@ -26,16 +26,15 @@ export default function Articles() {
         }
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [query]);
+  //todo change on path change
 
   console.log({ articles });
   return (
     <div className="articles">
       <h1>
-        {category || tag
-          ? articles.length
-            ? category || tag
-            : `No articles found for ${category || tag}`
+        {query
+          ? `${articles.length} articles found for ${query[1]}`
           : "Articles"}
       </h1>
       <ul>
@@ -56,4 +55,4 @@ export default function Articles() {
       </ul>
     </div>
   );
-}
+});

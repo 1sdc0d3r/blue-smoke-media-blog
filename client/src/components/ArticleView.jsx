@@ -36,7 +36,8 @@ export default function Article({ history }) {
           <h2>{post.title}</h2>
           <p className="content">{post.content}</p>
           <p className="info">
-            {post.author} • {post.date}
+            <Link to={`/author/${post.author}`}>{post.author}</Link> •{" "}
+            {post.date}
           </p>
           <div className="share-info">
             <ul>
@@ -72,8 +73,8 @@ export default function Article({ history }) {
             </ul>
             <p className="tags">
               {/* todo link to tags */}
-              {post.tags.split(",").map((e) => (
-                <Link to={`/tag/${e}`}>{e} </Link>
+              {post.tags.split(",").map((e, i) => (
+                <Link to={`/tag/${e}`}>{i !== 0 ? `• ${e}` : e}</Link>
               ))}
             </p>
           </div>

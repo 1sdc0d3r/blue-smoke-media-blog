@@ -4,6 +4,13 @@ article {
   display: flex;
   flex-direction: column;
   // text-align: left;
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: $lightBlue;
+    }
+  }
   .primary-img {
     width: 80%;
     height: 65vh;
@@ -59,12 +66,6 @@ article {
             height: 2em;
           }
         }
-      }
-    }
-    .tags {
-      a {
-        text-decoration: none;
-        color: inherit;
       }
     }
   }

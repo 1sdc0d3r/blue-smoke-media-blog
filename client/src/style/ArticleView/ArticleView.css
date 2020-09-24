@@ -8,6 +8,15 @@ article {
           flex-direction: column;
 }
 
+article a {
+  text-decoration: none;
+  color: inherit;
+}
+
+article a:hover {
+  color: #1e92f6;
+}
+
 article .primary-img {
   width: 80%;
   height: 65vh;
@@ -118,11 +127,6 @@ article .share-info ul li a {
 article .share-info ul li a img {
   width: 2em;
   height: 2em;
-}
-
-article .share-info .tags a {
-  text-decoration: none;
-  color: inherit;
 }
 
 #loading {
