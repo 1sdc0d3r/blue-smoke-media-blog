@@ -87,9 +87,10 @@
 }
 
 .sidebar .newsletter .ctct-form .ctct-form-defaults,
-.sidebar .newsletter .ctct-form .form_0 {
+.sidebar .newsletter .ctct-form #form_0 {
   background: #f6f6f6;
   padding: 0 0 0.5em;
+  width: 100%;
 }
 
 .sidebar .facebook {

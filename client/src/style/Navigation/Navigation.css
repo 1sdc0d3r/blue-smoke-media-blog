@@ -182,14 +182,18 @@
   list-style: none;
   width: 200%;
   top: 75%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  left: 35%;
+  -webkit-transform: translate(-35%, 0);
+          transform: translate(-35%, 0);
   padding: 0;
   background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
+  max-height: 40vh;
+  overflow: scroll;
 }
 
 .main-nav .search ul a {

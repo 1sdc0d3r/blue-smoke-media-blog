@@ -61,7 +61,8 @@ article {
         }
         a {
           display: flex;
-          img {
+          img,
+          svg {
             width: 2em;
             height: 2em;
           }

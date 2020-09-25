@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
+
+import { FiMail } from "react-icons/fi";
+
+//* Images
 import twitter from "../assets/Twitter.png";
 import facebook from "../assets/faceBook.png";
 import linkedIn from "../assets/linkedIn_social_media_button.png";
@@ -67,7 +71,7 @@ export default function Article({ history }) {
               </li>
               <li>
                 <a href={`mailto:?subject=${post.title}&body=${encodedURL}`}>
-                  mail img
+                  <FiMail color="#1e92f6" />
                 </a>
               </li>
             </ul>

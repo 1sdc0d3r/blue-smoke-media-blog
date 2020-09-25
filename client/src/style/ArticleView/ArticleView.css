@@ -125,7 +125,8 @@ article .share-info ul li a {
   display: flex;
 }
 
-article .share-info ul li a img {
+article .share-info ul li a img,
+article .share-info ul li a svg {
   width: 2em;
   height: 2em;
 }
