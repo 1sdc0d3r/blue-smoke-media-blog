@@ -7,15 +7,15 @@ import socialMedia from "../assets/Social-media-changes-every-small-business-sho
 import invertedCommas from "../assets/inverted-commas.png";
 
 export default function Home() {
-  useEffect(() => {
-    const email = document.querySelector("input[name='email']");
-    email.addEventListener("keyup", function (event) {
-      if (event.keyCode === 13) {
-        // enter key
-        document.querySelector("button[type='submit']").click();
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   const email = document.querySelector("input[name='email']");
+  //   email.addEventListener("keyup", function (event) {
+  //     if (event.keyCode === 13) {
+  //       // enter key
+  //       document.querySelector("button[type='submit']").click();
+  //     }
+  //   });
+  // }, []);
 
   const [newsletterMessage, setNewsletterMessage] = useState("");
   const API_URL = "https://blue-smoke-blog.herokuapp.com";
@@ -67,7 +67,7 @@ export default function Home() {
             <h2>
               Best practices:{" "}
               <span className="orange">
-                How to market yourself like a corporation.
+                How To Market Yourself Like A Corporation.
               </span>
             </h2>
             <h4>Got a favorite brand?</h4>
@@ -85,17 +85,37 @@ export default function Home() {
             <h4>Let’s talk about how they did it.</h4>
             <p>
               {" "}
-              Corporations are people is probably not a new concept to you.
+              <a
+                href="https://www.npr.org/2014/07/28/335288388/when-did-companies-become-people-excavating-the-legal-evolution"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Corporations are people is probably not a new concept to you.
+              </a>{" "}
               Collective ownership not bound to a single lifetime started with
               an argument of a wealthy robber baron who wanted his business to
-              exploit the 14th amendment. Here is a bit on the dubious journey
+              exploit the 14th amendment. Here is a bit on the{" "}
+              <a
+                href="https://www.theatlantic.com/business/archive/2018/03/corporations-people-adam-winkler/554852/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                dubious journey
+              </a>
               from business to personhood if you want to{" "}
-              {/* //todo learn more link to contact page */}
-              <span className="orange">learn more.</span> As ridiculous as the
-              idea started, it was successful.{" "}
+              <a
+                href="https://bluesmokedigitalandprintedmedia.com/contact"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                learn more.
+              </a>{" "}
+              As ridiculous as the idea started, it was successful.
             </p>
             <p className="author">— Ramona Lucius, (August, 2020)</p>
-            <Link to="/article/1">Read More</Link>
+            <Link to="/article/1" className="more-btn">
+              Read More
+            </Link>
           </section>
           <section>
             <img src={invertedCommas} alt="inverted commas" id="commas" />
@@ -130,7 +150,9 @@ export default function Home() {
               grow your brand by taking hold of your social media presence!
             </p>
             <p className="author">— Constance Beebe, (August, 2020)</p>
-            <Link to="/article/2">Read More</Link>
+            <Link to="/article/2" className="more-btn">
+              Read More
+            </Link>
           </section>
           <section>
             <img src={bigGuys} alt="img" />
@@ -149,7 +171,9 @@ export default function Home() {
               take on those competitors you never thought you could match!
             </p>
             <p className="author">— Constance Beebe, (August, 2020)</p>
-            <Link to="/article/3">Read More</Link>
+            <Link to="/article/3" className="more-btn">
+              Read More
+            </Link>
           </section>
         </div>
         {/* //! SIDEBAR */}
@@ -164,17 +188,21 @@ export default function Home() {
           </div>
           <div className="newsletter">
             <p>
-              Get a <span>Inside Look</span> to help compete with the big guys!
+              Get an <span>Inside Look</span> to Help Compete With the Big Guys!
             </p>
-            <span id="newsletter-message">{newsletterMessage}</span>
+            <div
+              className="ctct-inline-form ctct-form"
+              data-form-id="3b0b5c17-e6f4-4707-8090-bb39de378c16"
+            />
+            {/* <span id="newsletter-message">{newsletterMessage}</span>
             <input type="text" name="email" placeholder="Enter Your Email" />
             <input name="antiSpam" type="text" style={{ display: "none" }} />
             <button type="submit" onClick={() => registerEmail()}>
               Sign Up
-            </button>
+            </button> */}
           </div>
           <div className="facebook">
-            <p>Like us on facebook</p>
+            <p>Like Us On Facebook</p>
             <div
               class="fb-page"
               data-href="https://www.facebook.com/bluesmokemedia/"
@@ -188,9 +216,13 @@ export default function Home() {
             >
               <blockquote
                 cite="https://www.facebook.com/bluesmokemedia/"
-                class="fb-xfbml-parse-ignore"
+                className="fb-xfbml-parse-ignore"
               >
-                <a href="https://www.facebook.com/bluesmokemedia/">
+                <a
+                  href="https://www.facebook.com/bluesmokemedia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Blue Smoke Digital and Printed Media
                 </a>
               </blockquote>
@@ -290,7 +322,7 @@ function addComment() {
 */
 function newArticle(article) {
   return (
-    <div className="new-article">
+    <div className="new-article" key={article.id}>
       <img src={article.img} alt="post url" />
       <div className="text">
         <p>{article.tags?.map((e, i) => (i == 0 ? e : `, ${e}`))}</p>

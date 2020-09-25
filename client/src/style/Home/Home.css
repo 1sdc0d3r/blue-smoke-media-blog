@@ -45,6 +45,15 @@
 }
 
 .home .content .posts section a {
+  text-decoration: none;
+  color: #ee3e0e;
+}
+
+.home .content .posts section a:hover {
+  color: #1e92f6;
+}
+
+.home .content .posts section .more-btn {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -56,7 +65,7 @@
   text-decoration: none;
 }
 
-.home .content .posts section a:hover {
+.home .content .posts section .more-btn:hover {
   color: #7ff76f;
 }
 
@@ -65,6 +74,10 @@
   margin-bottom: 0.5em;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.home .content .sidebar {
+  text-align: center;
 }
 
 @media (max-width: 360px) {
@@ -109,7 +122,6 @@
 }
 
 .home .content .sidebar .newsletter {
-  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,28 +134,22 @@
           align-items: center;
 }
 
-.home .content .sidebar .newsletter p {
-  color: #ee3e0e;
-  font-weight: 600;
-  text-align: left;
+.home .content .sidebar .newsletter .ctct-form .ctct-form-footer,
+.home .content .sidebar .newsletter .ctct-form .ctct-gdpr-text,
+.home .content .sidebar .newsletter .ctct-form .ctct-form-required,
+.home .content .sidebar .newsletter .ctct-form .ctct-form-text,
+.home .content .sidebar .newsletter .ctct-form .g-recaptcha,
+.home .content .sidebar .newsletter .ctct-form #gdpr_text {
+  display: none;
 }
 
-.home .content .sidebar .newsletter #newsletter-message {
-  color: #ee3e33;
-  font-size: 0.8em;
-  margin-bottom: 0.25em;
-}
-
-.home .content .sidebar .newsletter input {
-  margin-bottom: 0.5em;
-}
-
-.home .content .sidebar .newsletter button {
-  margin: auto;
+.home .content .sidebar .newsletter .ctct-form .ctct-form-defaults,
+.home .content .sidebar .newsletter .ctct-form .form_0 {
+  border: none;
+  background: #f6f6f6;
 }
 
 .home .content .sidebar .facebook {
-  text-align: left;
   padding: 0 1em 1em;
 }
 

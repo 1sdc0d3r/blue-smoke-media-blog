@@ -6,8 +6,6 @@ export default withRouter(function Articles({ location }) {
   const [articles, setArticles] = useState([]);
   const [query] = useState(Object.entries(useParams())[0]);
   useEffect(() => {
-    // console.log("QUERY", query);
-    console.log({ location });
     axios
       .get("http://localhost:5000/api/blog")
       .then(({ data }) => {
@@ -27,6 +25,7 @@ export default withRouter(function Articles({ location }) {
       })
       .catch((err) => console.log(err));
   }, [query]);
+  console.log({ location });
   //todo change on path change
 
   console.log({ articles });
@@ -46,7 +45,7 @@ export default withRouter(function Articles({ location }) {
                 <h2>{e.title}</h2>
                 <p className="snippet">{e.snippet}...</p>
                 <span className="info">
-                  {e.author} {e.date}
+                  <Link to={`/author/${e.author}`}>{e.author}</Link> {e.date}
                 </span>
               </div>
             </li>

@@ -5,7 +5,7 @@ export default function Footer() {
   useEffect(() => {
     setTimeout(() => {
       document.querySelector(".ctct-form-element").placeholder = "Your Email";
-    }, 2000);
+    }, 3500);
   }, []);
   return (
     <footer>
