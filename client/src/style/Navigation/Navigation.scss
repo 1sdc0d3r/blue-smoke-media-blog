@@ -94,11 +94,16 @@
           min-width: -moz-min-content;
           min-width: min-content;
           cursor: pointer;
-
           &:hover {
-            color: $orange;
             transform: scale(1.05);
             transition: ease-in-out 200ms;
+          }
+          a {
+            text-decoration: none;
+            color: inherit;
+            &:hover {
+              color: $orange;
+            }
           }
         }
       }

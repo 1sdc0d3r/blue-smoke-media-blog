@@ -74,7 +74,7 @@ export default function Article({ history }) {
             <p className="tags">
               {/* todo link to tags */}
               {post.tags.split(",").map((e, i) => (
-                <Link to={`/tag/${e}`}>{i !== 0 ? `• ${e}` : e}</Link>
+                <Link to={`/tag/${e}`}>{i !== 0 ? ` • ${e}` : e}</Link>
               ))}
             </p>
           </div>

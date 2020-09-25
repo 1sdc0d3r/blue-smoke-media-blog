@@ -25,10 +25,8 @@ export default withRouter(function Articles({ location }) {
       })
       .catch((err) => console.log(err));
   }, [query]);
-  console.log({ location });
-  //todo change on path change
-
-  console.log({ articles });
+  // todo path change reload
+  //todo pagination
   return (
     <div className="articles">
       <h1>
@@ -38,14 +36,14 @@ export default withRouter(function Articles({ location }) {
       </h1>
       <ul>
         {articles.map((e) => (
-          <Link to={`/article/${e.id}`}>
+          <Link to={`/article/${e.id}`} key={e.id}>
             <li key={e.id}>
               <img src={e.imageUrl} alt={e.imageAlt} />
               <div className="content">
                 <h2>{e.title}</h2>
                 <p className="snippet">{e.snippet}...</p>
                 <span className="info">
-                  <Link to={`/author/${e.author}`}>{e.author}</Link> {e.date}
+                  {e.author} {e.date}
                 </span>
               </div>
             </li>

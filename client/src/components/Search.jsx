@@ -35,6 +35,7 @@ export default function Search() {
       .catch((err) => console.log(err));
     // console.log(filtered);
   }, [query]);
+  //todo set limit then scroll
 
   return (
     <div className="search">

@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import ArticleView from "./components/ArticleView";
 import Articles from "./components/Articles";
 import Navigation from "./components/Navigation";
-import Search from "./components/Search";
 
 function App() {
   return (

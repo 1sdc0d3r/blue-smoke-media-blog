@@ -136,11 +136,19 @@
 }
 
 .main-nav .dropdown .dropdown-content ul li:hover {
-  color: #ee3e0e;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-transition: ease-in-out 200ms;
   transition: ease-in-out 200ms;
+}
+
+.main-nav .dropdown .dropdown-content ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-nav .dropdown .dropdown-content ul li a:hover {
+  color: #ee3e0e;
 }
 
 .main-nav .dropdown .home-drop {

@@ -7,6 +7,7 @@ export default function Footer() {
       document.querySelector(".ctct-form-element").placeholder = "Your Email";
     }, 3500);
   }, []);
+  //todo icons
   return (
     <footer>
       <div className="wrapper">
@@ -46,16 +47,19 @@ export default function Footer() {
           </p>
           {/* todo links */}
           <div>
-            <NavLink to="#team">about</NavLink>
-            <NavLink to="#inquiry">contact</NavLink>
+            <a
+              href="https://bluesmokedigitalandprintedmedia.com/about"
+              rel="noopener noreferrer"
+            >
+              about
+            </a>
+            <a
+              href="https://bluesmokedigitalandprintedmedia.com/contact"
+              rel="noopener noreferrer"
+            >
+              contact
+            </a>
           </div>
-          {/* 
-          <NavLink to="#custom">Custom Website Design</NavLink>
-          <NavLink to="#music">Organic SEO</NavLink>
-          <NavLink to="#design">Social Media Marketing</NavLink>
-          <NavLink to="#lifestyle">Brand Loyalty</NavLink>
-          <NavLink to="#travel">Logos</NavLink>
-  <NavLink to="#photo">Reputation Management</NavLink>*/}
         </div>
       </div>
     </footer>

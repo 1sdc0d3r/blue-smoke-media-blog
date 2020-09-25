@@ -1,66 +1,29 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
-import * as emailjs from "emailjs-com";
 import bigGuys from "../assets/competing-with-the-big-guys.jpg";
 import socialMedia from "../assets/Social-media-changes-every-small-business-should-know- about.jpeg";
 import invertedCommas from "../assets/inverted-commas.png";
+import Sidebar from "./Sidebar";
+import axios from "axios";
 
 export default function Home() {
-  // useEffect(() => {
-  //   const email = document.querySelector("input[name='email']");
-  //   email.addEventListener("keyup", function (event) {
-  //     if (event.keyCode === 13) {
-  //       // enter key
-  //       document.querySelector("button[type='submit']").click();
-  //     }
-  //   });
-  // }, []);
-
-  const [newsletterMessage, setNewsletterMessage] = useState("");
-  const API_URL = "https://blue-smoke-blog.herokuapp.com";
-  // const API_URL = "http://localhost:5000";
-
-  const newArticles = [
-    {
-      title: "About Paris that has never been revealed....",
-      img: bigGuys,
-      tags: ["magic", "life", "work"],
-      author: "Yulia Purple",
-      date: "Dec 12, 2020",
-    },
-    {
-      title: "About Paris that has never been revealed....",
-      img: bigGuys,
-      tags: ["magic", "life", "work"],
-      author: "Yulia Purple",
-      date: "Dec 12, 2020",
-    },
-    {
-      title: "About Paris that has never been revealed....",
-      img: bigGuys,
-      tags: ["magic", "life", "work"],
-      author: "Yulia Purple",
-      date: "Dec 12, 2020",
-    },
-    {
-      title: "About Paris that has never been revealed....",
-      img: bigGuys,
-      tags: ["magic", "life", "work"],
-      author: "Yulia Purple",
-      date: "Dec 12, 2020",
-    },
-  ];
+  const [newArticles, setNewArticles] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:5000/api/blog")
+      .then(({ data }) =>
+        setNewArticles(data.sort((a, b) => b.date - a.date).splice(0, 5))
+      )
+      .catch((err) => console.log(err));
+  }, []);
 
   return (
     <div className="home">
-      {/* <div> */}
       <h1>
         Blue Smoke Media
         <br />
         <span className="orange">Nomad Techies</span>
       </h1>
-      {/* </div> */}
       <div className="content">
         <div className="posts">
           <section>
@@ -101,7 +64,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 dubious journey
-              </a>
+              </a>{" "}
               from business to personhood if you want to{" "}
               <a
                 href="https://bluesmokedigitalandprintedmedia.com/contact"
@@ -113,6 +76,7 @@ export default function Home() {
               As ridiculous as the idea started, it was successful.
             </p>
             <p className="author">— Ramona Lucius, (August, 2020)</p>
+            {/* todo READ MORE LINKS */}
             <Link to="/article/1" className="more-btn">
               Read More
             </Link>
@@ -150,6 +114,7 @@ export default function Home() {
               grow your brand by taking hold of your social media presence!
             </p>
             <p className="author">— Constance Beebe, (August, 2020)</p>
+            {/* todo */}
             <Link to="/article/2" className="more-btn">
               Read More
             </Link>
@@ -171,136 +136,110 @@ export default function Home() {
               take on those competitors you never thought you could match!
             </p>
             <p className="author">— Constance Beebe, (August, 2020)</p>
+            {/* todo */}
             <Link to="/article/3" className="more-btn">
               Read More
             </Link>
           </section>
         </div>
         {/* //! SIDEBAR */}
-        <div className="sidebar">
-          <div className="popular">
-            Most Popular divs <span className="coming-soon">Coming Soon!</span>
-          </div>
-          <div className="topics">
-            Popular Topics
-            <br />
-            <span className="coming-soon">Coming Soon!</span>
-          </div>
-          <div className="newsletter">
-            <p>
-              Get an <span>Inside Look</span> to Help Compete With the Big Guys!
-            </p>
-            <div
-              className="ctct-inline-form ctct-form"
-              data-form-id="3b0b5c17-e6f4-4707-8090-bb39de378c16"
-            />
-            {/* <span id="newsletter-message">{newsletterMessage}</span>
-            <input type="text" name="email" placeholder="Enter Your Email" />
-            <input name="antiSpam" type="text" style={{ display: "none" }} />
-            <button type="submit" onClick={() => registerEmail()}>
-              Sign Up
-            </button> */}
-          </div>
-          <div className="facebook">
-            <p>Like Us On Facebook</p>
-            <div
-              class="fb-page"
-              data-href="https://www.facebook.com/bluesmokemedia/"
-              data-tabs=""
-              data-width=""
-              data-height=""
-              data-small-header="false"
-              data-adapt-container-width="true"
-              data-hide-cover="false"
-              data-show-facepile="true"
-            >
-              <blockquote
-                cite="https://www.facebook.com/bluesmokemedia/"
-                className="fb-xfbml-parse-ignore"
-              >
-                <a
-                  href="https://www.facebook.com/bluesmokemedia/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Blue Smoke Digital and Printed Media
-                </a>
-              </blockquote>
-            </div>
-          </div>
-        </div>
+        <Sidebar articles={newArticles} />
       </div>
 
-      <div className="about">
+      {/* <div className="about">
         <div className="authors">
           <h3>Authors</h3>
-          <p>Ramona Lucius</p>
-          <p>Constance Beebe</p>
+          <Link to="/author/Ramona">Ramona Lucius</Link>
+          <Link to="/author/Constance">Constance Beebe</Link>
         </div>
         <div className="category">
           <h3>Category</h3>
-          <p>Branding</p>
-          <p>Social Media</p>
-          <p>Website Design</p>
+          <Link to="/category/Branding">Branding</Link>
+          <Link to="/category/Social Media">Social Media</Link>
+          <Link to="/category/Website Design">Website Design</Link>
         </div>
         <div className="tags">
           <h3>Tags</h3>
-          <p>Strategic Social Media Marketing</p>
-          <p>Affordable Custom Website Design</p>
-          <p>Consumer Loyalty</p>
-          <p>Typography</p>
+          <Link to="/tag/Strategic Social Media Marketing">
+            Strategic Social Media Marketing
+          </Link>
+          <Link to="/tag/Affordable Custom Website Design">
+            Affordable Custom Website Design
+          </Link>
+          <Link to="/tag/Consumer Loyalty">Consumer Loyalty</Link>
+          <Link to="/tag/Typography">Typography</Link>
         </div>
-      </div>
-      <div className="comments">
+      </div> */}
+      {/* todo comments */}
+      {/* <div className="comments">
         <div>
           <h2>Comments</h2>
           <button onClick={() => addComment}>Add Your Comment</button>
         </div>
-      </div>
+      </div> */}
       <div className="new-articles">
-        {newArticles?.map((e) => newArticle(e))}
+        <hr />
+        <h2>New Articles</h2>
+        <div>
+          {newArticles?.map((e) => (
+            <Link to={`/article/${e.id}`} className="new-article">
+              <img src={e.imageUrl} alt={e.imageAlt} />
+              <div className="text">
+                <h3>{e.title}</h3>
+                <p>
+                  by {e.author} · {e.date}
+                </p>
+                <span>{e.category}</span>
+                {/* <span>
+                    {e.tags.split(",")?.map((e, i) => (i == 0 ? e : `, ${e}`))}
+                  </span> */}
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
+}
 
-  function registerEmail() {
-    const email = document.querySelector("input[name='email']");
-    const antiSpam = document.querySelector("input[name='antiSpam']");
-    const templateParams = {
-      reply_to: email.value,
-      from_name: "blog subscriber",
-      message_subject: "Blog Subscriber",
-      message_html: email.value,
-    };
-    console.log(email.value, !antiSpam.value);
-    if (!email.value.includes("@") & !email.value.includes(".")) {
-      setNewsletterMessage("Please provide a valid email.");
-    } else if (!antiSpam.value) {
-      console.log("SENT");
-      emailjs.send(
-        "service_kys3ouv",
-        "template_fd7rhre",
-        templateParams,
-        "user_AKrWjfONfbrIagrKBIYq0"
-      );
-    }
-    /* //todo axios
-      .post(`${API_URL}/api/email`, { email: email.value })
-      .then((res) => {
-        if (res.status === 200) {
-          setNewsletterMessage("Successfully Subscribed!");
-          setTimeout(() => {
-            email.value = "";
-            setNewsletterMessage("");
-          }, 2000);
-        } else setNewsletterMessage(res.data.message);
-      })
-    .catch((err) => console.log(err));*/
-  }
-}
-function addComment() {
-  console.log("comment");
-}
+//   function registerEmail() {
+//     const email = document.querySelector("input[name='email']");
+//     const antiSpam = document.querySelector("input[name='antiSpam']");
+//     const templateParams = {
+//       reply_to: email.value,
+//       from_name: "blog subscriber",
+//       message_subject: "Blog Subscriber",
+//       message_html: email.value,
+//     };
+//     console.log(email.value, !antiSpam.value);
+//     if (!email.value.includes("@") & !email.value.includes(".")) {
+//       setNewsletterMessage("Please provide a valid email.");
+//     } else if (!antiSpam.value) {
+//       console.log("SENT");
+//       emailjs.send(
+//         "service_kys3ouv",
+//         "template_fd7rhre",
+//         templateParams,
+//         "user_AKrWjfONfbrIagrKBIYq0"
+//       );
+//     }
+//     /* //todo axios
+//       .post(`${API_URL}/api/email`, { email: email.value })
+//       .then((res) => {
+//         if (res.status === 200) {
+//           setNewsletterMessage("Successfully Subscribed!");
+//           setTimeout(() => {
+//             email.value = "";
+//             setNewsletterMessage("");
+//           }, 2000);
+//         } else setNewsletterMessage(res.data.message);
+//       })
+//     .catch((err) => console.log(err));*/
+//   }
+// }
+// function addComment() {
+//   console.log("comment");
+// }
 /*
  {posts.map((post) => {
           return (
@@ -320,17 +259,34 @@ function addComment() {
           );
         })}
 */
-function newArticle(article) {
-  return (
-    <div className="new-article" key={article.id}>
-      <img src={article.img} alt="post url" />
-      <div className="text">
-        <p>{article.tags?.map((e, i) => (i == 0 ? e : `, ${e}`))}</p>
-        <h3>{article.title}</h3>
-        <p>
-          by {article.author} · {article.date}
-        </p>
-      </div>
-    </div>
-  );
-}
+
+// [
+//   {
+//     title: "About Paris that has never been revealed....",
+//     img: bigGuys,
+//     tags: ["magic", "life", "work"],
+//     author: "Yulia Purple",
+//     date: "Dec 12, 2020",
+//   },
+//   {
+//     title: "About Paris that has never been revealed....",
+//     img: bigGuys,
+//     tags: ["magic", "life", "work"],
+//     author: "Yulia Purple",
+//     date: "Dec 12, 2020",
+//   },
+//   {
+//     title: "About Paris that has never been revealed....",
+//     img: bigGuys,
+//     tags: ["magic", "life", "work"],
+//     author: "Yulia Purple",
+//     date: "Dec 12, 2020",
+//   },
+//   {
+//     title: "About Paris that has never been revealed....",
+//     img: bigGuys,
+//     tags: ["magic", "life", "work"],
+//     author: "Yulia Purple",
+//     date: "Dec 12, 2020",
+//   },
+// ]

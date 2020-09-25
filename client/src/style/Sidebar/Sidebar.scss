@@ -1,0 +1,60 @@
+@import "../Utils/Mixins/Mixins.scss";
+.sidebar {
+  // border: 1px solid black;
+  text-align: center;
+  @include breakpoint(xxs, xs, s, m) {
+    display: none;
+  }
+  div {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    h4 {
+      margin: 0;
+      padding-bottom: 0.25em;
+    }
+  }
+  .coming-soon {
+    color: $orange;
+    font-weight: 900;
+  }
+  .popular {
+    a {
+      text-decoration: none;
+      color: inherit;
+      margin: 0.125em auto;
+    }
+  }
+  .topics {
+    padding: 2em 1em;
+  }
+  .newsletter {
+    padding: 0.25em 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: none;
+    div {
+      border: none;
+    }
+    .ctct-form {
+      .ctct-form-footer,
+      .ctct-gdpr-text,
+      .ctct-form-required,
+      .ctct-form-text,
+      .g-recaptcha,
+      #gdpr_text {
+        display: none;
+      }
+      .ctct-form-defaults,
+      .form_0 {
+        background: #f6f6f6;
+        padding: 0 0 0.5em;
+      }
+    }
+  }
+  .facebook {
+    padding: 0 1em 1em;
+  }
+}
