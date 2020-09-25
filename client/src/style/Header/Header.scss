@@ -62,12 +62,6 @@ header {
       font-weight: 700;
       line-height: 1.75;
       text-align: center;
-      @include breakpoint(xs, m, l) {
-        font-size: 1.3em;
-      }
-      @include breakpoint(xxs, s) {
-        font-size: 0.8em;
-      }
     }
 
     span {

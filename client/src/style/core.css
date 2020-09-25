@@ -1,9 +1,10 @@
-@import "../style/App.css";
+@import "../style/App/App.css";
 @import "../style/Home/Home.css";
 @import "../style/Header/Header.css";
 @import "../style/Footer/Footer.css";
 @import "../style/ArticleView/ArticleView.css";
 @import "../style/Articles/Articles.css";
 @import "../style/Navigation/Navigation.css";
+@import "../style/Navigation/HamburgerMenu.css";
 @import "../style/Sidebar/Sidebar.css";
 @import "../style/Pagination/Pagination.css";

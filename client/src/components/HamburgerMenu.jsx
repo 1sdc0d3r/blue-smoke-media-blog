@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import Search from "./Search";
 
 export default withRouter(function HamburgerMenu(props) {
   props.history.listen(() => {
@@ -23,72 +24,107 @@ export default withRouter(function HamburgerMenu(props) {
             {" "}
             <li>Home</li>
           </Link>
-
-          <Link to="/team">
-            <li>Our Team</li>
+          <a
+            href="https://bluesmokedigitalandprintedmedia.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <li>Our Website</li>
+          </a>
+          <Link to="/articles">
+            <li>Articles</li>
           </Link>
           <li className="sub-menu-btn" uk-icon="icon: triangle-right">
-            Services
+            Categories
           </li>
           <ul className="sub-drop-menu">
             <div className="dropdown-content">
-              <h3>SEO</h3>
-
-              <Link to="/seo/Friendly">SEO - Search Engine Optimization</Link>
-
-              <Link to="/seo/seoOrganic">
-                Organic Search Engine Optimization
-              </Link>
-              <Link to="/social-media">Social Media</Link>
-              <h3>Website Design</h3>
-
-              <Link to="/website-design/custom-website-design">
-                Custom Website Design
-              </Link>
-
-              <Link to="/website-design/eCommerce-website-development">
-                E-Commerce Website Development
-              </Link>
-
-              <Link to="/website-design/website-useability">
-                Creating Your Website-Useability
-              </Link>
-
-              <Link to="/ad-CopyWriting">Website Ad-Copy Writing</Link>
-
-              <Link to="/website-design/website-maintenance">
-                Website Maintenance
-              </Link>
-
-              <Link to="/website-design/coding">Coding and Programming</Link>
-
-              <Link to="/website-design/inquiry-form">Inquiry/Survey Form</Link>
-              <h3>Graphic Design</h3>
-
-              <Link to="/graphic-design/website-logo-design">
-                Website Logo Design
-              </Link>
-
-              <Link to="/graphic-design/printed-media-logos">
-                Print Logo Design
-              </Link>
-
-              <Link to="/graphic-design/digital-and-print-graphic-design">
-                Print & Graphic Design Services
-              </Link>
+              <ul>
+                <li>
+                  <Link to="/category/Ad-Copywriting">Ad-Copywriting</Link>
+                </li>
+                <li>
+                  <Link to="/category/Affordable Custom Website Design">
+                    Affordable Custom Website Design
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/category/Brand Loyalty">Brand Loyalty</Link>
+                </li>
+                <li>
+                  <Link to="/category/Coding and Programming">
+                    Coding and Programming
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/category/Consumer Loyalty">Consumer Loyalty</Link>
+                </li>
+                <li>
+                  <Link to="/category/Digital and Print Logo Design">
+                    Digital and Print Logo Design
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/category/Digital Graphic Design">
+                    Digital Graphic Design
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/category/E-Commerce Website Development">
+                    E-Commerce Website Development
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/category/Organic SEO">Organic SEO</Link>
+                </li>
+                <li>
+                  <Link to="/category/Printed Media Graphic Design">
+                    Printed Media Graphic Design
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/category/Reputation Management">
+                    Reputation Management
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/category/Search Engine Optimization (SEO)">
+                    Search Engine Optimization (SEO)
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/category/Strategic Social Media Marketing">
+                    Strategic Social Media Marketing
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/category/Typography">Typography</Link>
+                </li>
+                <li>
+                  <Link to="/category/Website Content Writing">
+                    Website Content Writing
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/category/Website Maintenance">
+                    Website Maintenance
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/category/Website Usability: It EQUALS SALES!">
+                    Website Usability: It EQUALS SALES!
+                  </Link>
+                </li>
+              </ul>
             </div>
           </ul>
-          <Link to="/plans">
-            <li>Pricing</li>
-          </Link>
-
-          <a href="#blog" target="_blank" rel="noopener noreferrer">
-            <li>Blog</li>
-          </a>
-
-          <Link to="/contact">
+          <a
+            href="https://bluesmokedigitalandprintedmedia.com/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <li>Contact</li>
-          </Link>
+          </a>
         </ul>
       </div>
     </nav>

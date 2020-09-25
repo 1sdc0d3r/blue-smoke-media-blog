@@ -7,12 +7,14 @@ import Footer from "./components/Footer";
 import ArticleView from "./components/ArticleView";
 import Articles from "./components/Articles";
 import Navigation from "./components/Navigation";
+import HamburgerMenu from "./components/HamburgerMenu";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Navigation />
+      <HamburgerMenu />
       {/* todo hamburger menu? */}
       <section className="wrapper">
         <Switch>

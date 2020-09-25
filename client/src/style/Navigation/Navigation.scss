@@ -20,13 +20,11 @@
   /* Links inside the navbar */
   .nav-item {
     color: $white;
-    font-size: 1em;
+    font-size: 1.4em;
     text-align: center;
     padding: 0.5em 0.65em;
     text-decoration: none;
-    @include breakpoint(xl, xxl) {
-      font-size: 1.8em;
-    }
+    // align-self: center;
 
     &:hover {
       color: $orange;
@@ -123,6 +121,9 @@
       line-height: 1.75em;
       font-size: 1.05em;
       width: 100%;
+      @include breakpoint(m) {
+        display: none;
+      }
 
       &:focus {
         outline: 2px solid $lightBlue;
@@ -175,45 +176,5 @@
         }
       }
     }
-    // ul {
-    //   list-style: none;
-    //   position: absolute;
-    //   list-style: none;
-    //   width: 200%;
-    //   top: 75%;
-    //   left: 50%;
-    //   transform: translate(-50%, 0);
-    //   padding: 0;
-    //   background: white;
-
-    //   a {
-    //     text-decoration: none;
-    //     color: black;
-    //   }
-    //   li {
-    //     border: 2px solid black;
-    //     display: flex;
-    //     padding: 0.5em;
-    //     margin-bottom: 2em;
-    //     img {
-    //       width: 22%;
-    //       height: 2em;
-    //     }
-    //     .content {
-    //       padding-left: 0.5em;
-    //       display: flex;
-    //       flex-direction: column;
-    //       h2 {
-    //         margin: 0;
-    //       }
-    //       .snippet {
-    //         text-align: left;
-    //       }
-    //       .info {
-    //         align-self: flex-end;
-    //       }
-    //     }
-    //   }
-    // }
   }
 }
