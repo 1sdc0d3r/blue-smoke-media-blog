@@ -1,5 +1,9 @@
 import React, { useEffect, useRef, useLayoutEffect } from "react";
 import { NavLink } from "react-router-dom";
+//* Images
+import twitter from "../assets/Twitter.png";
+import linkedIn from "../assets/linkedIn_social_media_button.png";
+import facebook from "../assets/faceBook.png";
 
 export default function Footer() {
   useEffect(() => {
@@ -33,9 +37,27 @@ export default function Footer() {
           <div className="follow">
             <p>Follow Us</p>
             <div className="icons">
-              <p>FB</p>
-              <p>LI</p>
-              <p>TW</p>
+              <a
+                href="https://www.facebook.com/bluesmokemedia/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={facebook} alt="Facebook Social Media Button" />
+              </a>
+              <a
+                href="https://twitter.com/bluesmokemedia/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={twitter} alt="Twitter Social Media Button" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/blue-smoke-digital-and-printed-media/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={linkedIn} alt="LinkedIn Social Media Button" />
+              </a>
             </div>
           </div>
         </div>
@@ -48,13 +70,15 @@ export default function Footer() {
           {/* todo links */}
           <div>
             <a
-              href="https://bluesmokedigitalandprintedmedia.com/about"
+              href="https://bluesmokedigitalandprintedmedia.com/team"
+              target="_blank"
               rel="noopener noreferrer"
             >
               about
             </a>
             <a
               href="https://bluesmokedigitalandprintedmedia.com/contact"
+              target="_blank"
               rel="noopener noreferrer"
             >
               contact

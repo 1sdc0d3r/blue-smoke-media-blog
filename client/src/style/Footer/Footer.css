@@ -1,6 +1,7 @@
 footer {
   background: #020723;
   color: goldenrod;
+  margin-top: 2em;
 }
 
 footer .wrapper {
@@ -131,6 +132,7 @@ footer .wrapper .top .follow {
 footer .wrapper .top .follow p {
   color: #1e92f6;
   font-weight: 700;
+  text-align: center;
 }
 
 footer .wrapper .top .follow .icons {
@@ -140,6 +142,17 @@ footer .wrapper .top .follow .icons {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+footer .wrapper .top .follow .icons a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0.25em;
+}
+
+footer .wrapper .top .follow .icons a img {
+  width: 2em;
 }
 
 footer .wrapper .bottom {

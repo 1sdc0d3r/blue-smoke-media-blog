@@ -72,6 +72,7 @@ article .share-info ul {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 600;
+  margin-top: 0.25em;
 }
 
 @media (max-width: 360px) {
@@ -127,6 +128,10 @@ article .share-info ul li a {
 article .share-info ul li a img {
   width: 2em;
   height: 2em;
+}
+
+article .share-info .tags {
+  margin-top: 0.25em;
 }
 
 #loading {
