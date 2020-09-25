@@ -1,10 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams, withRouter } from "react-router-dom";
 import axios from "axios";
+import Pagination from "./Pagination";
 
-export default withRouter(function Articles({ location }) {
+export default withRouter(function Articles({ match }) {
   const [articles, setArticles] = useState([]);
-  const [query] = useState(Object.entries(useParams())[0]);
+  const [query, setQuery] = useState(Object.entries(useParams())[0]);
+  const [pagination, setPagination] = useState({
+    limit: 10,
+    offset: 0,
+    page: 1,
+  });
+
+  useEffect(() => {
+    setQuery(Object.entries(match.params)[0]);
+  }, [match.params]);
+
   useEffect(() => {
     axios
       .get("http://localhost:5000/api/blog")
@@ -25,8 +36,8 @@ export default withRouter(function Articles({ location }) {
       })
       .catch((err) => console.log(err));
   }, [query]);
-  // todo path change reload
   //todo pagination
+  const { offset, limit } = pagination;
   return (
     <div className="articles">
       <h1>
@@ -35,7 +46,7 @@ export default withRouter(function Articles({ location }) {
           : "Articles"}
       </h1>
       <ul>
-        {articles.map((e) => (
+        {articles.slice(offset, offset + limit).map((e) => (
           <Link to={`/article/${e.id}`} key={e.id}>
             <li key={e.id}>
               <img src={e.imageUrl} alt={e.imageAlt} />
@@ -50,6 +61,11 @@ export default withRouter(function Articles({ location }) {
           </Link>
         ))}
       </ul>
+      <Pagination
+        state={pagination}
+        setState={setPagination}
+        itemLen={articles.length}
+      />
     </div>
   );
 });

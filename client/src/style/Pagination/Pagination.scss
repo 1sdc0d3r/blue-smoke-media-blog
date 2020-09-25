@@ -1,0 +1,9 @@
+.nav-btns {
+  display: flex;
+  width: 10%;
+  margin: 0.5rem auto 1rem;
+  justify-content: space-evenly;
+  svg {
+    cursor: pointer;
+  }
+}
