@@ -39,8 +39,8 @@ module.exports = {
     client: 'mysql',
     connection: {
       host: '70.32.23.16',
-      user: process.env.DB_USER || 'bluesmok',
-      password: process.env.DB_PASSWORD || '22;YHv1rKE5g.p',
+      user: process.env.DB_USER || 'bluesmok_root',
+      password: process.env.DB_PASSWORD || 'KueAFsyow6q37ARgWunAwrgJ',
       database: process.env.DB_NAME || 'bluesmok_blog',
       port: process.env.DB_PORT || 3306
     },
@@ -57,8 +57,8 @@ module.exports = {
     client: 'mysql',
     connection: {
       host: '70.32.23.16',
-      user: process.env.DB_USER || 'bluesmok',
-      password: process.env.DB_PASSWORD || '22;YHv1rKE5g.p',
+      user: process.env.DB_USER || 'bluesmok_root',
+      password: process.env.DB_PASSWORD || 'KueAFsyow6q37ARgWunAwrgJ',
       database: process.env.DB_NAME || 'bluesmok_blog',
       port: process.env.DB_PORT || 3306
     },
