@@ -8,7 +8,7 @@ export default withRouter(function Articles({ match }) {
   const [articles, setArticles] = useState([]);
   const [query, setQuery] = useState(Object.entries(useParams())[0]);
   const [pagination, setPagination] = useState({
-    limit: 10,
+    limit: 5,
     offset: 0,
     page: 1,
   });
@@ -17,6 +17,11 @@ export default withRouter(function Articles({ match }) {
     setQuery(Object.entries(match.params)[0]);
   }, [match.params]);
   useEffect(() => {
+    setPagination({
+      limit: 5,
+      offset: 0,
+      page: 1,
+    });
     if (query) {
       setArticles(
         articleList
@@ -69,7 +74,7 @@ export default withRouter(function Articles({ match }) {
                 <h2>{e.title}</h2>
                 <p className="snippet">{e.snippet}...</p>
                 <span className="info">
-                  {e.author} {e.date}
+                  {e.author} {e.date ? ` • ${e.date}` : ""}
                 </span>
               </div>
             </li>

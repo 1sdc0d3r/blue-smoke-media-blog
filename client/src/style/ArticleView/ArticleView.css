@@ -142,14 +142,17 @@ article .share-info ul li a svg {
 article .share-info .tags {
   margin-top: 0.25em;
   width: 50%;
+  text-align: right;
 }
 
 article .share-info .tags h4 {
   margin: 0;
+  margin-top: 0.5em;
+  margin-right: 5%;
 }
 
 article .share-info .tags p {
-  text-align: center;
+  margin: 0;
 }
 
 #loading {

@@ -37,19 +37,15 @@ export default function Article({ history }) {
       {post ? (
         <article>
           <img
-            src={post.imageUrl}
+            src={`https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/primary/${post.imageUrl}`}
             alt={post.imageAlt}
             className="primary-img"
           />
           <h2>{post.title}</h2>
           <pre className="content">{ReactHtmlParser(post.content)}</pre>
           <p className="info">
-            <Link
-              to={`/author/${post.author ? post.author : "Unknown Author"}`}
-            >
-              {post.author}
-            </Link>{" "}
-            • {post.date}
+            <Link to={`/author/${post.author}`}>{post.author}</Link>
+            {post.date ? ` • ${post.date}` : ""}
           </p>
           <div className="share-info">
             <ul>
