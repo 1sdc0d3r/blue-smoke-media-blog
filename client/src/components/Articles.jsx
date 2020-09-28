@@ -70,7 +70,7 @@ export default withRouter(function Articles({ match }) {
           <Link to={`/article/${e.id}`} key={e.id}>
             <li key={e.id}>
               <img
-                src={`https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/thumbnail/${post.imageUrl}`}
+                src={`https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/thumbnail/${e.imageUrl}`}
                 alt={e.imageAlt}
               />
               <div className="content">

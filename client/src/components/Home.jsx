@@ -186,7 +186,7 @@ export default function Home() {
           {newArticles?.map((e) => (
             <Link to={`/article/${e.id}`} className="new-article">
               <img
-                src={`https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/primary/${post.imageUrl}`}
+                src={`https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/thumbnail/${e.imageUrl}`}
                 alt={e.imageAlt}
               />
               <div className="text">
