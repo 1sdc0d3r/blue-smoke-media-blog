@@ -14,7 +14,6 @@ import linkedIn from "../assets/linkedIn_social_media_button.png";
 export default function Article({ history }) {
   const { id } = useParams();
   const [post, setPost] = useState();
-  //todo change URL to proper url (SOCIAL MEDIA SHARING)
   const encodedURL = encodeURI(
     `https://www.bluesmokemedia.com${history.location.pathname}`
   );

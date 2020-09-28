@@ -15,7 +15,6 @@ function App() {
       <Header />
       <Navigation />
       <HamburgerMenu />
-      {/* todo hamburger menu? */}
       <section className="wrapper">
         <Switch>
           <Route path="/" component={Home} exact />

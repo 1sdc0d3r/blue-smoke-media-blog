@@ -11,7 +11,7 @@ export default function Footer() {
       document.querySelector(".ctct-form-element").placeholder = "Your Email";
     }, 3500);
   }, []);
-  //todo icons
+
   return (
     <footer>
       <div className="wrapper">
@@ -67,7 +67,6 @@ export default function Footer() {
           <p className="copy">
             © 2019-2020 Blue Smoke Digital and Printed Media
           </p>
-          {/* todo links */}
           <div>
             <a
               href="https://bluesmokedigitalandprintedmedia.com/team"

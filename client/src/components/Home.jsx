@@ -172,7 +172,6 @@ export default function Home() {
           <Link to="/tag/Typography">Typography</Link>
         </div>
       </div> */}
-      {/* todo comments */}
       {/* <div className="comments">
         <div>
           <h2>Comments</h2>

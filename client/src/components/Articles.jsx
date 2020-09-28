@@ -56,7 +56,6 @@ export default withRouter(function Articles({ match }) {
   //     })
   //     .catch((err) => console.log(err));
   // }, [query]);
-  //todo pagination
   const { offset, limit } = pagination;
   return (
     <div className="articles">

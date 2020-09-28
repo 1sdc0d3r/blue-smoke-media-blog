@@ -71,7 +71,6 @@ export default function Search() {
         }
       />
       <ul>
-        {/* todo set dropdown limit w/ scroll */}
         {filtered.map((e) => (
           <Link
             to={`/article/${e.id}`}
