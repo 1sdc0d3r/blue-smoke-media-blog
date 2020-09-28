@@ -78,7 +78,10 @@ export default function Search() {
             onClick={() => (resultsList.style.display = "none")}
           >
             <li key={e.id}>
-              <img src={e.imageUrl} alt={e.imageAlt} />
+              <img
+                src={`https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/thumbnail/${post.imageUrl}`}
+                alt={e.imageAlt}
+              />
               <div className="content">
                 <h4>{e.title}</h4>
                 <span className="info">

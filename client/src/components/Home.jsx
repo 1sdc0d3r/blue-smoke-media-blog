@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import bigGuys from "../assets/competing-with-the-big-guys.jpg";
 import socialMedia from "../assets/Social-media-changes-every-small-business-should-know- about.jpeg";
 import invertedCommas from "../assets/inverted-commas.png";
@@ -16,7 +16,7 @@ export default function Home() {
     //     setNewArticles(data.sort((a, b) => b.date - a.date).splice(0, 5))
     //   )
     //   .catch((err) => console.log(err));
-    setNewArticles(articleList.sort((a, b) => b.date - a.date).splice(0, 5));
+    setNewArticles(articleList.sort((a, b) => b.date - a.date).splice(0, 6));
   }, []);
 
   return (
@@ -117,7 +117,7 @@ export default function Home() {
             </p>
             <p className="author">— Constance Beebe, (August, 2020)</p>
             {/* todo */}
-            <Link to="/article/2" className="more-btn">
+            <Link to="/article/17" className="more-btn">
               Read More
             </Link>
           </section>
@@ -185,16 +185,16 @@ export default function Home() {
         <div>
           {newArticles?.map((e) => (
             <Link to={`/article/${e.id}`} className="new-article">
-              <img src={e.imageUrl} alt={e.imageAlt} />
+              <img
+                src={`https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/primary/${post.imageUrl}`}
+                alt={e.imageAlt}
+              />
               <div className="text">
                 <h3>{e.title}</h3>
-                <p>
-                  by {e.author} · {e.date}
+                <p className="author-date">
+                  by {e.author} {e.date ? `· ${e.date}` : ""}
                 </p>
                 <span>{e.category}</span>
-                {/* <span>
-                    {e.tags.split(",")?.map((e, i) => (i == 0 ? e : `, ${e}`))}
-                  </span> */}
               </div>
             </Link>
           ))}
@@ -203,92 +203,3 @@ export default function Home() {
     </div>
   );
 }
-
-//   function registerEmail() {
-//     const email = document.querySelector("input[name='email']");
-//     const antiSpam = document.querySelector("input[name='antiSpam']");
-//     const templateParams = {
-//       reply_to: email.value,
-//       from_name: "blog subscriber",
-//       message_subject: "Blog Subscriber",
-//       message_html: email.value,
-//     };
-//     console.log(email.value, !antiSpam.value);
-//     if (!email.value.includes("@") & !email.value.includes(".")) {
-//       setNewsletterMessage("Please provide a valid email.");
-//     } else if (!antiSpam.value) {
-//       console.log("SENT");
-//       emailjs.send(
-//         "service_kys3ouv",
-//         "template_fd7rhre",
-//         templateParams,
-//         "user_AKrWjfONfbrIagrKBIYq0"
-//       );
-//     }
-//     /* //todo axios
-//       .post(`${API_URL}/api/email`, { email: email.value })
-//       .then((res) => {
-//         if (res.status === 200) {
-//           setNewsletterMessage("Successfully Subscribed!");
-//           setTimeout(() => {
-//             email.value = "";
-//             setNewsletterMessage("");
-//           }, 2000);
-//         } else setNewsletterMessage(res.data.message);
-//       })
-//     .catch((err) => console.log(err));*/
-//   }
-// }
-// function addComment() {
-//   console.log("comment");
-// }
-/*
- {posts.map((post) => {
-          return (
-            <div className="post">
-              <img src={image} alt="post url" />
-              <div className="content">
-                <span>{post.category}</span>
-                <h3>{post.title}</h3>
-                <span>
-                  by {post.author} · {post.date}
-                </span>
-                <p>
-                  {post.snippet} <a href={`/div/${post.id}`}>Read More.</a>
-                </p>
-              </div>
-            </div>
-          );
-        })}
-*/
-
-// [
-//   {
-//     title: "About Paris that has never been revealed....",
-//     img: bigGuys,
-//     tags: ["magic", "life", "work"],
-//     author: "Yulia Purple",
-//     date: "Dec 12, 2020",
-//   },
-//   {
-//     title: "About Paris that has never been revealed....",
-//     img: bigGuys,
-//     tags: ["magic", "life", "work"],
-//     author: "Yulia Purple",
-//     date: "Dec 12, 2020",
-//   },
-//   {
-//     title: "About Paris that has never been revealed....",
-//     img: bigGuys,
-//     tags: ["magic", "life", "work"],
-//     author: "Yulia Purple",
-//     date: "Dec 12, 2020",
-//   },
-//   {
-//     title: "About Paris that has never been revealed....",
-//     img: bigGuys,
-//     tags: ["magic", "life", "work"],
-//     author: "Yulia Purple",
-//     date: "Dec 12, 2020",
-//   },
-// ]

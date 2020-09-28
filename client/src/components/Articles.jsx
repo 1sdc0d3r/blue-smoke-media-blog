@@ -34,7 +34,7 @@ export default withRouter(function Articles({ match }) {
     } else {
       setArticles(articleList.sort((a, b) => b.date - a.date));
     }
-  }, [query]);
+  }, [query, match.params]);
   // useEffect(() => {
   //   axios
   //     .get("http://localhost:5000/api/blog")
@@ -69,7 +69,10 @@ export default withRouter(function Articles({ match }) {
         {articles.slice(offset, offset + limit).map((e) => (
           <Link to={`/article/${e.id}`} key={e.id}>
             <li key={e.id}>
-              <img src={e.imageUrl} alt={e.imageAlt} />
+              <img
+                src={`https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/thumbnail/${post.imageUrl}`}
+                alt={e.imageAlt}
+              />
               <div className="content">
                 <h2>{e.title}</h2>
                 <p className="snippet">{e.snippet}...</p>

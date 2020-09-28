@@ -126,8 +126,8 @@
 
 .home .new-articles div .new-article {
   border: 4px solid #020723;
-  width: 29%;
-  margin: 0 1em;
+  width: 26%;
+  margin: 0 auto 1em;
   text-decoration: none;
   color: inherit;
 }
@@ -153,8 +153,9 @@
   margin: 0;
 }
 
-.home .new-articles div .new-article .text p {
+.home .new-articles div .new-article .text .author-date {
   margin: 0.25em 0;
+  text-align: right;
 }
 
 .home .new-articles div .new-article .text span {
