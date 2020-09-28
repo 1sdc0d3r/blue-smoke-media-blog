@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 
 import { FiMail } from "react-icons/fi";
+import articleList from "../data/articles";
 
 //* Images
 import twitter from "../assets/Twitter.png";
@@ -16,11 +17,14 @@ export default function Article({ history }) {
   const encodedURL = encodeURI(
     `https://www.bluesmokemedia.com${history.location.pathname}`
   );
+  // useEffect(() => {
+  //   axios
+  //     .get(`http://localhost:5000/api/blog/${id}`)
+  //     .then((res) => setPost(res.data[0]))
+  //     .catch((err) => console.log(err));
+  // }, [id]);
   useEffect(() => {
-    axios
-      .get(`http://localhost:5000/api/blog/${id}`)
-      .then((res) => setPost(res.data[0]))
-      .catch((err) => console.log(err));
+    setPost(articleList.filter((e) => e.id == id));
   }, [id]);
 
   return (

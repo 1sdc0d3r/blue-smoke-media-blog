@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams, withRouter } from "react-router-dom";
 import axios from "axios";
 import Pagination from "./Pagination";
+import articleList from "../data/articles.js";
 
 export default withRouter(function Articles({ match }) {
   const [articles, setArticles] = useState([]);
@@ -15,7 +16,20 @@ export default withRouter(function Articles({ match }) {
   useEffect(() => {
     setQuery(Object.entries(match.params)[0]);
   }, [match.params]);
-
+  // useEffect(() => {
+  //   if (query) {
+  //     setArticles(
+  //       articleList
+  //         .filter((e) => {
+  //           console.log("here1", e[query[0]]);
+  //           return e[query[0]].toLowerCase().includes(query[1].toLowerCase());
+  //         })
+  //         .sort((a, b) => b.date - a.date)
+  //     );
+  //   } else {
+  //     setArticles(articleList.sort((a, b) => b.date - a.date));
+  //   }
+  // }, [query]);
   useEffect(() => {
     axios
       .get("http://localhost:5000/api/blog")
@@ -24,6 +38,7 @@ export default withRouter(function Articles({ match }) {
           setArticles(
             data
               .filter((e) => {
+                console.log("here2", e[query[0]]);
                 return e[query[0]]
                   .toLowerCase()
                   .includes(query[1].toLowerCase());

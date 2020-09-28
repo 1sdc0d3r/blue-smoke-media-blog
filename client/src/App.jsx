@@ -22,7 +22,7 @@ function App() {
           <Route path="/article/:id" component={ArticleView} />
           <Route path="/articles" component={Articles} />
           <Route path="/category/:category" component={Articles} />
-          <Route path="/tag/:tags" component={Articles} />
+          <Route path="/tags/:tags" component={Articles} />
           <Route path="/author/:author" component={Articles} />
           <Redirect to="/" />
         </Switch>
