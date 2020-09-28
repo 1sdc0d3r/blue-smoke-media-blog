@@ -5,16 +5,18 @@ import socialMedia from "../assets/Social-media-changes-every-small-business-sho
 import invertedCommas from "../assets/inverted-commas.png";
 import Sidebar from "./Sidebar";
 import axios from "axios";
+import articleList from "../data/articles";
 
 export default function Home() {
   const [newArticles, setNewArticles] = useState([]);
   useEffect(() => {
-    axios
-      .get("http://localhost:5000/api/blog")
-      .then(({ data }) =>
-        setNewArticles(data.sort((a, b) => b.date - a.date).splice(0, 5))
-      )
-      .catch((err) => console.log(err));
+    // axios
+    //   .get("http://localhost:5000/api/blog")
+    //   .then(({ data }) =>
+    //     setNewArticles(data.sort((a, b) => b.date - a.date).splice(0, 5))
+    //   )
+    //   .catch((err) => console.log(err));
+    setNewArticles(articleList.sort((a, b) => b.date - a.date).splice(0, 5));
   }, []);
 
   return (
