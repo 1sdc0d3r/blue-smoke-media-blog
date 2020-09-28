@@ -4,6 +4,7 @@ import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 export default function Pagination({ state, setState, itemLen }) {
   const pageHandler = (direction) => {
     const { limit, offset, page } = state;
+    window.scrollTo(0, 0);
     direction == "next"
       ? setState({
           ...state,

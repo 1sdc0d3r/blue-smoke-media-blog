@@ -25,8 +25,19 @@ article {
     margin: 0;
   }
   .content {
-    line-height: 1.3em;
+    // line-height: 1.3em;
     text-align: justify;
+    color: $darkBlue;
+    // margin-top: 0;
+    margin-bottom: 3em;
+    white-space: pre-wrap;
+    font-family: inherit;
+    // background: $white;
+    // padding: 0.5em 1em;
+    border: none;
+    span {
+      font-weight: 700;
+    }
   }
   .info {
     align-self: flex-end;
@@ -71,6 +82,13 @@ article {
     }
     .tags {
       margin-top: 0.25em;
+      width: 50%;
+      h4 {
+        margin: 0;
+      }
+      p {
+        text-align: center;
+      }
     }
   }
 }

@@ -34,8 +34,16 @@ article h2 {
 }
 
 article .content {
-  line-height: 1.3em;
   text-align: justify;
+  color: #020723;
+  margin-bottom: 3em;
+  white-space: pre-wrap;
+  font-family: inherit;
+  border: none;
+}
+
+article .content span {
+  font-weight: 700;
 }
 
 article .info {
@@ -133,6 +141,15 @@ article .share-info ul li a svg {
 
 article .share-info .tags {
   margin-top: 0.25em;
+  width: 50%;
+}
+
+article .share-info .tags h4 {
+  margin: 0;
+}
+
+article .share-info .tags p {
+  text-align: center;
 }
 
 #loading {

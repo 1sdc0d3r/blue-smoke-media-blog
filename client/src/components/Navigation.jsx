@@ -1,8 +1,13 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import Search from "./Search";
+import articleList from "../data/articles";
 
 export default function Navigation() {
+  const categories = Array.from(
+    new Set(articleList.map(({ category }) => category))
+  ).sort();
+
   const dropArrow = (
     <svg
       style={{
@@ -35,7 +40,12 @@ export default function Navigation() {
         <button className="drop-btn nav-item">Categories{dropArrow}</button>
         <div className="dropdown-content">
           <ul>
-            <li>
+            {categories.map((e) => (
+              <li>
+                <Link to={`/category/${e}`}>{e}</Link>
+              </li>
+            ))}
+            {/* <li>
               <Link to="/category/Ad-Copywriting">Ad-Copywriting</Link>
             </li>
             <li>
@@ -109,14 +119,17 @@ export default function Navigation() {
               <Link to="/category/Website Usability: It EQUALS SALES!">
                 Website Usability: It EQUALS SALES!
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
       {/* todo direct to contact on website */}
-      <NavLink to="/contact" className="nav-item">
+      <a
+        href="https://bluesmokedigitalandprintedmedia.com/contact"
+        className="nav-item"
+      >
         Contact
-      </NavLink>
+      </a>
       <Search />
     </nav>
   );

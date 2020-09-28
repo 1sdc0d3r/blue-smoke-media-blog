@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import ReactHtmlParser from "react-html-parser";
 import axios from "axios";
 
 import { FiMail } from "react-icons/fi";
@@ -24,9 +25,8 @@ export default function Article({ history }) {
   //     .catch((err) => console.log(err));
   // }, [id]);
   useEffect(() => {
-    setPost(articleList.filter((e) => e.id == id));
+    setPost(articleList.find((e) => e.id == id));
   }, [id]);
-
   return (
     <>
       {/* <h1>
@@ -42,10 +42,14 @@ export default function Article({ history }) {
             className="primary-img"
           />
           <h2>{post.title}</h2>
-          <p className="content">{post.content}</p>
+          <pre className="content">{ReactHtmlParser(post.content)}</pre>
           <p className="info">
-            <Link to={`/author/${post.author}`}>{post.author}</Link> •{" "}
-            {post.date}
+            <Link
+              to={`/author/${post.author ? post.author : "Unknown Author"}`}
+            >
+              {post.author}
+            </Link>{" "}
+            • {post.date}
           </p>
           <div className="share-info">
             <ul>
@@ -79,12 +83,14 @@ export default function Article({ history }) {
                 </a>
               </li>
             </ul>
-            <p className="tags">
-              {/* todo link to tags */}
-              {post.tags.split(",").map((e, i) => (
-                <Link to={`/tag/${e}`}>{i !== 0 ? ` • ${e}` : e}</Link>
-              ))}
-            </p>
+            <div className="tags">
+              <h4>Tags</h4>
+              <p>
+                {post.tags.split(",").map((e, i) => (
+                  <Link to={`/tags/${e}`}>{i !== 0 ? ` • ${e}` : e}</Link>
+                ))}
+              </p>
+            </div>
           </div>
 
           {/* //todo category tags here */}
