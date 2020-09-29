@@ -49,10 +49,22 @@
   font-weight: 900;
 }
 
+.sidebar .popular {
+  padding: 0.5em;
+}
+
+.sidebar .popular h4 {
+  text-decoration: underline;
+}
+
 .sidebar .popular a {
   text-decoration: none;
   color: inherit;
   margin: 0.125em auto;
+}
+
+.sidebar .popular a:hover {
+  color: #ee3e0e;
 }
 
 .sidebar .topics {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import bigGuys from "../assets/competing-with-the-big-guys.jpg";
 import socialMedia from "../assets/Social-media-changes-every-small-business-should-know- about.jpeg";
 import invertedCommas from "../assets/inverted-commas.png";
@@ -16,7 +16,7 @@ export default function Home() {
     //     setNewArticles(data.sort((a, b) => b.date - a.date).splice(0, 5))
     //   )
     //   .catch((err) => console.log(err));
-    setNewArticles(articleList.sort((a, b) => b.date - a.date).splice(0, 6));
+    setNewArticles(articleList.sort((a, b) => b.date - a.date).splice(11, 16));
   }, []);
 
   return (
@@ -79,7 +79,7 @@ export default function Home() {
             </p>
             <p className="author">— Ramona Lucius, (August, 2020)</p>
             {/* todo READ MORE LINKS */}
-            <Link to="/article/1" className="more-btn">
+            <Link to="/article/18" className="more-btn">
               Read More
             </Link>
           </section>
@@ -139,7 +139,7 @@ export default function Home() {
             </p>
             <p className="author">— Constance Beebe, (August, 2020)</p>
             {/* todo */}
-            <Link to="/article/3" className="more-btn">
+            <Link to="/article/19" className="more-btn">
               Read More
             </Link>
           </section>

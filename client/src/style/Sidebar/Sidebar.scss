@@ -20,10 +20,17 @@
     font-weight: 900;
   }
   .popular {
+    padding: 0.5em;
+    h4 {
+      text-decoration: underline;
+    }
     a {
       text-decoration: none;
       color: inherit;
       margin: 0.125em auto;
+      &:hover {
+        color: $orange;
+      }
     }
   }
   .topics {

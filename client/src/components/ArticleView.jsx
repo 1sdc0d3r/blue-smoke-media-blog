@@ -13,7 +13,7 @@ import linkedIn from "../assets/linkedIn_social_media_button.png";
 
 export default function Article({ history }) {
   const { id } = useParams();
-  const [post, setPost] = useState();
+  const [post, setPost] = useState(articleList.find((e) => e.id == id));
   const encodedURL = encodeURI(
     `https://www.bluesmokemedia.com${history.location.pathname}`
   );
@@ -26,6 +26,7 @@ export default function Article({ history }) {
   useEffect(() => {
     setPost(articleList.find((e) => e.id == id));
   }, [id]);
+  console.log(id, post, articleList);
   return (
     <>
       {/* <h1>

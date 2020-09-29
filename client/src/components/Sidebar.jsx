@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // todo check facebook on navigation to home
 export default function Sidebar() {
   return (
@@ -7,17 +7,14 @@ export default function Sidebar() {
       <div className="sidebar">
         <div className="popular">
           <h4>Most Popular</h4>
-          {/* <Link>tag1</Link>
-          <Link>tag1</Link>
-          <Link>tag1</Link>
-          <Link>tag1</Link>
-          <Link>tag1</Link>
-          <Link>tag1</Link> */}
+          <Link to="/tags/Search Engine Optimization (SEO)">SEO</Link>
+          <Link to="/tags/Content Writing">Content Writing</Link>
+          <Link to="/tags/Digital Graphic Design">Digital Graphic Design</Link>
         </div>
-        <div className="topics">
+        {/* <div className="topics">
           <h4>Popular Topics</h4>
           {/* <span className="coming-soon">Coming Soon!</span> */}
-        </div>
+        {/* </div>  */}
         <div className="newsletter">
           <p>
             Get an <span>Inside Look</span> to Help Compete With the Big Guys!
