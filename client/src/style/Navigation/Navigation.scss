@@ -147,10 +147,8 @@
       padding: 0;
       background: white;
       display: flex;
-      max-height: -webkit-min-content;
-      max-height: -moz-min-content;
-      max-height: 40vh;
       overflow: scroll;
+      max-height: 30em;
       a {
         text-decoration: none;
 
@@ -162,11 +160,12 @@
             color: $royalBlue;
           }
           img {
-            width: 20%;
+            width: 23%;
             margin: 0.5em;
             margin-right: 0;
           }
           .content {
+            margin: 0.125em;
             h4 {
               margin: 0.5em auto 0.1em;
             }

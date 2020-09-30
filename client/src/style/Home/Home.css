@@ -134,6 +134,33 @@
   min-width: -moz-min-content;
   min-width: min-content;
   margin: 0 auto 1em;
+  overflow: hidden;
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .home .new-articles div .new-article {
+    width: 40%;
+    margin-bottom: 2em;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  .home .new-articles div .new-article {
+    width: 40%;
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 360px) {
+  .home .new-articles div .new-article {
+    width: 80%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .home .new-articles div .new-article {
+    width: 80%;
+  }
 }
 
 .home .new-articles div .new-article a {
@@ -148,7 +175,7 @@
 }
 
 .home .new-articles div .new-article a .text {
-  height: 50%;
+  height: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,13 +189,15 @@
 }
 
 .home .new-articles div .new-article a .text h4 {
-  margin: 0.25em auto 0;
+  margin: 0;
+  padding: 0.125em 0.25em;
   text-align: center;
 }
 
 .home .new-articles div .new-article a .text .author {
   margin: 0;
   padding-right: 3%;
+  padding-bottom: 3%;
   text-align: right;
 }
 /*# sourceMappingURL=Home.css.map */

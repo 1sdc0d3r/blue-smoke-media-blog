@@ -207,11 +207,11 @@ export default function Home() {
                   />
                   <div className="text">
                     <h4>{e.title}</h4>
+                    {/* <div className="text"><span>{e.category}</span></div> */}
                     <p className="author">
                       –{e.author}
                       {/* {e.date ? `· ${e.date}` : ""} */}
                     </p>
-                    {/* <span>{e.category}</span> */}
                   </div>
                 </Link>
               </div>
