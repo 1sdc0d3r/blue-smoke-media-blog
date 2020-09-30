@@ -32,12 +32,9 @@ export default function Article({ history }) {
             className="primary-img"
           />
           <h2>{post.title}</h2>
+          {/* todo check with CoBe */}
           <pre className="content">{ReactHtmlParser(post.content)}</pre>
-          <p className="info">
-            <Link to={`/author/${post.author}`}>{post.author}</Link>
-            {post.date ? ` • ${post.date}` : ""}
-          </p>
-          <div className="share-info">
+          <div className="share">
             <ul>
               Share:
               <li>
@@ -70,13 +67,24 @@ export default function Article({ history }) {
                 </a>
               </li>
             </ul>
-            <div className="tags">
-              <h4>Tags</h4>
-              <p>
-                {post.tags.split(",").map((e, i) => (
-                  <Link to={`/tags/${e}`}>{i !== 0 ? ` • ${e}` : e}</Link>
-                ))}
+            <div className="info">
+              <h4>Author {post.date ? "• Date" : ""}</h4>
+              <p className="author">
+                <Link to={`/author/${post.author}`}>{post.author}</Link>
+                {post.date ? ` • ${post.date}` : ""}
               </p>
+              <h4>Category</h4>
+              <p>
+                <Link to={`/category/${post.category}`}> {post.category}</Link>
+              </p>
+              <div className="tags">
+                <h4>Tags</h4>
+                <p>
+                  {post.tags.split(",").map((e, i) => (
+                    <Link to={`/tags/${e}`}>{i !== 0 ? ` • ${e}` : e}</Link>
+                  ))}
+                </p>
+              </div>
             </div>
           </div>
 

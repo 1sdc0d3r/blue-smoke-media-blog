@@ -46,14 +46,7 @@ article .content span {
   font-weight: 700;
 }
 
-article .info {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin: 0;
-  margin-top: 0.5em;
-}
-
-article .share-info {
+article .share {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +59,7 @@ article .share-info {
   margin: 0;
 }
 
-article .share-info ul {
+article .share ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,75 +77,98 @@ article .share-info ul {
 }
 
 @media (max-width: 360px) {
-  article .share-info ul {
+  article .share ul {
     width: 40%;
   }
-  article .share-info ul .btn {
+  article .share ul .btn {
     width: 20%;
   }
 }
 
 @media (min-width: 361px) and (max-width: 480px) {
-  article .share-info ul {
+  article .share ul {
     width: 40%;
   }
-  article .share-info ul .btn {
+  article .share ul .btn {
     width: 20%;
   }
 }
 
 @media (min-width: 481px) and (max-width: 736px) {
-  article .share-info ul {
+  article .share ul {
     width: 40%;
   }
-  article .share-info ul .btn {
+  article .share ul .btn {
     width: 20%;
   }
 }
 
 @media (min-width: 737px) and (max-width: 980px) {
-  article .share-info ul {
+  article .share ul {
     width: 40%;
   }
-  article .share-info ul .btn {
+  article .share ul .btn {
     width: 20%;
   }
 }
 
-article .share-info ul li {
+article .share ul li {
   margin: 0 0.25em;
 }
 
-article .share-info ul li:first-child {
+article .share ul li:first-child {
   margin-left: 0.5em;
 }
 
-article .share-info ul li a {
+article .share ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-article .share-info ul li a img,
-article .share-info ul li a svg {
+article .share ul li a img,
+article .share ul li a svg {
   width: 2em;
   height: 2em;
 }
 
-article .share-info .tags {
-  margin-top: 0.25em;
-  width: 50%;
-  text-align: right;
-}
-
-article .share-info .tags h4 {
+article .share .info {
   margin: 0;
   margin-top: 0.5em;
-  margin-right: 5%;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-article .share-info .tags p {
+article .share .info h4 {
   margin: 0;
+  margin-top: 0.5em;
+}
+
+article .share .info p {
+  text-align: right;
+  margin: 0;
+}
+
+article .share .info .tags {
+  margin-top: 0.25em;
+  width: 70%;
+  text-align: right;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+article .share .info .tags h4 {
+  text-align: center;
+}
+
+article .share .info .tags p {
+  text-align: center;
 }
 
 #loading {

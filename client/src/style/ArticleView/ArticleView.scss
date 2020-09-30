@@ -39,12 +39,7 @@ article {
       font-weight: 700;
     }
   }
-  .info {
-    align-self: flex-end;
-    margin: 0;
-    margin-top: 0.5em;
-  }
-  .share-info {
+  .share {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,17 +75,32 @@ article {
         }
       }
     }
-    .tags {
-      margin-top: 0.25em;
-      width: 50%;
+    .info {
+      margin: 0;
+      margin-top: 0.5em;
       text-align: right;
+      display: flex;
+      flex-direction: column;
       h4 {
         margin: 0;
         margin-top: 0.5em;
-        margin-right: 5%;
+        // margin-right: 5%;
       }
       p {
+        text-align: right;
         margin: 0;
+      }
+      .tags {
+        margin-top: 0.25em;
+        width: 70%;
+        text-align: right;
+        align-self: flex-end;
+        h4 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
       }
     }
   }

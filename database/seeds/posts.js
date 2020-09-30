@@ -8,13 +8,13 @@ exports.seed = function (knex) {
           title: "10 Prominent Website Design Mistakes",
           author: "Constance Beebe",
           date: "05/2020",
-          imageUrl: "10_Prominent_Website_Design_Mistakes.jpg",
+          imageUrl: "10 Prominent Website Design Mistakes",
           imageAlt: "10 Prominent Website Design Mistakes Commonly Made.",
           category: "Custom Website Design",
           tags: "Affordable Custom Website Design, Search Engine Optimization (SEO), Organic SEO, E-Commerce Website Development, Website Usability",
           snippet: "Nowadays, sites are getting better. With minimal design and highly maintained archives they continue to offer comprehensive services. However, prominent mistakes on several websites are still apparent. Here is a list of the website mistakes that scares visitors away and ruins the business reputation.",
           content: `
-
+      
 Nowadays, website designs are getting better and more user-friendly. With minimal design and highly maintained archives they continue to offer comprehensive services. However, prominent mistakes on several websites are still apparent. Here is a list of the website mistakes that scares visitors away and ruins the businesses reputation.
 
 <span>1. The under construction sign.</span> Putting an 'under construction' sign on your website marks you as a struggling beginner. Websites are supposed to grow in time. If your site is not yet ready to be shown in public, then don’t publish it.
@@ -176,21 +176,21 @@ Search engine spiders have a lot of work to do. Not only do they spider billions
 
 <span class="italic">Avoid Bloated Code (Keep it DRY - Don’t Repeat Yourself!)</span>
 
-Unfortunately for the sake of design, many website owners have paid absolutely no attention to how efficient their
-code is. As a result, they may have a lot of extraneous, unnecessary code. The result of bloated code is a page
-that may be difficult and confusing for a search engine to decipher, or the spider may misinterpret the code. Fortunately, HTML and CSS has caught up to the design standards of website professionals. Using proper HTML and CSS, you can design extremely reponsive appealing websites.
+Unfortunately for the sake of design, many website owners have paid absolutely no attention to how efficient their 
+code is. As a result, they may have a lot of extraneous, unnecessary code. The result of bloated code is a page 
+that may be difficult and confusing for a search engine to decipher, or the spider may misinterpret the code. Fortunately, HTML and CSS has caught up to the design standards of website professionals. Using proper HTML and CSS, you can design extremely reponsive appealing websites. 
 
-If you would like to see just how versatile and effective HTML and CSS is,look at the examples laid out at CSS Zen Garden. CSS Zen Garden is a website that displays the power of CSS and properly formed HTML. There are several different designs all using the exact same HTML, but through CSS they are able to build sites that looking completely different form each other. If you want to see something very amazing about what CSS Zen Garden is doing, follow these steps: View the HTML of their page. It does not matter what style you are viewing, the HTML is the same for every style. Now copy that code and paste it into your HTML editor and view the output. The page that you will see is an extremely basic looking page. More importantly, though, the page that you will see is a very well organized page which would be easy for any spider to understand.
+If you would like to see just how versatile and effective HTML and CSS is,look at the examples laid out at CSS Zen Garden. CSS Zen Garden is a website that displays the power of CSS and properly formed HTML. There are several different designs all using the exact same HTML, but through CSS they are able to build sites that looking completely different form each other. If you want to see something very amazing about what CSS Zen Garden is doing, follow these steps: View the HTML of their page. It does not matter what style you are viewing, the HTML is the same for every style. Now copy that code and paste it into your HTML editor and view the output. The page that you will see is an extremely basic looking page. More importantly, though, the page that you will see is a very well organized page which would be easy for any spider to understand. 
 
-Learn More About HTML If you are like most website owners, you know very little about HTML. You may know a little bit of code here and there, but it really does not seem worth your time to learn the inner workings of HTML. If you feel this way, then you are really missing out on great SEO opportunities. There are plenty of FREE websites from which you can learn to code from. <a href='https://www.codecademy.com'>CodeAcademy</a> and <a href='https://www.freecodecamp.org'>FreeCodeCamp</a> are two of my favorites.
+Learn More About HTML If you are like most website owners, you know very little about HTML. You may know a little bit of code here and there, but it really does not seem worth your time to learn the inner workings of HTML. If you feel this way, then you are really missing out on great SEO opportunities. There are plenty of FREE websites from which you can learn to code from. <a href='https://www.codecademy.com'>CodeAcademy</a> and <a href='https://www.freecodecamp.org'>FreeCodeCamp</a> are two of my favorites. 
 
-HTML is built to naturally identify parts of your web page that are more important than others. It was built to be extremely organized. Using the organization that HTML provides, you can help a search engine spider identify the parts of your website that are more important.
+HTML is built to naturally identify parts of your web page that are more important than others. It was built to be extremely organized. Using the organization that HTML provides, you can help a search engine spider identify the parts of your website that are more important. 
 
-Below are some uncommon tags that HTML provides that you can use to help organize your content: the Alt Tag – Most website owners know about this, but including an Alt-Tag on your images is actually required if you want to have a properly formed website. The caption tag allows you to identify what a specific table is about. The element should be styled using the CSS properties caption-side and text-align.
+Below are some uncommon tags that HTML provides that you can use to help organize your content: the Alt Tag – Most website owners know about this, but including an Alt-Tag on your images is actually required if you want to have a properly formed website. The caption tag allows you to identify what a specific table is about. The element should be styled using the CSS properties caption-side and text-align. 
 
-The H Tags – H1 tags have become some of the most important tags in SEO circles, once website owners learned that Google DID pay attention to this tag. However, there are actually 6 different heading tags. The H1 tag is the most important while the H6 tag is the least important. If a search engine were to try to form a table of contents from a website, it should be able to do so from the H tags. These are just a few examples, but HTML provides several tags for your content to help you organize your material, and help search engines know what to emphasize in your content. Article Tip: We have started a thread of these HTML tags. If you would like to know more about HTML tags and CSS, check out <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'>here</a>.
+The H Tags – H1 tags have become some of the most important tags in SEO circles, once website owners learned that Google DID pay attention to this tag. However, there are actually 6 different heading tags. The H1 tag is the most important while the H6 tag is the least important. If a search engine were to try to form a table of contents from a website, it should be able to do so from the H tags. These are just a few examples, but HTML provides several tags for your content to help you organize your material, and help search engines know what to emphasize in your content. Article Tip: We have started a thread of these HTML tags. If you would like to know more about HTML tags and CSS, check out <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'>here</a>. 
 
-The lesson from this should be that learning HTML is not an endeavor that has few benefits. There is a lot of HTML that can help you both simplify your code and add more content to help your rankings. Fortunately, web technology is catching up. With the advent of HTML5 (and working on HTML6) and CSS3, it is easier now than ever to create beautiful sites. If you are not familiar with CSS, just read that previous sentence as being a very good thing. As was demonstrated by the example of CSSZenGarden.com, CSS can be used to create a page that is extremely appealing. Most website owners know CSS to be a tool that they can use to edit the appearance of text and the colors of their site, but CSS is also a tool that can be used for the layout of your site. As CSS comes out with newer versions, layout will become a more important development. If you plan to design your own website, I would like to suggest you learn HTML and CSS. A little Javascript wouldn’t hurt.
+The lesson from this should be that learning HTML is not an endeavor that has few benefits. There is a lot of HTML that can help you both simplify your code and add more content to help your rankings. Fortunately, web technology is catching up. With the advent of HTML5 (and working on HTML6) and CSS3, it is easier now than ever to create beautiful sites. If you are not familiar with CSS, just read that previous sentence as being a very good thing. As was demonstrated by the example of CSSZenGarden.com, CSS can be used to create a page that is extremely appealing. Most website owners know CSS to be a tool that they can use to edit the appearance of text and the colors of their site, but CSS is also a tool that can be used for the layout of your site. As CSS comes out with newer versions, layout will become a more important development. If you plan to design your own website, I would like to suggest you learn HTML and CSS. A little Javascript wouldn’t hurt. 
 
 The Side Benefit: Accessibility! Did you know that blind people surf the Internet? That may not seem shocking initially, but consider that the Internet is a highly visual medium of transferring information. Blind people are able to use web readers and Braille machines that interpret HTML code.Unfortunately, the vast majority of websites are not accessible for blind people because they are not well formed sites. By moving to a well formed website, you will be adding access for an audience who marketers really do not focus on.  But they should!
 
@@ -200,11 +200,11 @@ It supplements HTML so that interactions and widgets commonly used in applicatio
 
 Google has now begun to implement certain penalties for either Not using the Wai-Aria codes or using them incorrectly.  Here is a guide from the <a href='https://developers.google.com/web/fundamentals/accessibility/semantics-aria>Google Developers</a> on how to properly use the Aria codes.
 
-Article Tip: Search engines love websites that adhere to the W3C's Web Content Accessibility Guidelines.
+Article Tip: Search engines love websites that adhere to the W3C's Web Content Accessibility Guidelines. 
 
-Bringing it back to SEO, many website owners are reluctant to take the time, energy, and money to really learn HTML and CSS, or to learn how they can make their websites truly accessible. However, in the end, they could be hurting their search engine rankings once search engines move closer to identifying natural human language.
+Bringing it back to SEO, many website owners are reluctant to take the time, energy, and money to really learn HTML and CSS, or to learn how they can make their websites truly accessible. However, in the end, they could be hurting their search engine rankings once search engines move closer to identifying natural human language. 
 
-The creators of HTML have done a magnificent job in creating a structure that can be used to organize your content in ways that make search engine optimization extremely easy. As the owner of your website, you should take care to make sure that it is running the way it was intended to. You would never purchase a car that fails to meet basic standards of quality, so why would you trust your company's income to a website that is based on code that does not meet the quality standards of the Internet?
+The creators of HTML have done a magnificent job in creating a structure that can be used to organize your content in ways that make search engine optimization extremely easy. As the owner of your website, you should take care to make sure that it is running the way it was intended to. You would never purchase a car that fails to meet basic standards of quality, so why would you trust your company's income to a website that is based on code that does not meet the quality standards of the Internet? 
 
 Designing your site properly does take time and effort, but the rewards are numerous. Not only will you have the satisfaction of having a website that is both light in its code and efficient, but search engines will be able to identify the key points of your content much easier, thus giving you more control of your rankings.`
         },
@@ -228,30 +228,29 @@ We're constantly seeing features like customer reviews and ratings, storefront a
 
 <span>So what exactly is local search</span>, and how can you best position your business to take advantage of it?
 
-Simply put, <span>local search is essentially the Internet's version of the phone book.</span> The difference being that this "phone book" is much faster and far more responsive. For example, suppose I'm in Boston staying at the Harbor View Hotel and in need of a haircut? No problem. I Just enter haircut followed by the zip code of the Hotel where I'm staying - 02114, and instantly, find  Richard's Haircutting for Men a scant 0.4 miles east and with directions. All that took about 30 seconds from concept to completion leaving me with a feeling of satisfaction that no regular 
-phone book could ever provide. I'm now addicted to local search after only a single dose! Throw away the phone book, never mind the concierge.
+Simply put, <span>local search is essentially the Internet's version of the phone book.</span> The difference being that this "phone book" is much faster and far more responsive. For example, suppose I'm in Boston staying at the Harbor View Hotel and in need of a haircut? No problem. I Just enter haircut followed by the zip code of the Hotel where I'm staying - 02114, and instantly, find  Richard's Haircutting for Men a scant 0.4 miles east and with directions. All that took about 30 seconds from concept to completion leaving me with a feeling of satisfaction that no regular phone book could ever provide. I'm now addicted to local search after only a single dose! Throw away the phone book, never mind the concierge.
 
 Now, if that little demo hasn't yet convinced you, chew on this recent finding...
 <span>86% of U.S. households now use the Internet as an information source to find a local business when shopping locally for products and services.</span>
 
 Here is a breakdown for you:
 
-◆	80% of local searches convert
-◆	46% of Google searches are for local businesses
-◆	56% of local retailers have not claimed their Google My Business listing
-◆	“Near me” searches have increased more than 500% in the past few years
-◆	More than 55% of consumers use voice search to find a local business
-◆	Over 75% of voice-enabled speaker owners use voice search each week to discover a local company
-◆	50% of users visit a store within a day of a local search
-◆	76% of people who search on smartphones visit a business within a day
-◆	28% of local searches result in a purchase
-◆	97% of search engine users search online to find a local business
-◆	1 in 3 people conduct a search on their smartphone before visiting a store
-◆	97% of consumers check a company’s online presence before deciding to visit them
-◆	14. 86% of people rely on the Internet to find a local business
-◆	29% of people search for local businesses at least once a week
-◆	30% of Google mobile searches are related to location
-◆	78% of local mobile searches result in an in-store purchase
+    ◆	80% of local searches convert
+    ◆	46% of Google searches are for local businesses
+    ◆	56% of local retailers have not claimed their Google My Business listing
+    ◆	“Near me” searches have increased more than 500% in the past few years
+    ◆	More than 55% of consumers use voice search to find a local business
+    ◆	Over 75% of voice-enabled speaker owners use voice search each week to discover a local company
+    ◆	50% of users visit a store within a day of a local search
+    ◆	76% of people who search on smartphones visit a business within a day
+    ◆	28% of local searches result in a purchase
+    ◆	97% of search engine users search online to find a local business
+    ◆	1 in 3 people conduct a search on their smartphone before visiting a store
+    ◆	97% of consumers check a company’s online presence before deciding to visit them
+    ◆	14. 86% of people rely on the Internet to find a local business
+    ◆	29% of people search for local businesses at least once a week
+    ◆	30% of Google mobile searches are related to location
+    ◆	78% of local mobile searches result in an in-store purchase
 
 <span>Simply put, local search, including local search on mobile devices, </span>is  dominating the world of brick-n-mortar marketing (especially with the Covid-19 epidemic). Ready or not, here it comes! ...we suggest you get ready now, before it starts costing you a fortune to negotiate the learning curve. Oh, and get used to the fact that the big yellow phone book has almost become nothing more than a cheesy doorstop.
 
@@ -260,8 +259,8 @@ Here is a breakdown for you:
 The first step to getting your business listed in Local Search is (surprise) to buy a listing in the offline Yellow Pages (yep, that cheesy doorstop-to-be we just dis'd).
 Here's why:
 Most search engines get the bulk of their local business listings from just two companies:
-1.	InfoUSA
-2.	Acxiom
+    1.	InfoUSA
+    2.	Acxiom
 ...or else from Internet Yellow Pages sites which also derive their listings from these two companies. Both have compiled enormous databases containing detailed information on most of the businesses and consumer households in the US and Canada. And much of their data is pulled from your basic Yellow Page and Business White Page directories (aka, the cheesy doorstops) .
 
 The good news may be that your business already has a listing in your <span>local Yellow Pages,</span> if not, then you should get one! Don't worry about taking out a big colorful ad with lots of information about your company. We haven't any reason to believe that expensive ads offer any advantage in local search rankings. Nor does lots of business information in your Yellow Pages ad seem to enhance your local search listing's comprehensiveness. It appears to us that any Yellow Pages listing at all will get you included in most local search engines just fine.
@@ -355,66 +354,33 @@ The more time and effort you put into planning and building your website, or rev
 
 The following is a guide for building a new website. It shows how a corporate webmaster or Web department creates a world-class website, and it is the same step by step process that every organization, no matter how small, should follow.
 
-<span>Step 1 - Discovery:</span> The first phase involves determining the scope of the project, the timeline and scheduling
-parameters, everyone's expectations, and your current human and technical resources.
+<span>Step 1 - Discovery:</span> The first phase involves determining the scope of the project, the timeline and scheduling parameters, everyone's expectations, and your current human and technical resources.
 
-<span/>Step 2 - Concept and Planning: </span>The next step is to determine site requirements, business goals, types of
-functionality, site features, and a timeline and due date. You'll need to determine who your site audience is, the
+<span/>Step 2 - Concept and Planning: </span>The next step is to determine site requirements, business goals, types of functionality, site features, and a timeline and due date. You'll need to determine who your site audience is, the
 demographics and psychographics of your visitors.
 
-In this phase the architecture or organization of the information that will be included on the site needs to be
-planned as well. The most important part of this step is determining your goals for the site. You need to ask yourself
-and any other stake holders exactly what the new site ought to yield when completed. What do you expect the site
-to do? What do you want to get out of it? What messages do you want to convey to all the people who will
-eventually view it? What are the priorities of the site in terms of your business and making money? What types of
+In this phase the architecture or organization of the information that will be included on the site needs to be planned as well. The most important part of this step is determining your goals for the site. You need to ask yourself and any other stake holders exactly what the new site ought to yield when completed. What do you expect the site to do? What do you want to get out of it? What messages do you want to convey to all the people who will eventually view it? What are the priorities of the site in terms of your business and making money? What types of
 people will be using the site and what will they want to accomplish while there?
 
-<span>Step 3 - Design Specifications: </span>This is when the look & feel and a visual design specification are created. Here you'll
-determine the fonts, colors and size and layouts, always trying to keep consistency paramount. You'll want to write
-specifications for the images you'll be using on the site as well. It's also the time to decide upon and design the
-technical infrastructure and architecture of the site, server, environment and platform. You'll determine what
-programming languages and databases will be used, if any, and any other technical features your site will need.
+<span>Step 3 - Design Specifications: </span>This is when the look & feel and a visual design specification are created. Here you'll determine the fonts, colors and size and layouts, always trying to keep consistency paramount. You'll want to write specifications for the images you'll be using on the site as well. It's also the time to decide upon and design the technical infrastructure and architecture of the site, server, environment and platform. You'll determine what programming languages and databases will be used, if any, and any other technical features your site will need.
 
-One of the secondary benefits of following Step 3 is that you'll have a document to refer back to later on when
-adding to the site. If you hire a new Web person of company, you can give them this design specification document
-for them to follow whenever they work on your site.
+One of the secondary benefits of following Step 3 is that you'll have a document to refer back to later on when adding to the site. If you hire a new Web person of company, you can give them this design specification document for them to follow whenever they work on your site.
 
-<span>Step 4 - Production: </span>Before this phase begins, everyone who is involved in this project, including people who give
-the final ‘ok', need to know that there will be a technical and look and feel design freeze at this point. If any changes
-are needed during this point, then those changes will be done in the next redesign.
+<span>Step 4 - Production: </span>Before this phase begins, everyone who is involved in this project, including people who give the final ‘ok', need to know that there will be a technical and look and feel design freeze at this point. If any changes are needed during this point, then those changes will be done in the next redesign.
 
 <span>The production phase can be broken down into three areas and will include:
-</span><span>Step 4a- The Design Production:</span>  The artistic look and feel design production, usability designing, the navigation
-production, and image and button creation. The homepage of the site and the inner page template both need the
-new design applied to them. The homepage design may use the same template the rest of the site uses, or it may
-be unique. If it differs from the rest of the site, then make sure its look and feel is very similar to the look and feel of
-the inner page template(s). Also, if it differs, consider applying this entire step-by-step guide to the homepage as
-well, treating it as a separate, but related entity.
+</span><span>Step 4a- The Design Production:</span> The artistic look and feel design production, usability designing, the navigation production, and image and button creation. The homepage of the site and the inner page template both need the new design applied to them. The homepage design may use the same template the rest of the site uses, or it may be unique. If it differs from the rest of the site, then make sure its look and feel is very similar to the look and feel of the inner page template(s). Also, if it differs, consider applying this entire step-by-step guide to the homepage as well, treating it as a separate, but related entity.
 
-<span>Step 4b - The Technical Production: </span>This entails the HTML coding, any other coding to contribute to the functionality
-and the configuration of the server's environment. The technical aspects could also include any Server Side Coding
-in a major programming language, Database Design and Development, and site security measures.
+<span>Step 4b - The Technical Production: </span>This entails the HTML coding, any other coding to contribute to the functionality and the configuration of the server's environment. The technical aspects could also include any Server Side Coding in a major programming language, Database Design and Development, and site security measures.
 
-<span>Step 4c - The Marketing Production: </span>This area includes creating the homepage and pre-determined inner pages to
-be search engine and index friendly. It also includes the copywriting for every page. Any mechanisms for interacting
-with the visitors will be produced here. For example, forms on your site that asks users to give information are ways
-for a user to interact with your site. Although the look & feel of the form falls under ‘design', and the actual
-mechanisms that make the form work falls under ‘technology', the purpose of the forms will be very marketing-
-centric. What you ask, how you store the data, and how you retrieve it and use it later are all marketing issues that
+<span>Step 4c - The Marketing Production: </span>This area includes creating the homepage and pre-determined inner pages to be search engine and index friendly. It also includes the copywriting for every page. Any mechanisms for interacting with the visitors will be produced here. For example, forms on your site that asks users to give information are ways for a user to interact with your site. Although the look & feel of the form falls under ‘design', and the actual mechanisms that make the form work falls under ‘technology', the purpose of the forms will be very marketing- centric. What you ask, how you store the data, and how you retrieve it and use it later are all marketing issues that
 should be addressed in this step.
 
-<span>Step 5 - Testing: </span>The produced site now must be loaded onto a staging area that is exactly like the production
-environment, or made accessible to testers only. During this phase, various people will test all aspects of site,
-including functionality, spelling and grammar, hyperlinks, and all other elements. This is often called the Quality
-Assurance phase.
+<span>Step 5 - Testing: </span>The produced site now must be loaded onto a staging area that is exactly like the production environment, or made accessible to testers only. During this phase, various people will test all aspects of site, including functionality, spelling and grammar, hyperlinks, and all other elements. This is often called the Quality Assurance phase.
 
-<span>Step 6 - Publishing: </span>This phase is the push of the new site from staging to production. Here the site is made live
-and is now on the World Wide Web.
+<span>Step 6 - Publishing: </span>This phase is the push of the new site from staging to production. Here the site is made live and is now on the World Wide Web.
 
-<span>Step 7 - E-marketing and Maintenance: </span>Unless the site is marketed, it won't matter how well-designed or
-technically robust it is, no one will ever visit or use it. Therefore, the final and ongoing phase entails implementing
-E-marketing techniques, keeping the site's content fresh, and making continual adjustments based on site specific
-and customer research.
+<span>Step 7 - E-marketing and Maintenance: </span>Unless the site is marketed, it won't matter how well-designed or technically robust it is, no one will ever visit or use it. Therefore, the final and ongoing phase entails implementing E-marketing techniques, keeping the site's content fresh, and making continual adjustments based on site specific and customer research.
 
 Whether you decide to tackle building a new website yourself, or you choose to hire someone else to do it, the steps outlined above ought to be followed. If you decide to do it yourself, you'll need to read up on Graphic Design and Usability, Web Technologies and E-marketing.
 
@@ -507,7 +473,7 @@ colorblind people are able to see it.
 <span>Unity</span> among the different elements in the logo. The logo must fit together as a single unit, and not just appear as a
 jumble of elements pasted together.
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <span>Scalability,</span> so that your logo looks equally good on both a business card and on a sign for your business (or a
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           <span>Scalability,</span> so that your logo looks equally good on both a business card and on a sign for your business (or a
 billboard!), and at every size in between. Your business's name should be legible at different logo sizes ­ be sure that
 your designer chooses a font that is easily readable.
 
@@ -632,41 +598,41 @@ Are you a network marketer or an affiliate struggling to convert your website vi
 
 2. Is your ad copy (sales letter) persuasive and compelling enough?</span>
 
-and
+and  
 
 <span>3. Does it serve its intended purpose and that is to get the visitor to click through your sign-up link or order button?</span>
 
-To get you on the right track, here are
+To get you on the right track, here are 
 <span>10 essential tips you can use as a guide in writing persuasive ad copy:
 
-1. Publish a picture of yourself in your ad.</span>
+1. Publish a picture of yourself in your ad.</span> 
 This will show people that you're not hiding behind your website and you're not afraid to backup your product.
 
-<span>2. List how many famous or respected people have purchased your product in your ad.</span>
+<span>2. List how many famous or respected people have purchased your product in your ad.</span> 
 These people should be fairly known by your target audience.
 
-<span>3. Publish the results of any tests your product has passed in your ad.</span>
+<span>3. Publish the results of any tests your product has passed in your ad.</span> 
 Your product may have passed a durability test, safety test, quality test, etc.
 
-<span>4. Publish the results of any positive surveys you've taken from your customers in your ad.</span>
+<span>4. Publish the results of any positive surveys you've taken from your customers in your ad.</span> 
 Just survey your current customers and list the results.
 
-<span>5. List any publications that have written about your business in your ad.</span>
+<span>5. List any publications that have written about your business in your ad.</span> 
 It could be a product review, on a top ten list, an article, etc.
 
-<span>6. List any related books that you've written in your ad.</span>
+<span>6. List any related books that you've written in your ad.</span> 
 When you list a book(s) you've written, it gives you credibility because it shows you're an expert.
 
-<span>7. Have a professional looking website to publish your ad on.</span>
+<span>7. Have a professional looking website to publish your ad on.</span> 
 When people visit your site and it looks unprofessional, they'll relate that to your product.
 
-<span>8. Publish any endorsements from famous people in your ad.</span>
+<span>8. Publish any endorsements from famous people in your ad.</span> 
 Some people will think if a famous person, enjoys your product, so will they.
 
-<span>9. Use a money back guarantee in your ad.</span>
+<span>9. Use a money back guarantee in your ad.</span> 
 This will remove the risk from your potential customers and show them that you stand behind your product.
 
-<span>10. Provide testimonials from satisfied customers in your ad.</span>
+<span>10. Provide testimonials from satisfied customers in your ad.</span> 
 The testimonials should include specific and believable results your customers have received.
 
 Yes, you might think that your product or service is the best thing offered on the internet since sliced bread. But if you're unable to convey this message to your website visitors with your ad-copy, you'll never earn a living online! Take some time to ponder the 3 questions presented above. Experiment with the 10 tips to improve your ad copy and you'll soon discover just how easy it really is to build your mailing list and earn a living online!`
@@ -736,9 +702,9 @@ Writing effective web copy is the key to converting visitors into buyers. Gettin
           tags: "Affordable Custom Website Design, Website Traffic, Strategic Social Media Marketing, Search Engine Optimization (SEO), E-Commerce Website Development, Coding and Programming, Website Usability",
           snippet: "Build it and they will come! Well . . . sometimes. If you're real lucky, and I mean REALLY lucky.",
           content: `
-Build it and they will come! Well . . . sometimes. If you're real lucky, and I mean REALLY lucky. Now you have your beautiful website boasting your amazing products or services. It's out there, just waiting for people who want what you have to offer. You're going to dazzle them with your dynamic website and the sales are going to come flooding in. Wrong. The dream is over. It's time to come back to reality.
+Build it and they will come! Well . . . sometimes. If you're real lucky, and I mean REALLY lucky. Now you have your beautiful website boasting your amazing products or services. It's out there, just waiting for people who want what you have to offer. You're going to dazzle them with your dynamic website and the sales are going to come flooding in. Wrong. The dream is over. It's time to come back to reality. 
 
-I can't begin to tell you how many times I've heard the stories of disappointment from very sharp business people who actually thought that having a website is all there is to either starting and operating a successful and profitable online business, or incorporating E-Commerce into their existing business of traditional commerce.
+I can't begin to tell you how many times I've heard the stories of disappointment from very sharp business people who actually thought that having a website is all there is to either starting and operating a successful and profitable online business, or incorporating E-Commerce into their existing business of traditional commerce. 
 
 Your website is quite simply, a brochure that is now lost in a very large online ocean of literally billions of other brochures. We'll compare it to a stack of beautifully printed brochures sitting on your desk; your prospects will never see it unless you place your brochures in a visible place where people look for what you have to offer - true? Your online brochure, (your website), also needs to be positioned in a visible place where your prospects can find you - on major search engine directories.
 
@@ -752,7 +718,7 @@ By following these simple rules, you will be able to determine the right mix of 
 
 <span>Rule #2. Look at complementary products and services that people tend to buy that you don't offer.</span> Often, these keywords generate good prospects and typically have less competition than your primary keywords and phrases.
 
-<span>Rule #3. Use online tools to help determine keyword variations and search frequency.</span> The best free programs to use include <a href='https://ads.google.com/home/tools/keyword-planner/'>Google’s search term suggestion tool</a> and <a href='https://www.wordstream.com/keywords'>Word Stream’s keyword tool</a>.
+<span>Rule #3. Use online tools to help determine keyword variations and search frequency.</span> The best free programs to use include <a href='https://ads.google.com/home/tools/keyword-planner/'>Google’s search term suggestion tool</a> and <a href='https://www.wordstream.com/keywords'>Word Stream’s keyword tool</a>. 
 
 <span>Rule #4. Use <a href='www.wordtracker.com'>WordTracker</a> -</span> For a small fee, you can use this tool to find niche keywords, use the thesaurus to find related search terms and determine general monthly search frequency. This is a great tool and worth the investment.
 
@@ -775,7 +741,6 @@ By applying these simple rules, you will be well on your way to generating highl
           author: "Constance Beebe",
           date: "9/2020",
           imageUrl: "ial (and How to Use It Well), getting your brand out there amongst the people who fit in your niche.",
-          imageAlt: "testing",
           category: "Strategic Social Media Marketing",
           tags: "Brand Loyalty, Consumer Loyalty, Affordable Custom Website Design, Strategic Social Media Marketing, Content Writing, Ad-Copywriting",
           snippet: "In today’s society, word of mouth IS digital. Think about the questions you constantly ask about products, services or businesses; your customers are asking the SAME questions. Addressing these common points of confusion could be your key to converting casual website visitors into new clients.",
@@ -790,13 +755,13 @@ In today’s society, word of mouth IS digital.  Think about the questions you c
 However, not all businesses are aware of the benefits of social media marketing. In fact, <a href="http://stlblackbiz.com/small-businesses-arent-readily-using-social-media/">50% of small businesses aren’t using social media</a> to promote their business and an additional 25% don’t plan to use social media in the future. There is clearly a large disconnect between those who are seeing the benefits of social media and those struggling to get started.
 
 You may ask, <span>“How will my business benefit from and active social media presence?”</span>  Here are just three of the ways your business could benefit:
+    
+    ◆	Social Media can be a valuable tool as profiles can provide general information and updates about your 
+        business.
+    ◆	Business can interact and engage with current and future clients in a community like setting.
+    ◆	Your business’ social profiles can also help improve your organic SEO for your website.
 
-◆	Social Media can be a valuable tool as profiles can provide general information and updates about your
-    business.
-◆	Business can interact and engage with current and future clients in a community like setting.
-◆	Your business’ social profiles can also help improve your organic SEO for your website.
-
-<a href="https://clutch.co/agencies/resources/social-media-2015-small-business-survey">Mike Rosa</a> of 180Fusion, stated that <span>“If small businesses want to compete, if they want to level the playing field with their competitors, if they don’t want to lose ground, they have to be participating in social media.”</span>
+    <a href="https://clutch.co/agencies/resources/social-media-2015-small-business-survey">Mike Rosa</a> of 180Fusion, stated that <span>“If small businesses want to compete, if they want to level the playing field with their competitors, if they don’t want to lose ground, they have to be participating in social media.”</span>
 
 The world of digital tech is a constantly moving landscape with social media marketing seeming to move even faster. And because it’s so fast moving it can be tough to figure out how each piece of the puzzle fits with your small business. Social Media Engagement remains an essential ingredient of business and marketing success. To win over audiences in a world increasingly dominated by instantaneous social media and the 24-hour news cycle, the power of connecting with people can be the difference between success and failure.
 
@@ -826,15 +791,15 @@ It is important to get back to basics and ask yourself "What is it that customer
 <span>Making a list:</span>
 In our example of the Coffee Digital Cafe company, the owners may come up with the following list (after researching customer needs) of nine features customers desire in a web design company.
 
-<span>1.</span> Excellent support
-<span>2.</span> Package features (eg. disk quotas, email boxes, monthly bandwidth)
-<span>3.</span> Special language support (eg. JavaScript, PHP, Python, React.js, Ruby on Rails, etc.)
-<span>4.</span> Reasonable pricing
-<span>5.</span> Easy account management
-<span>6.</span> Reliability
-<span>7.</span> Do they write content
-<span>8.</span> Do they have an in-house graphic design team
-<span>9.</span> They offer Social Media Management
+    <span>1.</span> Excellent support
+    <span>2.</span> Package features (eg. disk quotas, email boxes, monthly bandwidth)
+    <span>3.</span> Special language support (eg. JavaScript, PHP, Python, React.js, Ruby on Rails, etc.)
+    <span>4.</span> Reasonable pricing
+    <span>5.</span> Easy account management
+    <span>6.</span> Reliability
+    <span>7.</span> Do they write content
+    <span>8.</span> Do they have an in-house graphic design team
+    <span>9.</span> They offer Social Media Management
 
 After reviewing this list, the Coffee Digital Cafe  owners could choose areas they believe their big company competitors are lacking. These areas would then become areas of focus for both product development and marketing.
 
@@ -846,12 +811,12 @@ Suggestion: If it is feasible for your business, setting up an account on one (o
 
 You may be asking just where you are expected to get such information about your customers needs. Below is a short list of suggestions to get you started.
 
-<span>*</span> Survey customers.
-<span>*</span> Participate in discussion groups relating to the subject. You will often find forums around the Internet with real
-   customers discussing what they like and dislike about certain products and services. Participating in these
-   discussions may also get you business!
-<span>*</span>Visit web sites and read newsletters which deal with the subject.
-<span>*</span>Put yourself in your customers shoes and look at it from their perspective.
+    <span>*</span> Survey customers.
+    <span>*</span> Participate in discussion groups relating to the subject. You will often find forums around the Internet with real 
+       customers discussing what they like and dislike about certain products and services. Participating in these 
+       discussions may also get you business!
+    <span>*</span>Visit web sites and read newsletters which deal with the subject.
+    <span>*</span>Put yourself in your customers shoes and look at it from their perspective.
 
 <span>Personalize your Service</span>
 
@@ -863,43 +828,43 @@ I don't know about you, but I find it much more appealing when I can actually ta
 
 Our Coffee Digital Cafe team may decide to incorporate some of the following things to help <span>personalize their service and gain trust</span> from their customers.
 
-<span>**On sign up,</span> Coffee Digital Cafe should ensure customers have the contact information for appropriate personnel
-    to voice their queries or comments. This information should be presented in a way which welcomes customer
-    interaction.
+    <span>**On sign up,</span> Coffee Digital Cafe should ensure customers have the contact information for appropriate personnel 
+        to voice their queries or comments. This information should be presented in a way which welcomes customer 
+        interaction.
 
-<span>**Building trust with your customers</span> is an incredibly important, and often underestimated, aspect which must be
-    considered. To put it simply, no one is going to buy anything from you on the Internet if they do not trust you.
-    Personalizing a service is an excellent way of gaining this customer trust.
+    <span>**Building trust with your customers</span> is an incredibly important, and often underestimated, aspect which must be 
+        considered. To put it simply, no one is going to buy anything from you on the Internet if they do not trust you. 
+        Personalizing a service is an excellent way of gaining this customer trust.    
 
-    Our Coffee Digital Cafe team may decide to incorporate some of the following things to help personalize their
-    service and gain trust from customers.
+        Our Coffee Digital Cafe team may decide to incorporate some of the following things to help personalize their 
+        service and gain trust from customers.
 
-<span>**</span>On sign up, Coffee Digital Cafe should ensure customers have the contact information for appropriate personnel
-    to voice their queries or comments. This information should be presented in a way which welcomes customer
-    interaction.
+    <span>**</span>On sign up, Coffee Digital Cafe should ensure customers have the contact information for appropriate personnel 
+        to voice their queries or comments. This information should be presented in a way which welcomes customer 
+        interaction.   
+        
+    <span>**</span>Every so often, Coffee Digital Cafe <span>owners should contact customers personally</span> to make sure everything is 
+        going well and answer any queries they may have. Many customers will not go out of their way to give feedback
+        unless asked specifically.
 
-<span>**</span>Every so often, Coffee Digital Cafe <span>owners should contact customers personally</span> to make sure everything is
-    going well and answer any queries they may have. Many customers will not go out of their way to give feedback
-    unless asked specifically.
+    <span>**Keep customers informed</span> of updates, changes and upcoming services.
 
-<span>**Keep customers informed</span> of updates, changes and upcoming services.
+    <span>**Give valid explanations</span> for any down-time which may occur.
 
-<span>**Give valid explanations</span> for any down-time which may occur.
-
-<span>**Provide an area for customers to give feedback</span> and talk with each other.
+    <span>**Provide an area for customers to give feedback</span> and talk with each other.
 
 <span>Charge Reasonable Prices</span>
 
-The last point I am going to make in this article, is that <span>you must charge reasonable prices.</span> Although you may not be
+The last point I am going to make in this article, is that <span>you must charge reasonable prices.</span> Although you may not be 
 able to match the extremely low prices of big companies in some industries, it is important, that you do not over-
 charge your customers. <span>Nothing scares customers off quicker than ridiculously high prices.</span>
 
-If you use the techniques described in this article, customers may not mind paying that little bit extra. Especially, if it is
+If you use the techniques described in this article, customers may not mind paying that little bit extra. Especially, if it is 
 going to get them a service which the big competitors do not provide so well.
 
-In conclusion, <span>the best thing you can do as a small business</span> or website starting out on the Internet <span>is to understand
-your customers and their needs.</span> You must exploit the advantages many small businesses have over large
-companies. Using the techniques outlined in this article, along with your own initiative and creativity, will help you gain
+In conclusion, <span>the best thing you can do as a small business</span> or website starting out on the Internet <span>is to understand 
+your customers and their needs.</span> You must exploit the advantages many small businesses have over large 
+companies. Using the techniques outlined in this article, along with your own initiative and creativity, will help you gain 
 respect, build a reputation and hopefully reach your goals!
 `
         },
@@ -920,8 +885,8 @@ respect, build a reputation and hopefully reach your goals!
 <span>Got a favorite brand?</span>
 
 Something that inspires the confidence that____is the best value? Most of us would answer yes. There is a specific toothpaste you seek, or brand of trash bags you avoid. Out of so many choices in this age of options - How did you grow this relationship? Of all the toothpastes in the world, why did you walk over to that one? Aside from the dollar in your wallet that serves as your ballot - this is a pretty one-sided affinity. How did this loyalty begin? More importantly, how can you use the same tools to inspire confidence that you are the best choice out of a stack of resumes?
-
-Let's talk about how they did it. <a href="https://www.npr.org/2014/07/28/335288388/when-did-companies-become-people-excavating-the-legal-evolution">Corporations are people is probably not a new concept to you.</a> Collective ownership not bound to a single lifetime started with an argument of a wealthy
+       
+Let's talk about how they did it. <a href="https://www.npr.org/2014/07/28/335288388/when-did-companies-become-people-excavating-the-legal-evolution">Corporations are people is probably not a new concept to you.</a> Collective ownership not bound to a single lifetime started with an argument of a wealthy 
 robber baron who wanted his business to exploit the 14th amendment. <a href="https://www.theatlantic.com/business/archive/2018/03/corporations-people-adam-winkler/554852/">Here is a bit on the dubious journey from business to personhood if you want to learn more.</a> As ridiculous as the idea started, it was successful.
 
 Over time as the concept matured and became more sophisticated. We now have company rivalries, million dollar commercials, and fierce consumer loyalty.  When we think of big corporations we are invoking emotional connections. They impress meaning beyond their function. Trash bags are just trash bags - so why do company brands inspire feelings of family, financial status, care, comfort, luxury. When you boil it down, each brand builds rapport and communicates it's worth through carefully placed words and pictures. You can too.
@@ -932,23 +897,23 @@ If someone asks you right now - What company do you really want to work for? Eve
 <span>Appropriate the machine!</span>
 Whoever you chose as the company of your dreams - has attracted strong talent (yes, I mean you).  Let's turn the lens to them - How did they do it?
 
-    <span>1)</span> If you engage in social media - consider making your personal pages private and allow
-    your strategized branded pages to be searched publicly. Being yourself is cool and all- but
-    does your dream job need to know about your obsession with 90's sci-fi?  Probably not.
-    There is potential to use your web print to leave an impression that makes you a more
-    attractive candidate.  Consider it.  Friends you want to invite over for a Cleopatra 2525
-    marathon will still be able to get the invite if you tighten the security on your page.
+        <span>1)</span> If you engage in social media - consider making your personal pages private and allow 
+        your strategized branded pages to be searched publicly. Being yourself is cool and all- but 
+        does your dream job need to know about your obsession with 90's sci-fi?  Probably not. 
+        There is potential to use your web print to leave an impression that makes you a more 
+        attractive candidate.  Consider it.  Friends you want to invite over for a Cleopatra 2525 
+        marathon will still be able to get the invite if you tighten the security on your page.
 
-    <span>2)</span> Watch the companies you like - what does their web print say about them? Look at
-    their posts, charities they support, what is the impression they offer? Most companies have
-    a strategy for their voice - are they supportive, casual, pedantic, etc. Figure out their voice
-    and utilize it in your posts. Does this company try to educate the consumer - be a thought
-    leader. Offer posts that will attract their attention as someone who is aligned with their
-    objectives and interests.
+        <span>2)</span> Watch the companies you like - what does their web print say about them? Look at 
+        their posts, charities they support, what is the impression they offer? Most companies have 
+        a strategy for their voice - are they supportive, casual, pedantic, etc. Figure out their voice 
+        and utilize it in your posts. Does this company try to educate the consumer - be a thought 
+        leader. Offer posts that will attract their attention as someone who is aligned with their 
+        objectives and interests.
 
-<span>There are so many opportunities to create your own brand.</span> You can really go down a rabbit
-hole here. Typography, color palette, even the source of information you use when you post are
-paints to create a more colorful picture. Choose wisely.
+<span>There are so many opportunities to create your own brand.</span> You can really go down a rabbit 
+hole here. Typography, color palette, even the source of information you use when you post are 
+paints to create a more colorful picture. Choose wisely. 
 
 <span>Everything you give to the world is a handshake. Make it a memorable one!</span>
 `

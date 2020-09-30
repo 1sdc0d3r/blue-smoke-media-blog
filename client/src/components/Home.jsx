@@ -5,20 +5,23 @@ import socialMedia from "../assets/Social-media-changes-every-small-business-sho
 import invertedCommas from "../assets/inverted-commas.png";
 import Sidebar from "./Sidebar";
 import axios from "axios";
-import { FacebookProvider, Like } from "react-facebook";
 
 export default function Home() {
   const [newArticles, setNewArticles] = useState([]);
   useEffect(() => {
     axios
       .get("http://localhost:5000/api/blog")
-      .then(({ data }) =>
-        setNewArticles(data.sort((a, b) => b.date - a.date).splice(0, 5))
-      )
+      .then(({ data }) => {
+        // console.log(data.length);
+        let random = Math.floor(Math.random() * (data.length - 1));
+        if (random < 6) random = 6;
+        setNewArticles(
+          data.sort((a, b) => b.date - a.date).slice(random - 6, random)
+        );
+      })
       .catch((err) => console.log(err));
-    // setNewArticles(articleList.sort((a, b) => b.date - a.date).slice(10, 16));
   }, []);
-  //todo splice numbers random
+  //todo sort date
 
   return (
     <>

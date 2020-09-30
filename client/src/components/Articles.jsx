@@ -12,13 +12,13 @@ export default withRouter(function Articles({ match }) {
     page: 1,
   });
   const { offset, limit } = pagination;
-  // todo sort by date (split and [1], [0])
+
   useEffect(() => {
     setQuery(Object.entries(match.params)[0]);
   }, [match.params]);
-  // todo merge these useEffects?
+  //? todo merge these useEffects?
   useEffect(() => {
-    console.log(process.env);
+    // console.log(process.env);
     setPagination({
       limit: 5,
       offset: 0,
@@ -27,23 +27,18 @@ export default withRouter(function Articles({ match }) {
     axios
       .get("http://localhost:5000/api/blog")
       .then(({ data }) => {
-        if (query) {
+        if (query)
           setArticles(
-            data
-              .filter((e) =>
-                e[query[0]].toLowerCase().includes(query[1].toLowerCase())
-              )
-              .sort((a, b) => {
-                console.log("date", a.date, b.date);
-                return b.date - a.date;
-              })
+            data.filter((e) =>
+              e[query[0]].toLowerCase().includes(query[1].toLowerCase())
+            )
           );
-        } else {
-          setArticles(data.sort((a, b) => b.date - a.date));
-        }
+        else setArticles(data);
       })
       .catch((err) => console.log(err));
   }, [query]);
+  //todo sort by date
+  // console.log(new Date(2020, 11));
 
   return (
     <div className="articles">
