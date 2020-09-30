@@ -31,8 +31,16 @@ export default function Sidebar() {
             </button> */}
         </div>
         <div className="facebook">
-          <p>Like Us On Facebook</p>
-          <div
+          <h3>
+            <a
+              href="https://www.facebook.com/bluesmokemedia/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Like Us On Facebook
+            </a>
+          </h3>
+          {/* <div
             className="fb-page"
             data-href="https://www.facebook.com/bluesmokemedia/"
             data-tabs=""
@@ -55,7 +63,7 @@ export default function Sidebar() {
                 Blue Smoke Digital and Printed Media
               </a>
             </blockquote>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

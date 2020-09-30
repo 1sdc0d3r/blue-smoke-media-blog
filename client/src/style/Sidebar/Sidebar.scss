@@ -2,6 +2,7 @@
 .sidebar {
   // border: 1px solid black;
   text-align: center;
+  min-width: 8em;
   @include breakpoint(xxs, xs, s, m) {
     display: none;
   }
@@ -63,6 +64,15 @@
     }
   }
   .facebook {
-    padding: 0 1em 1em;
+    padding: 0 1em 0.5em;
+    margin: 0;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        color: $orange;
+      }
+    }
   }
 }

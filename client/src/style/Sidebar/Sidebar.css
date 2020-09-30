@@ -1,5 +1,6 @@
 .sidebar {
   text-align: center;
+  min-width: 8em;
 }
 
 @media (max-width: 360px) {
@@ -106,6 +107,16 @@
 }
 
 .sidebar .facebook {
-  padding: 0 1em 1em;
+  padding: 0 1em 0.5em;
+  margin: 0;
+}
+
+.sidebar .facebook a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar .facebook a:hover {
+  color: #ee3e0e;
 }
 /*# sourceMappingURL=Sidebar.css.map */

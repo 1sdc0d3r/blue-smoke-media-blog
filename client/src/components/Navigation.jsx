@@ -51,6 +51,8 @@ export default function Navigation() {
       <a
         href="https://bluesmokedigitalandprintedmedia.com/contact"
         className="nav-item"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         Contact
       </a>
