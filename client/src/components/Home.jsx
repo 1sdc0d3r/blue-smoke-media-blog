@@ -199,19 +199,22 @@ export default function Home() {
           <h2>New Articles</h2>
           <div>
             {newArticles?.map((e) => (
-              <Link to={`/article/${e.id}`} className="new-article">
-                <img
-                  src={`https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/thumbnail/${e.imageUrl}`}
-                  alt={e.imageAlt}
-                />
-                <div className="text">
-                  <h3>{e.title}</h3>
-                  <p className="author-date">
-                    by {e.author} {e.date ? `· ${e.date}` : ""}
-                  </p>
-                  <span>{e.category}</span>
-                </div>
-              </Link>
+              <div className="new-article">
+                <Link to={`/article/${e.id}`}>
+                  <img
+                    src={`https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/thumbnail/${e.imageUrl}`}
+                    alt={e.imageAlt}
+                  />
+                  <div className="text">
+                    <h4>{e.title}</h4>
+                    <p className="author">
+                      –{e.author}
+                      {/* {e.date ? `· ${e.date}` : ""} */}
+                    </p>
+                    {/* <span>{e.category}</span> */}
+                  </div>
+                </Link>
+              </div>
             ))}
           </div>
         </div>

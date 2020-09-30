@@ -122,22 +122,33 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
 }
 
 .home .new-articles div .new-article {
   border: 4px solid #020723;
   width: 26%;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
   margin: 0 auto 1em;
+}
+
+.home .new-articles div .new-article a {
   text-decoration: none;
   color: inherit;
+  height: 100%;
 }
 
-.home .new-articles div .new-article img {
+.home .new-articles div .new-article a img {
   width: 100%;
-  height: 20%;
+  height: 45%;
 }
 
-.home .new-articles div .new-article .text {
+.home .new-articles div .new-article a .text {
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,21 +156,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 90%;
-  margin: 0.25em auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .new-articles div .new-article a .text h4 {
+  margin: 0.25em auto 0;
   text-align: center;
 }
 
-.home .new-articles div .new-article .text h3 {
+.home .new-articles div .new-article a .text .author {
   margin: 0;
-}
-
-.home .new-articles div .new-article .text .author-date {
-  margin: 0.25em 0;
-  text-align: right;
-}
-
-.home .new-articles div .new-article .text span {
+  padding-right: 3%;
   text-align: right;
 }
 /*# sourceMappingURL=Home.css.map */
