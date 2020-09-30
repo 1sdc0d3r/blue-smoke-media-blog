@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useLayoutEffect } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect } from "react";
 //* Images
 import twitter from "../assets/Twitter.png";
 import linkedIn from "../assets/linkedIn_social_media_button.png";

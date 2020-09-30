@@ -60,10 +60,10 @@ module.exports = {
     client: 'mysql',
     connection: {
       host: '70.32.23.16',
-      user: process.env.DB_USER || 'bluesmok',
-      password: process.env.DB_PASSWORD || 'knum8klih.ZEWN7taub',
-      database: process.env.DB_NAME || 'bluesmok_blog',
-      port: process.env.DB_PORT || 3306
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_NAME,
+      port: process.env.DB_PORT
     },
     pool: {
       min: 2,

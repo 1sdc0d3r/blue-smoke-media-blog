@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams, withRouter } from "react-router-dom";
 import axios from "axios";
 import Pagination from "./Pagination";
-import articleList from "../data/articles.js";
 
 export default withRouter(function Articles({ match }) {
   const [articles, setArticles] = useState([]);
@@ -12,51 +11,40 @@ export default withRouter(function Articles({ match }) {
     offset: 0,
     page: 1,
   });
-
+  const { offset, limit } = pagination;
+  // todo sort by date (split and [1], [0])
   useEffect(() => {
     setQuery(Object.entries(match.params)[0]);
   }, [match.params]);
+  // todo merge these useEffects?
   useEffect(() => {
+    console.log(process.env);
     setPagination({
       limit: 5,
       offset: 0,
       page: 1,
     });
-    if (query) {
-      setArticles(
-        articleList
-          .filter((e) => {
-            console.log(e[query]);
-            return e[query[0]].toLowerCase().includes(query[1].toLowerCase());
-          })
-          .sort((a, b) => b.date - a.date)
-      );
-    } else {
-      setArticles(articleList.sort((a, b) => b.date - a.date));
-    }
-  }, [query, match.params]);
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:5000/api/blog")
-  //     .then(({ data }) => {
-  //       if (query) {
-  //         setArticles(
-  //           data
-  //             .filter((e) => {
-  //               console.log("here2", e[query[0]]);
-  //               return e[query[0]]
-  //                 .toLowerCase()
-  //                 .includes(query[1].toLowerCase());
-  //             })
-  //             .sort((a, b) => b.date - a.date)
-  //         );
-  //       } else {
-  //         setArticles(data.sort((a, b) => b.date - a.date));
-  //       }
-  //     })
-  //     .catch((err) => console.log(err));
-  // }, [query]);
-  const { offset, limit } = pagination;
+    axios
+      .get("http://localhost:5000/api/blog")
+      .then(({ data }) => {
+        if (query) {
+          setArticles(
+            data
+              .filter((e) =>
+                e[query[0]].toLowerCase().includes(query[1].toLowerCase())
+              )
+              .sort((a, b) => {
+                console.log("date", a.date, b.date);
+                return b.date - a.date;
+              })
+          );
+        } else {
+          setArticles(data.sort((a, b) => b.date - a.date));
+        }
+      })
+      .catch((err) => console.log(err));
+  }, [query]);
+
   return (
     <div className="articles">
       <h1>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import articleList from "../data/articles";
+// import articleList from "../data/articles";
 import axios from "axios";
 
 export default function Search() {
@@ -12,47 +12,30 @@ export default function Search() {
   const resultsList = document.querySelector(".search ul");
 
   useEffect(() => {
-    if (query) {
-      setFiltered(
-        articleList.filter((e) => {
-          for (var key in e) {
-            if (excludedKeys.indexOf(key) == -1) {
-              if (e[key].toString().toLowerCase().includes(query)) {
-                return e;
+    axios
+      .get("http://localhost:5000/api/blog")
+      .then(({ data }) => {
+        if (query) {
+          resultsList.style.border = "2px solid black";
+          setFiltered(
+            data.filter((e) => {
+              for (var key in e) {
+                if (excludedKeys.indexOf(key) == -1) {
+                  if (e[key].toString().toLowerCase().includes(query)) {
+                    return e;
+                  }
+                }
               }
-            }
-          }
-        })
-      );
-    } else {
-      setFiltered([]);
-    }
+            })
+          );
+        } else {
+          resultsList.style.border = "none";
+          setFiltered([]);
+        }
+      })
+      .catch((err) => console.log(err));
   }, [query]);
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:5000/api/blog")
-  //     .then(({ data }) => {
-  //       if (query) {
-  //         resultsList.style.border = "2px solid black";
-  //         setFiltered(
-  //           data.filter((e) => {
-  //             for (var key in e) {
-  //               if (excludedKeys.indexOf(key) == -1) {
-  //                 if (e[key].toString().toLowerCase().includes(query)) {
-  //                   return e;
-  //                 }
-  //               }
-  //             }
-  //           })
-  //         );
-  //       } else {
-  //         resultsList.style.border = "none";
-  //         setFiltered([]);
-  //       }
-  //     })
-  //     .catch((err) => console.log(err));
-  //   // console.log(filtered);
-  // }, [query]);
+
   if (resultsList) {
     filtered.length > 0
       ? (resultsList.style.border = "2px solid black")

@@ -4,7 +4,6 @@ import ReactHtmlParser from "react-html-parser";
 import axios from "axios";
 
 import { FiMail } from "react-icons/fi";
-import articleList from "../data/articles";
 
 //* Images
 import twitter from "../assets/Twitter.png";
@@ -13,27 +12,18 @@ import linkedIn from "../assets/linkedIn_social_media_button.png";
 
 export default function Article({ history }) {
   const { id } = useParams();
-  const [post, setPost] = useState(articleList.find((e) => e.id == id));
+  const [post, setPost] = useState();
   const encodedURL = encodeURI(
     `https://www.bluesmokemedia.com${history.location.pathname}`
   );
-  // useEffect(() => {
-  //   axios
-  //     .get(`http://localhost:5000/api/blog/${id}`)
-  //     .then((res) => setPost(res.data[0]))
-  //     .catch((err) => console.log(err));
-  // }, [id]);
   useEffect(() => {
-    setPost(articleList.find((e) => e.id == id));
+    axios
+      .get(`http://localhost:5000/api/blog/${id}`)
+      .then((res) => setPost(res.data[0]))
+      .catch((err) => console.log(err));
   }, [id]);
-  console.log(id, post, articleList);
   return (
     <>
-      {/* <h1>
-        Blue Smoke Media
-        <br />
-        <span className="orange">Nomads</span>
-      </h1> */}
       {post ? (
         <article>
           <img
@@ -69,6 +59,7 @@ export default function Article({ history }) {
                 <a
                   href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodedURL}`}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img src={linkedIn} alt="LinkedIn icon" className="icon" />
                 </a>

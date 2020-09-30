@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Search from "./Search";
-import articleList from "../data/articles";
+import Axios from "axios";
 
 export default function Navigation() {
-  const categories = Array.from(
-    new Set(articleList.map(({ category }) => category))
-  ).sort();
+  const [categories, setCategories] = useState([]);
+  useEffect(() => {
+    Axios.get("http://localhost:5000/api/blog")
+      .then(({ data }) =>
+        setCategories(
+          Array.from(new Set(data.map(({ category }) => category))).sort()
+        )
+      )
+      .catch((err) => console.log(err));
+  }, []);
+  // const categories = Array.from(
+  //   new Set(articleList.map(({ category }) => category))
+  // ).sort();
 
   const dropArrow = (
     <svg

@@ -3,7 +3,7 @@ exports.up = function (knex) {
         tbl.increments("id").primary();
         tbl.string("title").notNullable();
         tbl.string("author").notNullable();
-        tbl.string("date").notNullable();
+        tbl.string("date")
         tbl.string("imageUrl").notNullable();
         tbl.string("imageAlt").notNullable();
         tbl.string("category").notNullable();

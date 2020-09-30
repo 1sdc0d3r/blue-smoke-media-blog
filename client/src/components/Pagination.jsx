@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 
 export default function Pagination({ state, setState, itemLen }) {
