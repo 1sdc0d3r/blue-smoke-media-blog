@@ -9,6 +9,12 @@ footer {
       display: flex;
       justify-content: space-between;
       text-align: left;
+      @include breakpoint(xxs, xs, s, m) {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
       .about {
         h3 {
           color: $lightBlue;
@@ -20,10 +26,18 @@ footer {
         p {
           width: 80%;
           font-weight: 700;
+          @include breakpoint(xxs, xs, s, m) {
+            margin: auto;
+            margin-top: 0.5em;
+          }
         }
       }
       .newsletter {
         width: 30%;
+        @include breakpoint(xxs, xs, s, m) {
+          width: 50%;
+        }
+
         h4 {
           color: $lightBlue;
           margin-bottom: 0.5em;
@@ -106,6 +120,10 @@ footer {
       }
       .follow {
         padding: 0.5em 0.25em;
+        @include breakpoint(xxs, xs, s, m) {
+          width: 40%;
+          margin: 0.5em auto 1em;
+        }
         p {
           color: $lightBlue;
           font-weight: 700;
@@ -132,8 +150,17 @@ footer {
       justify-content: space-between;
       p {
         margin-right: 3%;
+        @include breakpoint(xxs, xs) {
+          margin-right: 5%;
+        }
       }
       div {
+        @include breakpoint(xxs, xs) {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+
         a {
           text-decoration: none;
           color: goldenrod;

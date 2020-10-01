@@ -133,7 +133,7 @@
   min-width: -webkit-min-content;
   min-width: -moz-min-content;
   min-width: min-content;
-  margin: 0 auto 1em;
+  margin: 0 auto 1.25em;
   overflow: hidden;
 }
 
@@ -154,12 +154,14 @@
 @media (max-width: 360px) {
   .home .new-articles div .new-article {
     width: 80%;
+    margin-bottom: 1em;
   }
 }
 
 @media (min-width: 361px) and (max-width: 480px) {
   .home .new-articles div .new-article {
     width: 80%;
+    margin-bottom: 1em;
   }
 }
 

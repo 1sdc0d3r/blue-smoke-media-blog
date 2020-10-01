@@ -18,6 +18,58 @@ footer .wrapper .top {
   text-align: left;
 }
 
+@media (max-width: 360px) {
+  footer .wrapper .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  footer .wrapper .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  footer .wrapper .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  footer .wrapper .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 footer .wrapper .top .about h3 {
   color: #1e92f6;
   margin-bottom: 0;
@@ -32,8 +84,60 @@ footer .wrapper .top .about p {
   font-weight: 700;
 }
 
+@media (max-width: 360px) {
+  footer .wrapper .top .about p {
+    margin: auto;
+    margin-top: 0.5em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  footer .wrapper .top .about p {
+    margin: auto;
+    margin-top: 0.5em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  footer .wrapper .top .about p {
+    margin: auto;
+    margin-top: 0.5em;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  footer .wrapper .top .about p {
+    margin: auto;
+    margin-top: 0.5em;
+  }
+}
+
 footer .wrapper .top .newsletter {
   width: 30%;
+}
+
+@media (max-width: 360px) {
+  footer .wrapper .top .newsletter {
+    width: 50%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  footer .wrapper .top .newsletter {
+    width: 50%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  footer .wrapper .top .newsletter {
+    width: 50%;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  footer .wrapper .top .newsletter {
+    width: 50%;
+  }
 }
 
 footer .wrapper .top .newsletter h4 {
@@ -129,6 +233,34 @@ footer .wrapper .top .follow {
   padding: 0.5em 0.25em;
 }
 
+@media (max-width: 360px) {
+  footer .wrapper .top .follow {
+    width: 40%;
+    margin: 0.5em auto 1em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  footer .wrapper .top .follow {
+    width: 40%;
+    margin: 0.5em auto 1em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  footer .wrapper .top .follow {
+    width: 40%;
+    margin: 0.5em auto 1em;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  footer .wrapper .top .follow {
+    width: 40%;
+    margin: 0.5em auto 1em;
+  }
+}
+
 footer .wrapper .top .follow p {
   color: #1e92f6;
   font-weight: 700;
@@ -170,6 +302,44 @@ footer .wrapper .bottom {
 
 footer .wrapper .bottom p {
   margin-right: 3%;
+}
+
+@media (max-width: 360px) {
+  footer .wrapper .bottom p {
+    margin-right: 5%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  footer .wrapper .bottom p {
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 360px) {
+  footer .wrapper .bottom div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  footer .wrapper .bottom div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
 }
 
 footer .wrapper .bottom div a {
