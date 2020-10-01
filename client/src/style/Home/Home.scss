@@ -2,6 +2,11 @@
 
 .home {
   text-align: left;
+  h1 {
+    span {
+      text-shadow: 4px 4px 3px black;
+    }
+  }
   .content {
     display: flex;
     .posts {

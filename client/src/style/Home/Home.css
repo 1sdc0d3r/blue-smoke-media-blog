@@ -2,6 +2,10 @@
   text-align: left;
 }
 
+.home h1 span {
+  text-shadow: 4px 4px 3px black;
+}
+
 .home .content {
   display: -webkit-box;
   display: -ms-flexbox;

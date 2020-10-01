@@ -228,9 +228,30 @@ article .share-info .info {
           flex-direction: column;
 }
 
+@media (max-width: 360px) {
+  article .share-info .info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  article .share-info .info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media (min-width: 481px) and (max-width: 736px) {
   article .share-info .info {
-    color: red !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
