@@ -186,7 +186,7 @@ Accessible Rich Internet Applications (WAI-ARIA) is a set of attributes that def
 
 It supplements HTML so that interactions and widgets commonly used in applications can be passed to assistive technologies when there is not otherwise a mechanism. For example, WAI-ARIA enables accessible navigation landmarks in HTML5, JavaScript widgets, form hints and error messages, live content updates, and more. 
 
-Google has now begun to implement certain penalties for either Not using the Wai-Aria codes or using them incorrectly.  Here is a guide from the <a href='https://developers.google.com/web/fundamentals/accessibility/semantics-aria>Google Developers</a> on how to properly use the Aria codes.
+Google has now begun to implement certain penalties for either Not using the Wai-Aria codes or using them incorrectly. Here is a guide from the <a href="https://developers.google.com/web/fundamentals/accessibility/semantics-aria">Google Developers</a> on how to properly use the Aria codes.
 
 Article Tip: Search engines love websites that adhere to the W3C's Web Content Accessibility Guidelines.
 
@@ -489,7 +489,7 @@ business.
 symbol (i.e., travel agencies often use globes in their logos), try to use something else, that way, your logo doesn't
 just look like everyone elses.
 
-<span>Professionalism,</span> in the quality of the graphics, the printing and the paper on which your materials are printed.
+<a>Professionalism,</a> in the quality of the graphics, the printing and the paper on which your materials are printed.
 
 <span>Timelessness in your logo</span> will ensure that you don't have to redesign your logo in just a few years and that your
 investment and equity in your design will be lasting. Differentiation between the colors in your logo  and not just in

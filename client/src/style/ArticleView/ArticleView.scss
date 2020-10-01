@@ -15,12 +15,16 @@ article {
     width: 90%;
     height: 30em;
     margin: 5% auto;
+    @include breakpoint(m, l) {
+      width: 98%;
+      height: 20em;
+    }
+    @include breakpoint(xxs, xs, s) {
+      width: 98%;
+      height: 15em;
+    }
   }
-  .category {
-    text-align: left;
-    color: grey;
-  }
-  h2 {
+  h1 {
     font-size: 1.7em;
     margin: 0;
   }
@@ -39,39 +43,51 @@ article {
       font-weight: 700;
     }
   }
-  .share {
+  .share-info {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 0;
-    z-index: 1;
-    ul {
+    @include breakpoint(xxs, xs, s) {
+      flex-direction: column;
+    }
+
+    .share {
       display: flex;
-      list-style: none;
-      justify-content: space-between;
-      width: 25%;
-      padding: 0;
       align-items: center;
-      font-weight: 600;
-      margin-top: 0.25em;
-      @include breakpoint(xxs, xs, s, m) {
-        width: 40%;
-        .btn {
-          width: 20%;
-        }
+      justify-content: space-between;
+      margin: 0;
+
+      @include breakpoint(xxs, xs, s) {
+        margin: auto;
       }
 
-      li {
-        margin: 0 0.25em;
-        &:first-child {
-          margin-left: 0.5em;
+      ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        width: 25%;
+        padding: 0;
+        align-items: center;
+        font-weight: 600;
+        @include breakpoint(xxs, xs, s, m) {
+          width: 40%;
+          // flex-wrap: wrap;
+          .btn {
+            width: 20%;
+          }
         }
-        a {
-          display: flex;
-          img,
-          svg {
-            width: 2em;
-            height: 2em;
+
+        li {
+          margin: 0 0.25em;
+          &:first-child {
+            margin-left: 0.5em;
+          }
+          a {
+            display: flex;
+            img,
+            svg {
+              width: 2em;
+              height: 2em;
+            }
           }
         }
       }
@@ -82,7 +98,11 @@ article {
       text-align: right;
       display: flex;
       flex-direction: column;
-      z-index: -1;
+      @include breakpoint(s) {
+        color: red !important;
+        justify-content: center;
+        align-items: center;
+      }
 
       h4 {
         margin: 0;
@@ -93,18 +113,22 @@ article {
         text-align: right;
         margin: 0;
       }
-      .tags {
-        margin-top: 0.25em;
-        width: 70%;
-        text-align: right;
-        align-self: flex-end;
-        h4 {
-          text-align: center;
-        }
-        p {
-          text-align: center;
-        }
-      }
+    }
+  }
+  .tags {
+    margin-top: 0.25em;
+    width: 70%;
+    text-align: right;
+    // align-self: flex-end;
+    align-self: center;
+    @include breakpoint(xxs, xs, s) {
+    }
+
+    h4 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
     }
   }
 }

@@ -23,12 +23,42 @@ article .primary-img {
   margin: 5% auto;
 }
 
-article .category {
-  text-align: left;
-  color: grey;
+@media (min-width: 737px) and (max-width: 980px) {
+  article .primary-img {
+    width: 98%;
+    height: 20em;
+  }
 }
 
-article h2 {
+@media (min-width: 981px) and (max-width: 1280px) {
+  article .primary-img {
+    width: 98%;
+    height: 20em;
+  }
+}
+
+@media (max-width: 360px) {
+  article .primary-img {
+    width: 98%;
+    height: 15em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  article .primary-img {
+    width: 98%;
+    height: 15em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  article .primary-img {
+    width: 98%;
+    height: 15em;
+  }
+}
+
+article h1 {
   font-size: 1.7em;
   margin: 0;
 }
@@ -46,7 +76,43 @@ article .content span {
   font-weight: 700;
 }
 
-article .share {
+article .share-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 360px) {
+  article .share-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  article .share-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  article .share-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+article .share-info .share {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,10 +123,27 @@ article .share {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0;
-  z-index: 1;
 }
 
-article .share ul {
+@media (max-width: 360px) {
+  article .share-info .share {
+    margin: auto;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  article .share-info .share {
+    margin: auto;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  article .share-info .share {
+    margin: auto;
+  }
+}
+
+article .share-info .share ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,66 +157,65 @@ article .share ul {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 600;
-  margin-top: 0.25em;
 }
 
 @media (max-width: 360px) {
-  article .share ul {
+  article .share-info .share ul {
     width: 40%;
   }
-  article .share ul .btn {
+  article .share-info .share ul .btn {
     width: 20%;
   }
 }
 
 @media (min-width: 361px) and (max-width: 480px) {
-  article .share ul {
+  article .share-info .share ul {
     width: 40%;
   }
-  article .share ul .btn {
+  article .share-info .share ul .btn {
     width: 20%;
   }
 }
 
 @media (min-width: 481px) and (max-width: 736px) {
-  article .share ul {
+  article .share-info .share ul {
     width: 40%;
   }
-  article .share ul .btn {
+  article .share-info .share ul .btn {
     width: 20%;
   }
 }
 
 @media (min-width: 737px) and (max-width: 980px) {
-  article .share ul {
+  article .share-info .share ul {
     width: 40%;
   }
-  article .share ul .btn {
+  article .share-info .share ul .btn {
     width: 20%;
   }
 }
 
-article .share ul li {
+article .share-info .share ul li {
   margin: 0 0.25em;
 }
 
-article .share ul li:first-child {
+article .share-info .share ul li:first-child {
   margin-left: 0.5em;
 }
 
-article .share ul li a {
+article .share-info .share ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-article .share ul li a img,
-article .share ul li a svg {
+article .share-info .share ul li a img,
+article .share-info .share ul li a svg {
   width: 2em;
   height: 2em;
 }
 
-article .share .info {
+article .share-info .info {
   margin: 0;
   margin-top: 0.5em;
   text-align: right;
@@ -144,32 +226,44 @@ article .share .info {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: -1;
 }
 
-article .share .info h4 {
+@media (min-width: 481px) and (max-width: 736px) {
+  article .share-info .info {
+    color: red !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+article .share-info .info h4 {
   margin: 0;
   margin-top: 0.5em;
 }
 
-article .share .info p {
+article .share-info .info p {
   text-align: right;
   margin: 0;
 }
 
-article .share .info .tags {
+article .tags {
   margin-top: 0.25em;
   width: 70%;
   text-align: right;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-article .share .info .tags h4 {
+article .tags h4 {
   text-align: center;
 }
 
-article .share .info .tags p {
+article .tags p {
   text-align: center;
 }
 
