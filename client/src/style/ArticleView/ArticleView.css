@@ -57,6 +57,7 @@ article .share {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0;
+  z-index: 1;
 }
 
 article .share ul {
@@ -143,6 +144,7 @@ article .share .info {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: -1;
 }
 
 article .share .info h4 {

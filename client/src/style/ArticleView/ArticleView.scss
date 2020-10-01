@@ -44,6 +44,7 @@ article {
     align-items: center;
     justify-content: space-between;
     margin: 0;
+    z-index: 1;
     ul {
       display: flex;
       list-style: none;
@@ -81,6 +82,8 @@ article {
       text-align: right;
       display: flex;
       flex-direction: column;
+      z-index: -1;
+
       h4 {
         margin: 0;
         margin-top: 0.5em;
