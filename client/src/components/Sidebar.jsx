@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 export default function Sidebar() {
   useEffect(() => {
     if (window.FB) window.FB.XFBML.parse();
-    if ("main" in window.SignUpFormWidget) window.SignUpFormWidget.main();
+    if (window.SignUpFormWidget)
+      if ("main" in window.SignUpFormWidget) window.SignUpFormWidget.main();
     setTimeout(() => {
       const form = document.querySelector(".ctct-form-element");
       if (form) form.placeholder = "Your Email";

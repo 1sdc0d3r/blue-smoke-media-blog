@@ -8,7 +8,7 @@ exports.seed = function (knex) {
           title: "10 Prominent Website Design Mistakes",
           author: "Constance Beebe",
           date: "05/2020",
-          imageUrl: "10 Prominent Website Design Mistakes",
+          imageUrl: "ID_1_10_Prominent_Website_Design_Mistakes.jpg",
           imageAlt: "10 Prominent Website Design Mistakes Commonly Made.",
           category: "Custom Website Design",
           tags: "Affordable Custom Website Design, Search Engine Optimization (SEO), Organic SEO, E-Commerce Website Development, Website Usability",
@@ -36,13 +36,12 @@ Nowadays, website designs are getting better and more user-friendly. With minima
 
 <span>10. Accepting as true the maxim build it and they will come.</span> Once you've built your website you have to let people know about it. If you don't deliver them to people, then your website is not worth the money you spent to create them!`
         },
-        /* ID-2   "how-website-design-can-affect-search-engine-rankings.jpg"   */
         {
           id: 2,
           title: "How Website Design Can Affect Search Engine Rankings",
           author: "John Metzler",
           date: "",
-          imageUrl: "how-website-design-can-affect-search-engine-rankings.jpg",
+          imageUrl: "ID_2_how-website-design-can-affect-search-engine-rankings.jpg",
           imageAlt: "How Website Design Can Affect Search Engine Rankings",
           category: "Search Engine Optimization",
           tags: "Search Engine Optimization (SEO), Organic SEO, Website Content Writing",
@@ -76,15 +75,12 @@ Not only does information printed two or three years ago reflect badly on your o
 
 Many shortfalls of websites can easily be attributed to designers who just do not keep the user or search engines in mind. Search engine algorithms are constantly improving to try and list the most user-friendly sites higher, given that the content and link popularity are there to back it up. So first and foremost, know your target market and make your website work for them before focusing on search engine optimization. If you build it (properly), they will come.`
         },
-
-        /* ID-3 --->Image is in the original images file  --->  "ad-copy-writing-image.png"*/
-
         {
           id: 3,
           title: "Ad Copy Inspection - Cover These 12 Points!",
           author: "Daniel Levis",
           date: "",
-          imageUrl: "ad-copy-writing-image.png",
+          imageUrl: "ID_3_ad-copy-writing-image.png",
           imageAlt: "Getting a piece of 'Advertising Copy'to come through for you and getting stellar results by following these 12 points!",
           category: "Ad-Copywriting",
           tags: "Ad-copywriting, Search Engine Optimization (SEO), Organic SEO, Strategic Social Media Marketing, Website Content Writing, Reputation Management",
@@ -136,7 +132,7 @@ For some reason, the P.S. at the bottom of a sales letter gets read a lot. Make 
           title: "The Difference Between a Print Logo and a Web Logo",
           author: "Constance Beebe",
           date: "06/2020",
-          imageUrl: "image-file-types.jpg",
+          imageUrl: "ID_4_image-file-types.jpg",
           imageAlt: "The Difference Between a Print Logo and a Web Logo",
           category: "Logos",
           tags: "Digital and Print Logo Design, Digital Media Logos, Graphic Design, Printed Media Graphic Design, Corporate Branding",
@@ -154,7 +150,7 @@ Web logos require a much smaller resolution (since they only need to be displaye
           title: "SEO Through Well Built Pages",
           author: "Mark Daoust",
           date: "",
-          imageUrl: "Organic-SEO-at-no-extra-cost.jpg",
+          imageUrl: "ID_5_Organic-SEO-a-no-extra-cost.jpg",
           imageAlt: "We build Organic SEO into your website at no extra cost!",
           category: "Organic SEO",
           tags: "Organic SEO, Search Engine Optimization (SEO), Digital Graphic Design, Website Content Writing, Coding and Programming, Website Useability",
@@ -209,7 +205,7 @@ Designing your site properly does take time and effort, but the rewards are nume
           title: "The Local Search Revolution has Arrived!...optimize your online LOCAL presence now - before the learning curve turns expensive.",
           author: "Esoos Bobnar",
           date: "",
-          imageUrl: "Advantages_of_Social_Media.jpg",
+          imageUrl: "ID_6_Advantages of Social Media.jpg",
           imageAlt: "The Advantages of Local Search and how it can effect your business",
           category: "Local Search",
           tags: "Local Search, Consumer Loyalty, Organic SEO, Website Content Writing, Ad-Copywriting, Website Usability",
@@ -227,32 +223,32 @@ Now, if that little demo hasn't yet convinced you, chew on this recent finding..
 
 Here is a breakdown for you:
 
-    ◆	80% of local searches convert
-    ◆	46% of Google searches are for local businesses
-    ◆	56% of local retailers have not claimed their Google My Business listing
-    ◆	“Near me” searches have increased more than 500% in the past few years
-    ◆	More than 55% of consumers use voice search to find a local business
-    ◆	Over 75% of voice-enabled speaker owners use voice search each week to discover a local company
-    ◆	50% of users visit a store within a day of a local search
-    ◆	76% of people who search on smartphones visit a business within a day
-    ◆	28% of local searches result in a purchase
-    ◆	97% of search engine users search online to find a local business
-    ◆	1 in 3 people conduct a search on their smartphone before visiting a store
-    ◆	97% of consumers check a company’s online presence before deciding to visit them
-    ◆	14. 86% of people rely on the Internet to find a local business
-    ◆	29% of people search for local businesses at least once a week
-    ◆	30% of Google mobile searches are related to location
-    ◆	78% of local mobile searches result in an in-store purchase
+◆	80% of local searches convert
+◆	46% of Google searches are for local businesses
+◆	56% of local retailers have not claimed their Google My Business listing
+◆	'Near me' searches have increased more than 500% in the past few years
+◆	More than 55% of consumers use voice search to find a local business
+◆	Over 75% of voice-enabled speaker owners use voice search each week to discover a local company
+◆	50% of users visit a store within a day of a local search
+◆	76% of people who search on smartphones visit a business within a day
+◆	28% of local searches result in a purchase
+◆	97% of search engine users search online to find a local business
+◆	1 in 3 people conduct a search on their smartphone before visiting a store
+◆	97% of consumers check a company’s online presence before deciding to visit them
+◆	14. 86% of people rely on the Internet to find a local business
+◆	29% of people search for local businesses at least once a week
+◆	30% of Google mobile searches are related to location
+◆	78% of local mobile searches result in an in-store purchase
 
 <span>Simply put, local search, including local search on mobile devices, </span>is  dominating the world of brick-n-mortar marketing (especially with the Covid-19 epidemic). Ready or not, here it comes! ...we suggest you get ready now, before it starts costing you a fortune to negotiate the learning curve. Oh, and get used to the fact that the big yellow phone book has almost become nothing more than a cheesy doorstop.
 
-<span>How To Get Listed In Local Search</span>
+<span>How To Get Listed in Local Search</span>
 
 The first step to getting your business listed in Local Search is (surprise) to buy a listing in the offline Yellow Pages (yep, that cheesy doorstop-to-be we just dis'd).
 Here's why:
 Most search engines get the bulk of their local business listings from just two companies:
-    1.	InfoUSA
-    2.	Acxiom
+1.	InfoUSA
+2.	Acxiom
 ...or else from Internet Yellow Pages sites which also derive their listings from these two companies. Both have compiled enormous databases containing detailed information on most of the businesses and consumer households in the US and Canada. And much of their data is pulled from your basic Yellow Page and Business White Page directories (aka, the cheesy doorstops) .
 
 The good news may be that your business already has a listing in your <span>local Yellow Pages,</span> if not, then you should get one! Don't worry about taking out a big colorful ad with lots of information about your company. We haven't any reason to believe that expensive ads offer any advantage in local search rankings. Nor does lots of business information in your Yellow Pages ad seem to enhance your local search listing's comprehensiveness. It appears to us that any Yellow Pages listing at all will get you included in most local search engines just fine.
@@ -275,7 +271,7 @@ Google My Business pages aren’t complicated, but they are important. While yo
           title: "Attract Targeted Local Customers With Online Marketing",
           author: "Judy Cullins",
           date: "",
-          imageUrl: "Digital-Marketing-vs-Traditional-Marketing.jpg",
+          imageUrl: "ID_7_Digital-Marketing-vs-Traditional-Marketing.jpg",
           imageAlt: "Social Media: Your 24/7 virtual marketing machine?",
           category: "Local Search",
           tags: "Local Search, Brand Loyalty, Affordable Custom Website Design, Strategic Social Media Marketing, Organic SEO, Website Content Writing, Website Usability, Reputation Management",
@@ -313,7 +309,7 @@ Does your business have a website? Have you missed the idea that it can be your 
           title: "What Makes A Winning Online Ad?",
           author: "Daniel Levis",
           date: "",
-          imageUrl: "",
+          imageUrl: "ID_8_Local-Search-Social-Media-through-well-built-pages.jpg",
           imageAlt: "Selling to meet the publics needs - an online ad strategy.",
           category: "Social Media Marketing",
           tags: "Social Media Marketing, Website Content Writing, Digital Graphic Design, Typography",
@@ -329,7 +325,7 @@ Most people who have been involved with sales & marketing for any length of time
           title: "Website Manifestation - 5 Steps to a Successful website",
           author: "Constance Beebe",
           date: "07/2020",
-          imageUrl: "5-components-of-website-useability.jpg",
+          imageUrl: "ID_9_5-components-of-website-useability.jpg",
           imageAlt: "5 Components of Website Useability",
           category: "Website Useability",
           tags: "Website Useability, Custom Website Design, Website Content Writing, Search Engine Optimization (SEO), Digital Graphic Design, Website Maintenance, Website Usability",
@@ -383,7 +379,7 @@ If you hire an outside company to build a site for you, ask them how they plan t
           title: "New client? Get it in writing!",
           author: "Cathy Goodwin, Ph.D.",
           date: "",
-          imageUrl: "get-it-in-writing.jpg",
+          imageUrl: "ID_10_get-it-in-writing.jpg",
           imageAlt: "New Client? Get an agreement. In writing!",
           category: "Contract Agreement",
           tags: "Strategic Social Media Marketing, Website Content Writing, Reputation Management, Custom Website Design, Search Engine Optimization (SEO), Digital Graphic Design, E-Commerce Website Development",
@@ -427,7 +423,7 @@ Nobody's complained. In fact, I think everyone appreciates knowing what's expect
           title: "9 Keys to an Effective Logo",
           author: "Erin Ferree",
           date: "",
-          imageUrl: "9-powerful-tips-for-an-effective-logo.jpg",
+          imageUrl: "ID_11_9-powerful-tips-for-an-effective-logo.jpg",
           imageAlt: "9 Powerful Tips to an Effective Logo",
           category: "Logos",
           tags: "Digital Media Logo, Printed Media Logo, Brand Loyalty, Consumer Loyalty, Reputation Management",
@@ -474,7 +470,7 @@ Having a professionally designed logo can really give your business a jump-start
           title: "Three Things You Must Do When Designing and Building Your Small Business Website",
           author: "Constance Beebe",
           date: "8/2020",
-          imageUrl: "small-business-website-design.jpg",
+          imageUrl: "ID_12_small-business-website-design.jpg",
           imageAlt: "Building your small business website",
           category: "Custom Website Design",
           tags: "Affordable Custom Website Design, Search Engine Optimization (SEO), Website Usability, Website Content Writing",
@@ -523,7 +519,7 @@ Hopefully, these guidelines will help you build a website that gets you more sal
           title: "What is 'organic' search and how can it help your company?",
           author: "Constance Beebe",
           date: "6/2020",
-          imageUrl: "What-is-organic-search-and-how-can-it-help-your-company.jpg",
+          imageUrl: "ID_13_What-is-organic-search-and-how-can-it-help-your-company.jpg",
           imageAlt: "Organic Search: The Concept of Pure, or Crawler-Based Search.",
           category: "Organic SEO",
           tags: "Organic SEO, Website Content Writing, Custom Website Design, Search Engine Optimization (SEO), Digital Graphic Design, E-Commerce Website Development",
@@ -569,7 +565,7 @@ The catch? As with any area of marketing, SEO is a competitive field. Arming you
           title: "10 TIPS FOR WRITING A HIGHLY PERSUASIVE AD",
           author: "Keith Gloster",
           date: "",
-          imageUrl: "10 tips-for-writing-a-highly-persuasive-ad.jpg",
+          imageUrl: "ID_14_10 tips-for-writing-a-highly-persuasive-ad.jpg",
           imageAlt: "Instilling curiosity to your clients through Highly Persuasive Ads.",
           category: "Strategic Social Media Marketing",
           tags: "Strategic Social Media Marketing, Ad-Copywriting, Website Content Writing, E-mail Marketing",
@@ -627,7 +623,7 @@ Yes, you might think that your product or service is the best thing offered on t
           title: "How to Write Effective Website Copy",
           author: "Herman Drost",
           date: "",
-          imageUrl: "How-to-Write-Effective-Website-Copy.jpg",
+          imageUrl: "ID_15_How-to-Write-Effective-Website-Copy.jpg",
           imageAlt: "What are the goals of your website? Without knowing this, you cannot write effective Website Copy!",
           category: "Effective Website Copy",
           tags: "Effective Website Copy, Affordable Custom Website Design, Website Content Writing, Website Usability",
@@ -635,13 +631,13 @@ Yes, you might think that your product or service is the best thing offered on t
           content: `
 Writing effective web copy begins with an understanding of what the goals of your website are. Are you trying to get your visitors to purchase something or have them sign up for your newsletter? Remember, you are trying to get someone you can't see and have never met, take a step towards building a relationship with you or your company.
 
-<span>1. Create a customer profile –</span> try to find out what are the needs and desires of your visitors. Below are some examples of questions you could ask:
+<span>1. Create a customer profile –                 </span> try to find out what are the needs and desires of your visitors. Below are some examples of questions you could ask:
 
 Are they young, middle aged or senior?Are they primarily male or female?Are they financially secure or budget-minded?What gets him or her excited?What are his or her most pressing concerns?
 
 Try to brainstorm a list of topics that might interest your target audience.
 
-<span>2. Create a Unique Selling Position (USP) –</span> This is a statement of 2-3 sentences that explains why you are different from everybody else. This is the unique factor that sets you apart from your competition. Make this the first thing your visitor sees when they arrive on your home page.
+<span>2. Create a Unique Selling Position (USP) – </span> This is a statement of 2-3 sentences that explains why you are different from everybody else. This is the unique factor that sets you apart from your competition. Make this the first thing your visitor sees when they arrive on your home page.
 
 <span>3. Focus on benefits –</span> most web users want to find the information about the product or service they need as fast as possible. If they land on your site, they want to know how they will benefit from buying your product or subscribing to your e-zine. You will need to answer that question as clearly and concisely as possible or you will lose that visitor.
 
@@ -677,7 +673,7 @@ Writing effective web copy is the key to converting visitors into buyers. Gettin
           title: "Build It And They Will Come. True or False? Why So Many Online Businesses Fail.",
           author: "Jill St Claire",
           date: "",
-          imageUrl: "How-to-Write-Effective-Website-Copy.jpg",
+          imageUrl: "ID_16_How-SEO-works.jpg",
           imageAlt: "Why So Many Online Businesses Fail",
           category: "Custom Website Design",
           tags: "Affordable Custom Website Design, Website Traffic, Strategic Social Media Marketing, Search Engine Optimization (SEO), E-Commerce Website Development, Coding and Programming, Website Usability",
@@ -721,8 +717,8 @@ By applying these simple rules, you will be well on your way to generating highl
           title: "Social Media: Why It Is 100% Essential (and How to Use It Well)",
           author: "Constance Beebe",
           date: "9/2020",
-          imageUrl: "Social Media: Why It Is 100% Essential (and How to Use It Well), getting your brand out there amongst the people who fit in your niche.",
-          imageAlt: "test",
+          imageUrl: "ID_17_marketing-through-social-media.jpg",
+          imageAlt: "Social Media is used to market your products, promote your brand, connect to current and possible new clients, and help foster new business.",
           category: "Strategic Social Media Marketing",
           tags: "Brand Loyalty, Consumer Loyalty, Affordable Custom Website Design, Strategic Social Media Marketing, Content Writing, Ad-Copywriting",
           snippet: "In today’s society, word of mouth IS digital. Think about the questions you constantly ask about products, services or businesses; your customers are asking the SAME questions. Addressing these common points of confusion could be your key to converting casual website visitors into new clients.",
@@ -739,12 +735,12 @@ However, not all businesses are aware of the benefits of social media marketing.
 
 You may ask, <span>“How will my business benefit from an active social media presence?”</span>  Here are just three of the ways your business could benefit:
 
-    ◆   Social Media can be a valuable tool as profiles can provide general information and updates about your
-        business.
-    ◆   Businesses can interact and engage with current and future clients in a community-like setting.
-    ◆   Your business’ social profiles can also help improve your organic SEO for your website.
+◆   Social Media can be a valuable tool as profiles can provide general information and updates about your
+    business.
+◆   Businesses can interact and engage with current and future clients in a community-like setting.
+◆   Your business’ social profiles can also help improve your organic SEO for your website.
 
-    <a href="https://clutch.co/agencies/resources/social-media-2015-small-business-survey">Mike Rosa</a> of 180Fusion, stated that <span>“If small businesses want to compete, if they want to level the playing field with their competitors, if they don’t want to lose ground, they have to be participating in social media.”</span>
+<a href="https://clutch.co/agencies/resources/social-media-2015-small-business-survey">Mike Rosa</a> of 180Fusion, stated that <span>“If small businesses want to compete, if they want to level the playing field with their competitors, if they don’t want to lose ground, they have to be participating in social media.”</span>
 
 The world of digital tech is a constantly moving landscape with social media marketing seeming to move even faster. And because it’s so fast-moving it can be tough to figure out how each piece of the puzzle fits with your small business. Social Media Engagement remains an essential ingredient of business and marketing success. To win over audiences in a world increasingly dominated by instantaneous social media and the 24-hour news cycle, the power of connecting with people can be the difference between success and failure.
 
@@ -773,15 +769,15 @@ It is important to get back to basics and ask yourself "What is it that customer
 <span>Making a list:</span>
 In our example of the Coffee Digital Cafe company, the owners may come up with the following list (after researching customer needs) of nine features customers desire in a web design company.
 
-    <span>1.</span> Excellent support
-    <span>2.</span> Package features (eg. disk quotas, email boxes, monthly bandwidth)
-    <span>3.</span> Special language support (eg. JavaScript, PHP, Python, React.js, Ruby on Rails, etc.)
-    <span>4.</span> Reasonable pricing
-    <span>5.</span> Easy account management
-    <span>6.</span> Reliability
-    <span>7.</span> Do they write content
-    <span>8.</span> Do they have an in-house graphic design team
-    <span>9.</span> They offer Social Media Management
+<span>1.</span> Excellent support
+<span>2.</span> Package features (eg. disk quotas, email boxes, monthly bandwidth)
+<span>3.</span> Special language support (eg. JavaScript, PHP, Python, React.js, Ruby on Rails, etc.)
+<span>4.</span> Reasonable pricing
+<span>5.</span> Easy account management
+<span>6.</span> Reliability
+<span>7.</span> Do they write content
+<span>8.</span> Do they have an in-house graphic design team
+<span>9.</span> They offer Social Media Management
 
 After reviewing this list, the Coffee Digital Cafe owners could choose areas they believe their big company competitors are lacking. These areas would then become areas of focus for both product development and marketing.
 
@@ -793,10 +789,10 @@ Suggestion: If it is feasible for your business, setting up an account on one (o
 
 You may be asking just where you are expected to get a lot of information about your customer's needs. Below is a shortlist of suggestions to get you started.
 
-    <span>*</span> Survey customers.
-    <span>*</span> Participate in discussion groups relating to the subject. You will often find forums around the Internet with real customers discussing what they like and dislike about certain products and services. Participating in these discussions may also get your business!
-    <span>*</span>Visit websites and read newsletters that deal with the subject.
-    <span>*</span>Put yourself in your customer's shoes and look at it from their perspective.
+<span>*</span> Survey customers.
+<span>*</span> Participate in discussion groups relating to the subject. You will often find forums around the Internet with real customers discussing what they like and dislike about certain products and services. Participating in these discussions may also get your business!
+<span>*</span>Visit websites and read newsletters that deal with the subject.
+<span>*</span>Put yourself in your customer's shoes and look at it from their perspective.
 
 <span>Personalize your Service</span>
 
@@ -808,23 +804,23 @@ I don't know about you, but I find it much more appealing when I can actually ta
 
 Our Coffee Digital Cafe team may decide to incorporate some of the following things to help <span>personalize their service and gain trust</span> from their customers.
 
-    <span>**On sign up,</span> Coffee Digital Cafe should ensure customers have the contact information for appropriate personnel to voice their queries or comments. This information should be presented in a way that welcomes customer interaction.
+<span>**On sign up,</span> Coffee Digital Cafe should ensure customers have the contact information for appropriate personnel to voice their queries or comments. This information should be presented in a way that welcomes customer interaction.
 
-    <span>**Building trust with your customers</span> is an incredibly important, and often underestimated, aspect which must be considered. To put it simply, no one is going to buy anything from you on the Internet if they do not trust you.
-        Personalizing a service is an excellent way of gaining this customer trust.
+<span>**Building trust with your customers</span> is an incredibly important, and often underestimated, aspect which must be considered. To put it simply, no one is going to buy anything from you on the Internet if they do not trust you.
+    Personalizing a service is an excellent way of gaining this customer trust.
 
-        Our Coffee Digital Cafe team may decide to incorporate some of the following things to help personalize their
-        service and gain trust from customers.
+    Our Coffee Digital Cafe team may decide to incorporate some of the following things to help personalize their
+    service and gain trust from customers.
 
-    <span>**</span>On sign up, Coffee Digital Cafe should ensure customers have the contact information for appropriate personnel to voice their queries or comments. This information should be presented in a way that welcomes customer interaction.
+<span>**</span>On sign up, Coffee Digital Cafe should ensure customers have the contact information for appropriate personnel to voice their queries or comments. This information should be presented in a way that welcomes customer interaction.
 
-    <span>**</span>Every so often, Coffee Digital Cafe <span>owners should contact customers personally</span> to make sure everything is going well and answer any queries they may have. Many customers will not go out of their way to give feedback unless asked specifically.
+<span>**</span>Every so often, Coffee Digital Cafe <span>owners should contact customers personally</span> to make sure everything is going well and answer any queries they may have. Many customers will not go out of their way to give feedback unless asked specifically.
 
-    <span>**Keep customers informed</span> of updates, changes and upcoming services.
+<span>**Keep customers informed</span> of updates, changes and upcoming services.
 
-    <span>**Give valid explanations</span> for any down-time which may occur.
+<span>**Give valid explanations</span> for any down-time which may occur.
 
-    <span>**Provide an area for customers to give feedback</span> and talk with each other.
+<span>**Provide an area for customers to give feedback</span> and talk with each other.
 
 <span>Charge Reasonable Prices</span>
 
@@ -842,7 +838,7 @@ In conclusion, <span>the best thing you can do as a small business</span> or web
           title: "Best Practices: How to Market Yourself Like a Corporation",
           author: "Ramona Lucius",
           date: "07/2020",
-          imageUrl: "ID-19_How_to_Market_Yourself_Like a_Corporation.jpg",
+          imageUrl: "ID_19_How_to_Market_Yourself_Like a_Corporation.jpg",
           imageAlt: "How to Market Yourself Like a Corporation",
           category: "Corporate Branding",
           tags: "Strategic Social Media Marketing,Affordable Custom Website Design, Typography, Brand Loyalty, Consumer Loyalty, Digital and Print Logo Design, Website Content Writing, Reputation Management",
@@ -857,24 +853,23 @@ Let's talk about how they did it. <a href="https://www.npr.org/2014/07/28/335288
 Over time as the concept matured and became more sophisticated. We now have company rivalries, million dollar commercials, and fierce consumer loyalty.  When we think of big corporations we are invoking emotional connections. They impress meaning beyond their function. Trash bags are just trash bags - so why do company brands inspire feelings of family, financial status, care, comfort, luxury. When you boil it down, each brand builds rapport and communicates it's worth through carefully placed words and pictures. You can too.
 
 <span>Let's go one step further.</span>
-If someone asks you right now - What company do you really want to work for? Everyone has an answer. Now ask yourself - how did _______ company make it onto your well thought out success strategy road map? Did you see a post they made about a social value you hold?  Have you heard great things about the company culture?  Whatever you think you know about this "person" is all built using tools to make a first and lasting impression.
-
+If someone asks you right now - What company do you really want to work for? Eve
 <span>Appropriate the machine!</span>
 Whoever you chose as the company of your dreams - has attracted strong talent (yes, I mean you).  Let's turn the lens to them - How did they do it?
 
-        <span>1)</span> If you engage in social media - consider making your personal pages private and allow
-        your strategized branded pages to be searched publicly. Being yourself is cool and all- but
-        does your dream job need to know about your obsession with 90's sci-fi?  Probably not.
-        There is potential to use your web print to leave an impression that makes you a more
-        attractive candidate.  Consider it.  Friends you want to invite over for a Cleopatra 2525
-        marathon will still be able to get the invite if you tighten the security on your page.
+    <span>1)</span> If you engage in social media - consider making your personal pages private and allow
+    your strategized branded pages to be searched publicly. Being yourself is cool and all- but
+    does your dream job need to know about your obsession with 90's sci-fi?  Probably not.
+    There is potential to use your web print to leave an impression that makes you a more
+    attractive candidate.  Consider it.  Friends you want to invite over for a Cleopatra 2525
+    marathon will still be able to get the invite if you tighten the security on your page.
 
-        <span>2)</span> Watch the companies you like - what does their web print say about them? Look at
-        their posts, charities they support, what is the impression they offer? Most companies have
-        a strategy for their voice - are they supportive, casual, pedantic, etc. Figure out their voice
-        and utilize it in your posts. Does this company try to educate the consumer - be a thought
-        leader. Offer posts that will attract their attention as someone who is aligned with their
-        objectives and interests.
+    <span>2)</span> Watch the companies you like - what does their web print say about them? Look at
+    their posts, charities they support, what is the impression they offer? Most companies have
+    a strategy for their voice - are they supportive, casual, pedantic, etc. Figure out their voice
+    and utilize it in your posts. Does this company try to educate the consumer - be a thought
+    leader. Offer posts that will attract their attention as someone who is aligned with their
+    objectives and interests.
 
 <span>There are so many opportunities to create your own brand.</span> You can really go down a rabbit
 hole here. Typography, color palette, even the source of information you use when you post are
