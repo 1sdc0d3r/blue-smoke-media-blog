@@ -44,7 +44,9 @@ export default withRouter(function Articles({ match }) {
     <div className="articles">
       <h1>
         {query
-          ? `${articles.length} articles found for ${query[1]}`
+          ? `${articles.length} ${
+              articles.length > 1 ? "articles" : "article"
+            } found for ${query[1]}`
           : "Articles"}
       </h1>
       <ul>

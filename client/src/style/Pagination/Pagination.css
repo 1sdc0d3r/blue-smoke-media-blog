@@ -12,4 +12,28 @@
 .nav-btns svg {
   cursor: pointer;
 }
+
+@media (max-width: 360px) {
+  .nav-btns {
+    width: 20%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .nav-btns {
+    width: 20%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .nav-btns {
+    width: 20%;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  .nav-btns {
+    width: 20%;
+  }
+}
 /*# sourceMappingURL=Pagination.css.map */

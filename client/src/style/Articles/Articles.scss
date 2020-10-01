@@ -1,9 +1,15 @@
+@import "../Utils/Mixins/Mixins.scss";
 .articles {
   h1 {
     margin: 0.5em auto 0.75em;
+    @include breakpoint(s) {
+      color: red !important;
+    }
   }
   ul {
     list-style: none;
+    padding: 0;
+
     a {
       text-decoration: none;
       color: black;
@@ -13,24 +19,50 @@
       display: flex;
       padding: 0.5em;
       margin-bottom: 2em;
-      // justify-content: space-between;
+      @include breakpoint(xxs, xs, s, m) {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
       img {
         width: 25%;
         min-width: 8em;
+        @include breakpoint(xxs, xs, s, m, l) {
+          height: 7em;
+          margin: auto;
+        }
+        @include breakpoint(xxs, xs, s, m) {
+          width: 40%;
+          margin-bottom: 0.5em;
+        }
+        @include breakpoint(xxs, xs, s) {
+          width: 80%;
+        }
       }
       .content {
         padding-left: 0.5em;
         display: flex;
         flex-direction: column;
         width: 78%;
+        @include breakpoint(xxs, xs, s, m) {
+          width: 100%;
+          padding: 0;
+        }
+
         h2 {
           margin: 0;
         }
         .snippet {
           text-align: left;
+          @include breakpoint(xxs, xs, s, m) {
+            padding: 0 0.25em;
+          }
         }
         .info {
           align-self: flex-end;
+          @include breakpoint(xxs, xs, s, m) {
+            padding: 0.25em;
+          }
         }
       }
     }
