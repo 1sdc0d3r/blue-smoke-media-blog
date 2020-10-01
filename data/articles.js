@@ -331,24 +331,24 @@ Look at this ad for the Wall Street Journal. It’s said to be one of the most s
 Look carefully, & see how skillfully it evokes one or more of these powerful emotions. Try to get a sense of how you feel when you read it.
 
 <span>THE WALL STREET JOURNAL 'TWO YOUNG MEN' LETTER</span>
+On a beautiful late spring afternoon, twenty-five years ago, two young men graduated from the same college. They were very much alike, these two young men. Both had been better than average students, both were personable, and as young college graduates are - were filled with ambitious dreams for the future.
 
-    On a beautiful late spring afternoon, twenty-five years ago, two young men graduated from the same college. They were very much alike, these two young men. Both had been better than average students, both were personable, and as young college graduates are - were filled with ambitious dreams for the future.
+Recently, these men returned to their college for their 25th reunion. They were still very much alike. Both were happily married. Both had three children. And both, it turned out, had gone to work for the same Midwestern manufacturing company after graduation, and were still there.
 
-    Recently, these men returned to their college for their 25th reunion. They were still very much alike. Both were happily married. Both had three children. And both, it turned out, had gone to work for the same Midwestern manufacturing company after graduation, and were still there.
+But there was a difference. One of the men was manager of a small department of that company. The other was its president.
 
-    But there was a difference. One of the men was manager of a small department of that company. The other was its president.
+Have you ever wondered, as I have, what makes this kind of difference in people's lives? It isn't always a native intelligence or talent or dedication. It isn't that one person wants success and the other doesn't. The difference lies in what each person knows and how he or she makes use of that knowledge.
 
-    Have you ever wondered, as I have, what makes this kind of difference in people's lives? It isn't always a native intelligence or talent or dedication. It isn't that one person wants success and the other doesn't. The difference lies in what each person knows and how he or she makes use of that knowledge.
+And that is why I am writing to you and to people like you about The Wall Street Journal. For that is the whole purpose of The Journal: To give its readers knowledge - knowledge that they can use in business.
 
-    And that is why I am writing to you and to people like you about The Wall Street Journal. For that is the whole purpose of The Journal: To give its readers knowledge - knowledge that they can use in business.
+The letter closes:
 
-    The letter closes:
+About those two college classmates I mention at the beginning of this letter: They were graduated from college together and together got started in the business world. So what made their lives in business different?
 
-    About those two college classmates I mention at the beginning of this letter: They were graduated from college together and together got started in the business world. So what made their lives in business different?
+Knowledge. Useful knowledge. And its application.
 
-    Knowledge. Useful knowledge. And its application.
+I cannot promise you that success will be instantly yours if you start reading The Wall Street Journal. But I can guarantee that you will find The Journal always interesting, always reliable, and always useful.
 
-    I cannot promise you that success will be instantly yours if you start reading The Wall Street Journal. But I can guarantee that you will find The Journal always interesting, always reliable, and always useful.
 
 This is a newspaper! It doesn’t get much more mundane than that, but the same principle applies, do you see the power in it?
 
