@@ -26,14 +26,6 @@ export default function Home() {
   return (
     <>
       <div className="home">
-        {/* <FacebookProvider appId="123456789">
-          <Like
-            href="https://www.facebook.com/bluesmokemedia/"
-            colorScheme="dark"
-            showFaces
-            share
-          />
-        </FacebookProvider> */}
         <h1>
           Blue Smoke Media
           <br />

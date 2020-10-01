@@ -21,6 +21,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd client && yarn start",
+    "deploy": "cd client && yarn build && roast deploy",
     "server": "nodemon index.js",
     "start": "node index.js",
     "dev": "concurrently \"yarn start\" \"cd client && yarn start\""

@@ -1,15 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 //* Images
 import twitter from "../assets/Twitter.png";
 import linkedIn from "../assets/linkedIn_social_media_button.png";
 import facebook from "../assets/faceBook.png";
 
 export default function Footer() {
-  useEffect(() => {
-    setTimeout(() => {
-      document.querySelector(".ctct-form-element").placeholder = "Your Email";
-    }, 3500);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //   }, 3500);
+  // }, []);
 
   return (
     <footer>

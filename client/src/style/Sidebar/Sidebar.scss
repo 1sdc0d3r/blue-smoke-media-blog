@@ -2,7 +2,9 @@
 .sidebar {
   // border: 1px solid black;
   text-align: center;
-  min-width: 8em;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
   @include breakpoint(xxs, xs, s, m) {
     display: none;
   }
@@ -61,12 +63,32 @@
         padding: 0 0 0.5em;
         width: 100%;
       }
+      #email_address_0 {
+        ::-webkit-input-placeholder {
+          color: red;
+        }
+        ::-moz-placeholder {
+          color: red;
+        }
+        :-ms-input-placeholder {
+          color: red;
+        }
+        ::-ms-input-placeholder {
+          color: red;
+        }
+        ::placeholder {
+          color: red;
+          opacity: 1; /* Firefox */
+        }
+      }
     }
   }
   .facebook {
-    padding: 0 1em 0.5em;
-    margin: 0;
-
+    padding: 0 1em 1em;
+    // margin: 0;
+    h3 {
+      margin-bottom: 0.5em;
+    }
     a {
       text-decoration: none;
       color: inherit;

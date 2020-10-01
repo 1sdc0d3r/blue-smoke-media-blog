@@ -1,6 +1,8 @@
 .sidebar {
   text-align: center;
-  min-width: 8em;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
 }
 
 @media (max-width: 360px) {
@@ -106,9 +108,30 @@
   width: 100%;
 }
 
+.sidebar .newsletter .ctct-form #email_address_0 ::-webkit-input-placeholder {
+  color: red;
+}
+
+.sidebar .newsletter .ctct-form #email_address_0 :-ms-input-placeholder {
+  color: red;
+}
+
+.sidebar .newsletter .ctct-form #email_address_0 ::-ms-input-placeholder {
+  color: red;
+}
+
+.sidebar .newsletter .ctct-form #email_address_0 ::placeholder {
+  color: red;
+  opacity: 1;
+  /* Firefox */
+}
+
 .sidebar .facebook {
-  padding: 0 1em 0.5em;
-  margin: 0;
+  padding: 0 1em 1em;
+}
+
+.sidebar .facebook h3 {
+  margin-bottom: 0.5em;
 }
 
 .sidebar .facebook a {

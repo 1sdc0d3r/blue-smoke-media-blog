@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, withRouter } from "react-router-dom";
 import Search from "./Search";
 import Axios from "axios";
 
-export default function Navigation() {
+export default withRouter(function Navigation({ history }) {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
     Axios.get("http://localhost:5000/api/blog")
@@ -69,4 +69,4 @@ export default function Navigation() {
       <Search />
     </nav>
   );
-}
+});

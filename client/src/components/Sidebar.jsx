@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-// todo check facebook on navigation to home
+
 export default function Sidebar() {
+  useEffect(() => {
+    if (window.FB) window.FB.XFBML.parse();
+    if ("main" in window.SignUpFormWidget) window.SignUpFormWidget.main();
+    setTimeout(() => {
+      const form = document.querySelector(".ctct-form-element");
+      if (form) form.placeholder = "Your Email";
+    }, 500);
+  }, []);
+
   return (
     <>
       <div className="sidebar">
@@ -40,7 +49,7 @@ export default function Sidebar() {
               Like Us On Facebook
             </a>
           </h3>
-          {/* <div
+          <div
             className="fb-page"
             data-href="https://www.facebook.com/bluesmokemedia/"
             data-tabs=""
@@ -60,10 +69,10 @@ export default function Sidebar() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Blue Smoke Digital and Printed Media
+                Blue Smoke Digital Media
               </a>
             </blockquote>
-          </div> */}
+          </div>
         </div>
       </div>
     </>
