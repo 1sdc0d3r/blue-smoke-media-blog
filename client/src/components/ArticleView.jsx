@@ -16,13 +16,16 @@ const linkedIn =
 export default function Article({ history }) {
   const { id } = useParams();
   const [post, setPost] = useState();
+  const [loadingMessage, setLoadingMessage] = useState("Loading...");
   const encodedURL = encodeURI(
     `https://www.bluesmokemedia.com${history.location.pathname}`
   );
   useEffect(() => {
     axios
       .get(`https://blue-smoke-blog.herokuapp.com/api/blog/${id}`)
-      .then((res) => setPost(res.data[0]))
+      .then(({ data }) =>
+        data[0] ? setPost(data[0]) : setLoadingMessage(data.message)
+      )
       .catch((err) => console.log(err));
   }, [id]);
   return (
@@ -96,7 +99,7 @@ export default function Article({ history }) {
           {/* //todo category tags here */}
         </article>
       ) : (
-        <p id="loading">No Article Found</p>
+        <p id="loading">{loadingMessage}</p>
       )}
     </>
   );
