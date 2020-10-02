@@ -5,7 +5,10 @@ import Axios from "axios";
 
 export default withRouter(function Navigation({ history }) {
   const [categories, setCategories] = useState([]);
+
   useEffect(() => {
+    const searchInput = document.querySelector("input[name='search']");
+    const searchResults = document.querySelector(".search ul");
     Axios.get("https://blue-smoke-blog.herokuapp.com/api/blog")
       .then(({ data }) =>
         setCategories(
@@ -13,11 +16,12 @@ export default withRouter(function Navigation({ history }) {
         )
       )
       .catch((err) => console.log(err));
+
+    history.listen(() => {
+      searchInput.value = "";
+      searchResults.style.display = "none";
+    });
   }, []);
-  history.listen(() => {
-    document.querySelector("input[name='search']").value = "";
-    document.querySelector(".search ul").style.display = "none";
-  });
 
   const dropArrow = (
     <svg className="drop-arrow">

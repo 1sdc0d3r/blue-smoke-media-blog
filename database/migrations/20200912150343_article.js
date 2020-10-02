@@ -7,9 +7,9 @@ exports.up = function (knex) {
         tbl.string("imageUrl").notNullable();
         tbl.string("imageAlt").notNullable();
         tbl.string("category").notNullable();
-        tbl.string("tags").notNullable();
-        tbl.string("snippet").notNullable();
-        tbl.string("content").notNullable();
+        tbl.string("tags", 65535).notNullable();
+        tbl.string("snippet", 65535).notNullable();
+        tbl.string("content", 65535).notNullable();
     })
 };
 

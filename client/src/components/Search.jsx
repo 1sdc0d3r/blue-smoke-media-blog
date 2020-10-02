@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// import articleList from "../data/articles";
 import axios from "axios";
 
-export default function Search() {
+export default function Search({ history }) {
   // const [queryType, setQueryType] = useState("");
   const [query, setQuery] = useState();
   // const [posts, setPosts] = useState([]);
@@ -36,11 +35,11 @@ export default function Search() {
       .catch((err) => console.log(err));
   }, [query]);
 
-  if (resultsList) {
-    filtered.length > 0
-      ? (resultsList.style.border = "2px solid black")
-      : (resultsList.style.border = "none");
-  }
+  // if (resultsList) {
+  //   filtered.length > 0
+  //     ? (resultsList.style.border = "2px solid black")
+  //     : (resultsList.style.border = "none");
+  // }
 
   return (
     <div className="search">
