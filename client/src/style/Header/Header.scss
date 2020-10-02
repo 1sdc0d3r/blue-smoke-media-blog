@@ -22,6 +22,7 @@ header {
   #flame {
     width: 7%;
     padding-top: 1%;
+    height: 100%;
     @include breakpoint(m) {
       width: 12%;
     }
