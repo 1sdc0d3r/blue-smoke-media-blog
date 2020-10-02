@@ -25,7 +25,7 @@ export default withRouter(function Articles({ match }) {
       page: 1,
     });
     axios
-      .get("http://localhost:5000/api/blog")
+      .get("https://blue-smoke-blog.herokuapp.com/api/blog")
       .then(({ data }) => {
         if (query)
           setArticles(

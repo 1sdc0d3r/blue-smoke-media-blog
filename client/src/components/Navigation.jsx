@@ -6,7 +6,7 @@ import Axios from "axios";
 export default withRouter(function Navigation({ history }) {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
-    Axios.get("http://localhost:5000/api/blog")
+    Axios.get("https://blue-smoke-blog.herokuapp.com/api/blog")
       .then(({ data }) =>
         setCategories(
           Array.from(new Set(data.map(({ category }) => category))).sort()

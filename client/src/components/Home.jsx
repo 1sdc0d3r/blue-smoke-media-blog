@@ -10,7 +10,7 @@ export default function Home() {
   const [newArticles, setNewArticles] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/blog")
+      .get("https://blue-smoke-blog.herokuapp.com/api/blog")
       .then(({ data }) => {
         // console.log(data.length);
         let random = Math.floor(Math.random() * (data.length - 1));

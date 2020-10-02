@@ -13,7 +13,7 @@ export default function Search() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/blog")
+      .get("https://blue-smoke-blog.herokuapp.com/api/blog")
       .then(({ data }) => {
         if (query) {
           resultsList.style.border = "2px solid black";

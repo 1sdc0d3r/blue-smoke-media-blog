@@ -18,7 +18,7 @@ export default function Article({ history }) {
   );
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/blog/${id}`)
+      .get(`https://blue-smoke-blog.herokuapp.com/api/blog/${id}`)
       .then((res) => setPost(res.data[0]))
       .catch((err) => console.log(err));
   }, [id]);
