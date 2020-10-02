@@ -1,8 +1,11 @@
 import React from "react";
 //* Images
-import twitter from "../assets/Twitter.png";
-import linkedIn from "../assets/linkedIn_social_media_button.png";
-import facebook from "../assets/faceBook.png";
+const twitter =
+  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/social+media/twitter.png";
+const facebook =
+  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/social+media/facebook.png";
+const linkedIn =
+  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/social+media/linkedIn.png";
 
 export default function Footer() {
   // useEffect(() => {

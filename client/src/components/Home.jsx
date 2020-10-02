@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import bigGuys from "../assets/competing-with-the-big-guys.jpg";
-import socialMedia from "../assets/Social-media-changes-every-small-business-should-know- about.jpeg";
-import invertedCommas from "../assets/inverted-commas.png";
-import Sidebar from "./Sidebar";
 import axios from "axios";
+// * Components
+import Sidebar from "./Sidebar";
+// * Images
+const invertedCommas =
+  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/inverted-commas.png";
+const bigGuys =
+  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/competing-with-the-big-guys.jpg";
+const socialMedia =
+  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/Social-media-changes-every-small-business-should-know-about.jpeg";
 
 export default function Home() {
   const [newArticles, setNewArticles] = useState([]);
