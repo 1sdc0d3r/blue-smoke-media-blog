@@ -51,6 +51,12 @@
   transition: ease-in-out 150ms;
 }
 
+.main-nav .nav-item .drop-arrow {
+  width: 20px;
+  height: 20px;
+  fill: #7ff76f;
+}
+
 .main-nav .dropdown {
   float: left;
   position: relative;

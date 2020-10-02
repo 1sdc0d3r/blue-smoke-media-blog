@@ -2,8 +2,8 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import Search from "./Search";
 
-export default withRouter(function HamburgerMenu(props) {
-  props.history.listen(() => {
+export default withRouter(function HamburgerMenu({ history }) {
+  history.listen(() => {
     document.querySelector("input[type='checkbox']").checked = false;
   });
   return (

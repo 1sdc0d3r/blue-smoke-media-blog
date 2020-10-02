@@ -14,20 +14,14 @@ export default withRouter(function Navigation({ history }) {
       )
       .catch((err) => console.log(err));
   }, []);
-  // const categories = Array.from(
-  //   new Set(articleList.map(({ category }) => category))
-  // ).sort();
+  history.listen(() => {
+    document.querySelector("input[name='search']").value = "";
+    document.querySelector(".search ul").style.display = "none";
+  });
 
   const dropArrow = (
-    <svg
-      style={{
-        width: "20",
-        height: "20",
-        viewBox: "0 0 20 20",
-        color: "#7ff76f",
-      }}
-    >
-      <polygon points="5,5 13,15 20,5" fill="#7ff76f" />
+    <svg className="drop-arrow">
+      <polygon points="5,5 13,15 20,5" />
     </svg>
   );
   return (

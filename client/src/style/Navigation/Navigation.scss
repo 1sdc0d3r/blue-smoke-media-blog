@@ -31,6 +31,11 @@
       transform: scale(1.1);
       transition: ease-in-out 150ms;
     }
+    .drop-arrow {
+      width: 20px;
+      height: 20px;
+      fill: $green;
+    }
   }
 
   /* The dropdown container */
