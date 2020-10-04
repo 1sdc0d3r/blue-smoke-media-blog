@@ -28,7 +28,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="newsletter">
-            <h4>The Inside Scoope</h4>
+            <h4>The Inside Scoop</h4>
             {/* <!-- Constant Contact Form --> */}
             <div
               className="ctct-inline-form ctct-form"
