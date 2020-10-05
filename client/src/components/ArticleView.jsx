@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import ReactHtmlParser from "react-html-parser";
 import axios from "axios";
+import serverURL from "../utils";
 
 import { FiMail } from "react-icons/fi";
 
@@ -22,7 +23,7 @@ export default function Article({ history }) {
   );
   useEffect(() => {
     axios
-      .get(`https://blue-smoke-blog.herokuapp.com/api/blog/${id}`)
+      .get(`${serverURL[0]}${id}`)
       .then(({ data }) =>
         data[0] ? setPost(data[0]) : setLoadingMessage(data.message)
       )

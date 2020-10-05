@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams, withRouter } from "react-router-dom";
 import axios from "axios";
 import Pagination from "./Pagination";
+import serverURL from "../utils";
 
 export default withRouter(function Articles({ match }) {
   const [articles, setArticles] = useState([]);
@@ -12,6 +13,7 @@ export default withRouter(function Articles({ match }) {
     page: 1,
   });
   const { offset, limit } = pagination;
+  console.log(serverURL[0]);
 
   useEffect(() => {
     setQuery(Object.entries(match.params)[0]);
@@ -25,7 +27,7 @@ export default withRouter(function Articles({ match }) {
       page: 1,
     });
     axios
-      .get("https://blue-smoke-blog.herokuapp.com/api/blog")
+      .get(serverURL[0])
       .then(({ data }) => {
         if (query)
           setArticles(

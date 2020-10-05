@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import serverURL from "../utils";
 // * Components
 import Sidebar from "./Sidebar";
 // * Images
@@ -15,7 +16,7 @@ export default function Home() {
   const [newArticles, setNewArticles] = useState([]);
   useEffect(() => {
     axios
-      .get("https://blue-smoke-blog.herokuapp.com/api/blog")
+      .get(serverURL[0])
       .then(({ data }) => {
         // console.log(data.length);
         let random = Math.floor(Math.random() * (data.length - 1));

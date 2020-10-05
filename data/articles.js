@@ -12,8 +12,7 @@ export default [{
         category: "Custom Website Design",
         tags: "Affordable Custom Website Design, Search Engine Optimization (SEO), Organic SEO, E-Commerce Website Development, Website Usability",
         snippet: "Nowadays, sites are getting better. With minimal design and highly maintained archives they continue to offer comprehensive services. However, prominent mistakes on several websites are still apparent. Here is a list of the website mistakes that scares visitors away and ruins the business reputation.",
-        content: `
-Nowadays, website designs are getting better and more user-friendly. With minimal design and highly maintained archives, they continue to offer comprehensive services. However, prominent mistakes on several websites are still apparent. Here is a list of the website mistakes that scares visitors away and ruins the business's reputation.
+        content: `Nowadays, website designs are getting better and more user-friendly. With minimal design and highly maintained archives, they continue to offer comprehensive services. However, prominent mistakes on several websites are still apparent. Here is a list of the website mistakes that scares visitors away and ruins the business's reputation.
 
 <span>1. The under-construction sign.</span> Putting an 'under construction' sign on your website marks you as a struggling beginner. Websites are supposed to grow in time. If your site is not yet ready to be shown in public, then don’t publish it.
 

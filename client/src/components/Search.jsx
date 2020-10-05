@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import serverURL from '../utils'
 
 export default function Search({ history }) {
   // const [queryType, setQueryType] = useState("");
@@ -12,7 +13,7 @@ export default function Search({ history }) {
 
   useEffect(() => {
     axios
-      .get("https://blue-smoke-blog.herokuapp.com/api/blog")
+      .get(serverURL[0])
       .then(({ data }) => {
         if (query) {
           resultsList.style.border = "2px solid black";

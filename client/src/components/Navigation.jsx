@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink, Link, withRouter } from "react-router-dom";
 import Search from "./Search";
 import Axios from "axios";
+import serverURL from '../utils'
 
 export default withRouter(function Navigation({ history }) {
   const [categories, setCategories] = useState([]);
@@ -9,7 +10,7 @@ export default withRouter(function Navigation({ history }) {
   useEffect(() => {
     const searchInput = document.querySelector("input[name='search']");
     const searchResults = document.querySelector(".search ul");
-    Axios.get("https://blue-smoke-blog.herokuapp.com/api/blog")
+    Axios.get(serverURL[0])
       .then(({ data }) =>
         setCategories(
           Array.from(new Set(data.map(({ category }) => category))).sort()
