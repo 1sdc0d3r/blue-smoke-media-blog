@@ -21,13 +21,13 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <!-- script for TWITTER SHARE -->
+    <!--! script for TWITTER SHARE -->
     <script
       async
       src="https://platform.twitter.com/widgets.js"
       charset="utf-8"
     ></script>
-    <!-- Begin Constant Contact Active Forms -->
+    <!--! Begin Constant Contact Active Forms -->
     <script>
       var _ctct_m = "31566278eaf0993f3e46281952044f82";
     </script>
@@ -37,7 +37,22 @@
       async
       defer
     ></script>
-    <!-- End Constant Contact Active Forms -->
+    <!--! End Constant Contact Active Forms -->
+
+    <!--! Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-177470204-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-177470204-2");
+    </script>
     <title>Blue Smoke Nomads Blog</title>
   </head>
   <body>
