@@ -44,7 +44,7 @@ Nowadays, website designs are getting better and more user-friendly. With minima
         imageAlt: "How Website Design Can Affect Search Engine Rankings",
         category: "Search Engine Optimization",
         tags: "Search Engine Optimization (SEO), Organic SEO, Website Content Writing",
-        snippet: "Uniquely built websites can create unique issues when being promoted on the search engines. From a basic 3 page brochure site to a corporate site with hundreds of dynamically generated pages, every website needs to have certain design aspects in order to achieve the full effects of an SEO campaign. Below are a few points to take into consideration when building or updating your website.",
+        snippet: "Uniquely built websites can create unique issues when being promoted on the search engines. From a basic 3 page brochure site to a corporate site with hundreds of dynamically generated pages, every website needs to have certain design aspects in order to achieve the full effects of an SEO campaign.",
         content: `
 Uniquely built websites can create unique issues when being promoted on the search engines. From a basic 3 page brochure website to a corporate branding website with hundreds of dynamically generated pages, every website needs to have certain digital graphic design aspects in order to achieve the full effects of an SEO campaign. Below are a few points to take into consideration when building or updating your website.
 
@@ -85,7 +85,9 @@ Many shortfalls of websites can easily be attributed to designers who just do no
         tags: "Ad-Copywriting, Search Engine Optimization (SEO), Organic SEO, Strategic Social Media Marketing, Website Content Writing, Reputation Management",
         snippet: "You are ready to launch that new product or promotion, & you are really counting on a piece of advertising copy to come through for you. You're are looking for stellar results! And, you are determined to do everything in your power to get them. Which means surveys, thorough testing, and ongoing refinement of your ad copy.",
         content: `
-You are ready to launch that new product or promotion and you are really counting on a piece of advertising copy to come through for you. You are expecting stellar results! And, you are determined to do everything in your power to get them. Which means surveys, thorough testing, and ongoing refinement of your ad copy. Hold the phone! When you receive your draft, run it through this 12-point inspection. Check off these basics and you can be sure you'll be off to a running start.
+You are ready to launch that new product or promotion and you are really counting on a piece of advertising copy to come through for you. You are expecting stellar results and you are determined to do everything in your power to get them! Which means surveys, thorough testing, and ongoing refinement of your ad copy. 
+
+<span>Hold the phone!</span> When you receive your draft, run it through this 12-point inspection. Check off these basics and you can be sure you'll be off to a running start.
 
 <span>1. Do You Have A Compelling Headline?</span>
 Does it generate curiosity or envy? Does it promise a benefit that will compel someone with an interest in what you are selling to keep reading. Remember, your headline is the ad for <span>THE</span> ad. When I am being paid to write direct response ad copy, or a sales letter, or have a very important sales objective of my own, I normally write 25 headlines before I begin the body of the piece. Then I will pick half a dozen that I think will work & test them. The best of the rest, I use as sub headings throughout the piece to propel readership, and draw skimmers & skippers back into the copy as they move down the page.
@@ -97,7 +99,7 @@ I most often find that headlines work best when they are centered on the page, &
 Does it trip the reader, interrupting the internal turbulence of the day? Each line of your ad copy must serve to 'sell' the reader on continued reading, especially at the beginning. You are looking to build enough momentum and interest to convey the points necessary to generate a greater desire for the product than its price. Generally speaking, the higher the cost of the product, the more words required.
 
 <span>4. Are You FAB Balanced?</span>
-You must focus on painting a picture of your prospects future life, as a result of their purchase. Does your copy promise emotional benefits? Does it pledge the realization of positive feelings or the relief of negative ones? Does it show how these outcomes are achieved with concise descriptions of the features & advantages that will deliver them? Your ad copy must strike a balance between emotion and logic if it is to be effective.
+You must focus on painting a picture of your prospects future life, as a result of their purchase. Does your copy promise emotional benefits? Does it pledge the realization of positive feelings or the relief of negative ones? Does it show how these outcomes are achieved with concise descriptions of the <span>features</span> and <span>advantages</span> that will deliver them? Your ad copy must strike a <span>balance</span> between emotion and logic if it is to be effective.
 
 <span>5. Are You Creating Excitement and Enthusiasm?</span>
 Demonstrate your personal belief in what you are selling. Will your message quicken the readers pulse? Is it upbeat, positive, & full of inspired energy? Is there a sense of WOW?
@@ -106,7 +108,7 @@ Demonstrate your personal belief in what you are selling. Will your message quic
 Bare in mind that simple is best. Keep sentences short. Use a plain 0-point to 12-point font. Paragraphs no more than a few lines. Words that are comfortable and specific to the audience you are targeting. Inject subheads to break up text. Highlight important points.
 
 <span>7. Do You Have High YOU density?</span>
-Remember to you use the words YOU and YOUR to the hilt. Your reader is auto translating to ME & MINE.
+Remember to use the words YOU and YOUR to the hilt. Your reader is auto translating to ME & MINE.
 
 <span>8. Are You Speaking Intimately?</span>
 Can you get a strong sense of personality when you review your letter after being away from it for a while? Visualize yourself or the character you are personifying, writing a personal letter to your perfect prospect. Never write to a crowd.
@@ -137,7 +139,7 @@ For some reason, the P.S. at the bottom of a sales letter gets read a lot. Make 
         tags: "Digital and Print Logo Design, Digital Media Logos, Graphic Design, Printed Media Graphic Design, Corporate Branding",
         snippet: "The difference between Print Logos and Digital Logos",
         content: `
-Print logos require a much higher resolution (i.e., pixels per inch - begins at 300px), to create your project. Printed media also needs to be saved in certain standard print file formats. Some of the most common and universal print formats for print jobs are TIFF, EPS, and Adobe Acrobat PDF. By creating a logo in these file formats, the logo can be opened up and printed, even without having the original software application the logo was created in. Because print logos can become very large in file size unless you have a fast Internet connection. The files are best sent on a form of removable media, such as a Thumb Drive, a Portable Hard Drive, or a CD-ROM.
+Print logos require a much higher resolution (i.e., pixels per inch - begins at 300px), to create your project. Printed media also needs to be saved in certain standard print file formats. Some of the most common and universal print formats for print jobs are TIFF, EPS, GIF, PNG, RAW and Adobe Acrobat PDF. By creating a logo in these file formats, the logo can be opened up and printed, even without having the original software application the logo was created in. Because print logos can become very large in file size unless you have a fast Internet connection. The files are best sent on a form of removable media, such as a Thumb Drive, a Portable Hard Drive.
 
 Web logos require a much smaller resolution (since they only need to be displayed on-screen - use 72px), and can be sent directly through email or available for immediate download. Because web logos are so small in file size, they are not a good choice for printing, as the quality will appear very blurred or jagged on paper.`
     },
@@ -170,25 +172,27 @@ Unfortunately for the sake of design, many website owners have paid absolutely n
 
 If you would like to see just how versatile and effective HTML and CSS is,look at the examples laid out at CSS Zen Garden. CSS Zen Garden is a website that displays the power of CSS and properly formed HTML. There are several different designs all using the exact same HTML, but through CSS they are able to build sites that looking completely different form each other. If you want to see something very amazing about what CSS Zen Garden is doing, follow these steps: View the HTML of their page. It does not matter what style you are viewing, the HTML is the same for every style. Now copy that code and paste it into your HTML editor and view the output. The page that you will see is an extremely basic looking page. More importantly, though, the page that you will see is a very well organized page which would be easy for any spider to understand.
 
-Learn More About HTML If you are like most website owners, you know very little about HTML. You may know a little bit of code here and there, but it really does not seem worth your time to learn the inner workings of HTML. If you feel this way, then you are really missing out on great SEO opportunities. There are plenty of FREE websites from which you can learn to code from. <a href='https://www.codecademy.com'>CodeAcademy</a> and <a href='https://www.freecodecamp.org'>FreeCodeCamp</a> are two of my favorites.
+Learn More About HTML If you are like most website owners, you know very little about HTML. You may know a little bit of code here and there, but it really does not seem worth your time to learn the inner workings of HTML. If you feel this way, then you are really missing out on great SEO opportunities. There are plenty of FREE websites from which you can learn to code from. <a href="https://www.codecademy.com">CodeAcademy</a> and <a href="https://www.freecodecamp.org">FreeCodeCamp</a> are two of my favorites.
 
 HTML is built to naturally identify parts of your web page that are more important than others. It was built to be extremely organized. Using the organization that HTML provides, you can help a search engine spider identify the parts of your website that are more important.
 
-Below are some uncommon tags that HTML provides that you can use to help organize your content: the Alt Tag – Most website owners know about this, but including an Alt-Tag on your images is actually required if you want to have a properly formed website. The caption tag allows you to identify what a specific table is about. The element should be styled using the CSS properties caption-side and text-align.
+Below are some uncommon tags that HTML provides that you can use to help organize your content: <span>the Alt Tag</span> – Most website owners know about this, but including an Alt-Tag on your images is actually required if you want to have a properly formed website. The caption tag allows you to identify what a specific table is about. The element should be styled using the CSS properties caption-side and text-align.
 
-The H Tags – H1 tags have become some of the most important tags in SEO circles, once website owners learned that Google DID pay attention to this tag. However, there are actually 6 different heading tags. The H1 tag is the most important while the H6 tag is the least important. If a search engine were to try to form a table of contents from a website, it should be able to do so from the H tags. These are just a few examples, but HTML provides several tags for your content to help you organize your material, and help search engines know what to emphasize in your content. Article Tip: We have started a thread of these HTML tags. If you would like to know more about HTML tags and CSS, check out <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'>here</a>.
+<span>The H Tags</span> – H1 tags have become some of the most important tags in SEO circles, once website owners learned that Google DID pay attention to this tag. However, there are actually 6 different heading tags. The H1 tag is the most important while the H6 tag is the least important. If a search engine were to try to form a table of contents from a website, it should be able to do so from the H tags. These are just a few examples, but HTML provides several tags for your content to help you organize your material, and help search engines know what to emphasize in your content. 
 
-The lesson from this should be that learning HTML is not an endeavor that has few benefits. There is a lot of HTML that can help you both simplify your code and add more content to help your rankings. Fortunately, web technology is catching up. With the advent of HTML5 (and working on HTML6) and CSS3, it is easier now than ever to create beautiful sites. If you are not familiar with CSS, just read that previous sentence as being a very good thing. As was demonstrated by the example of CSSZenGarden.com, CSS can be used to create a page that is extremely appealing. Most website owners know CSS to be a tool that they can use to edit the appearance of text and the colors of their site, but CSS is also a tool that can be used for the layout of your site. As CSS comes out with newer versions, layout will become a more important development. If you plan to design your own website, I would like to suggest you learn HTML and CSS. A little Javascript wouldn’t hurt.
+<span>Article Tip:</span> We have started a thread of these HTML tags. If you would like to know more about HTML tags and CSS, you can check it out <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">here</a>.
 
-The Side Benefit: Accessibility! Did you know that blind people surf the Internet? That may not seem shocking initially, but consider that the Internet is a highly visual medium of transferring information. Blind people are able to use web readers and Braille machines that interpret HTML code.Unfortunately, the vast majority of websites are not accessible for blind people because they are not well formed sites. By moving to a well formed website, you will be adding access for an audience who marketers really do not focus on.  But they should!
+The lesson from this should be that learning HTML is not an endeavor that has few benefits. There is a lot of HTML that can help you both simplify your code and add more content to help your rankings. Fortunately, web technology is catching up. With the advent of HTML5 (and working on HTML6) and CSS3, it is easier now than ever to create beautiful sites. If you are not familiar with CSS, just read that previous sentence as being a very good thing. As was demonstrated by the example of <span><a href="http://www.csszengarden.com/">CSSZenGarden.com</a></span>, CSS can be used to create a page that is extremely appealing. Most website owners know CSS to be a tool that they can use to edit the appearance of text and the colors of their site, but CSS is also a tool that can be used for the layout of your site. As CSS comes out with newer versions, layout will become a more important development. If you plan to design your own website, I would like to suggest you learn HTML and CSS. A little Javascript wouldn’t hurt.
+
+<span>The Side Benefit: Accessibility!</span> Did you know that blind people surf the Internet? That may not seem shocking initially, but consider that the Internet is a highly visual medium of transferring information. Blind people are able to use web readers and Braille machines that interpret HTML code.Unfortunately, the vast majority of websites are not accessible for blind people because they are not well formed sites. By moving to a well formed website, you will be adding access for an audience who marketers really do not focus on.  But they should!
 
 Accessible Rich Internet Applications (WAI-ARIA) is a set of attributes that define ways to make web content and web applications (especially those developed with JavaScript), more accessible to people with disabilities.
 
 It supplements HTML so that interactions and widgets commonly used in applications can be passed to assistive technologies when there is not otherwise a mechanism. For example, WAI-ARIA enables accessible navigation landmarks in HTML5, JavaScript widgets, form hints and error messages, live content updates, and more. 
 
-Google has now begun to implement certain penalties for either Not using the Wai-Aria codes or using them incorrectly. Here is a guide from the <a href="https://developers.google.com/web/fundamentals/accessibility/semantics-aria">Google Developers</a> on how to properly use the Aria codes.
+Google has now begun to implement certain penalties for either not using the Wai-Aria codes or using them incorrectly. Here is a guide from the <span><a href="https://developers.google.com/web/fundamentals/accessibility/semantics-aria">Google Developers</a></span> on how to properly use the Aria codes.
 
-Article Tip: Search engines love websites that adhere to the W3C's Web Content Accessibility Guidelines.
+<span>Article Tip:<span> Search engines love websites that adhere to the W3C's Web Content Accessibility Guidelines.
 
 Bringing it back to SEO, many website owners are reluctant to take the time, energy, and money to really learn HTML and CSS, or to learn how they can make their websites truly accessible. However, in the end, they could be hurting their search engine rankings once search engines move closer to identifying natural human language.
 
@@ -212,32 +216,34 @@ Designing your site properly does take time and effort, but the rewards are nume
         content: `
 While searching the web these days, it's hard not to notice all those little Local tabs sprouting up in the vicinity of the search field on virtually every major search engine. Within the past year, the race has been to integrate a plethora of advanced features into local search capabilities.
 
-We're constantly seeing features like customer reviews and ratings, storefront and product photos, detailed maps with directions, hours of operation, forms of accepted payment, integration with cell phones, and much more is promised to follow. Picture a million paper phone books <span>combined.</span> on steroids and capable of providing instant results for an information-hungry and time-challenged customer base. The potential for local search is really quite staggering!
+We're constantly seeing features like customer reviews and ratings, storefront and product photos, detailed maps with directions, hours of operation, forms of accepted payment, integration with cell phones, and much more is promised to follow. Picture a million paper phone books combined, on steroids and capable of providing instant results for an information-hungry and time-challenged customer base. The potential for local search is really quite staggering!
 
 <span>So what exactly is local search</span>, and how can you best position your business to take advantage of it?
 
 Simply put, <span>local search is essentially the Internet's version of the phone book.</span> The difference being that this "phone book" is much faster and far more responsive. For example, suppose I'm in Boston staying at the Harbor View Hotel and in need of a haircut? No problem. I Just enter haircut followed by the zip code of the Hotel where I'm staying - 02114, and instantly, find  Richard's Haircutting for Men a scant 0.4 miles east and with directions. All that took about 30 seconds from concept to completion leaving me with a feeling of satisfaction that no regular phone book could ever provide. I'm now addicted to local search after only a single dose! Throw away the phone book, never mind the concierge.
 
 Now, if that little demo hasn't yet convinced you, chew on this recent finding...<span> 86% of U.S. households now use the Internet as an information source to find a local business when shopping locally for products and services.</span>
+</br>
+</br>
 
-Here is a breakdown for you:
+<span>Here is a breakdown for you:</span>
 
-◆	80% of local searches convert
-◆	46% of Google searches are for local businesses
-◆	56% of local retailers have not claimed their Google My Business listing
-◆	'Near me' searches have increased more than 500% in the past few years
-◆	More than 55% of consumers use voice search to find a local business
-◆	Over 75% of voice-enabled speaker owners use voice search each week to discover a local company
-◆	50% of users visit a store within a day of a local search
-◆	76% of people who search on smartphones visit a business within a day
-◆	28% of local searches result in a purchase
-◆	97% of search engine users search online to find a local business
-◆	1 in 3 people conduct a search on their smartphone before visiting a store
-◆	97% of consumers check a company’s online presence before deciding to visit them
-◆	14. 86% of people rely on the Internet to find a local business
-◆	29% of people search for local businesses at least once a week
-◆	30% of Google mobile searches are related to location
-◆	78% of local mobile searches result in an in-store purchase
+    ◆	80% of local searches convert
+    ◆	46% of Google searches are for local businesses
+    ◆	56% of local retailers have not claimed their Google My Business listing
+    ◆	'Near me' searches have increased more than 500% in the past few years
+    ◆	More than 55% of consumers use voice search to find a local business
+  ◆	  Over 75% of voice-enabled speaker owners use voice search each week to discover a local company
+    ◆	50% of users visit a store within a day of a local search
+    ◆	76% of people who search on smartphones visit a business within a day
+    ◆	28% of local searches result in a purchase
+    ◆	97% of search engine users search online to find a local business
+    ◆	1 in 3 people conduct a search on their smartphone before visiting a store
+   ◆	    97% of consumers check a company’s online presence before deciding to visit them
+    ◆	14. 86% of people rely on the Internet to find a local business
+    ◆	29% of people search for local businesses at least once a week
+    ◆	30% of Google mobile searches are related to location
+    ◆	78% of local mobile searches result in an in-store purchase
 
 <span>Simply put, local search, including local search on mobile devices, </span>is  dominating the world of brick-n-mortar marketing (especially with the Covid-19 epidemic). Ready or not, here it comes! ...we suggest you get ready now, before it starts costing you a fortune to negotiate the learning curve. Oh, and get used to the fact that the big yellow phone book has almost become nothing more than a cheesy doorstop.
 
