@@ -20,11 +20,11 @@ function App() {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/article/:id" component={ArticleView} />
-          <Route path="/test/:id" component={ArticleTesting} />
           <Route path="/articles" component={Articles} />
           <Route path="/category/:category" component={Articles} />
           <Route path="/tags/:tags" component={Articles} />
           <Route path="/author/:author" component={Articles} />
+          <Route path="/test/:id" component={ArticleTesting} />
           <Redirect to="/" />
         </Switch>
       </section>
