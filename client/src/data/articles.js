@@ -257,12 +257,15 @@ Most search engines get the bulk of their local business listings from just two 
 ...or else from Internet Yellow Pages sites which also derive their listings from these two companies. Both have compiled enormous databases containing detailed information on most of the businesses and consumer households in the US and Canada. And much of their data is pulled from your basic Yellow Page and Business White Page directories (aka, the cheesy doorstops) .
 
 The good news may be that your business already has a listing in your <span>local Yellow Pages,</span> if not, then you should get one! Don't worry about taking out a big colorful ad with lots of information about your company. We haven't any reason to believe that expensive ads offer any advantage in local search rankings. Nor does lots of business information in your Yellow Pages ad seem to enhance your local search listing's comprehensiveness. It appears to us that any Yellow Pages listing at all will get you included in most local search engines just fine.
-
+</br>
+</br>
 <Span>What is the most important thing you could do for your businesses is Local Search?</span>
-
+</br>
+</br>
 <span>Sign up for Google My Business!</Span>
-
-Google My Business is essential for Local SEO as it enables your business listing to appear in local search results for queries specific to your products or services. Even broad queries with large search volumes display local results in the three-pack, and this is something small business owners can capitalize on. It is a tool to manage your online presence across the Google suite of websites, including Google Search, Mobile Search, Local Search and Google Maps. It allows you to create, verify and edit a business listing in Google, without needing to do any extra work to your website or implementing a search engine optimization strategy.
+</br>
+</br>
+<span>Google My Business is essential for Local SEO</span> as it enables your business listing to appear in local search results for queries specific to your products or services. Even broad queries with large search volumes display local results in the three-pack, and this is something small business owners can capitalize on. It is a tool to manage your online presence across the Google suite of websites, including Google Search, Mobile Search, Local Search and Google Maps. It allows you to create, verify and edit a business listing in Google, without needing to do any extra work to your website or implementing a search engine optimization strategy.
 
 In a nutshell, make sure that your business has an up-to-date and detailed Google My Business listing. If you have not taken the time to create and optimize one, then you’re missing out on one of the best free (and guaranteed!) ways of appearing in the Google search results.
 
