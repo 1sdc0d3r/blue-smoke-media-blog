@@ -1,5 +1,5 @@
 //! 19 articles
-/*  ID-1-"10_Prominent_Website_Design_Mistakes.jpg"  */
+/*  ID-1-"10_Prominent_Website_Design_Mistakes.jpg" */
 
 
 export default [{
@@ -924,7 +924,7 @@ Over time as the concept matured and became more sophisticated. We now have comp
 
 <span>Let's go one step further.</span>
 If someone asks you right now - What company do you really want to work for? Everyone has an answer.  Now ask yourself - how did _______ company make it onto your well thought out success strategy road map?  Did you see a post they made about a social value you hold?  Have you heard great things about the company culture?  Whatever you think you know about this "person" is all built using tools to make a first and lasting impression. 
- 
+
 <span>Appropriate the machine!</span>
 Whoever you chose as the company of your dreams - has attracted strong talent (yes, I mean you).  Let's turn the lens to them - How did they do it?
 
