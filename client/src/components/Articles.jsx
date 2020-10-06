@@ -13,7 +13,7 @@ export default withRouter(function Articles({ match }) {
     page: 1,
   });
   const { offset, limit } = pagination;
-  console.log(serverURL[0]);
+  console.log(serverURL[1]);
 
   useEffect(() => {
     setQuery(Object.entries(match.params)[0]);
@@ -27,7 +27,7 @@ export default withRouter(function Articles({ match }) {
       page: 1,
     });
     axios
-      .get(serverURL[0])
+      .get(serverURL[1])
       .then(({ data }) => {
         if (query)
           setArticles(

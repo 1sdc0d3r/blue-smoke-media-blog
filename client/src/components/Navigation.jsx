@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink, Link, withRouter } from "react-router-dom";
 import Search from "./Search";
 import Axios from "axios";
-import serverURL from '../utils'
+import serverURL from "../utils";
 
 export default withRouter(function Navigation({ history }) {
   const [categories, setCategories] = useState([]);
@@ -10,7 +10,7 @@ export default withRouter(function Navigation({ history }) {
   useEffect(() => {
     const searchInput = document.querySelector("input[name='search']");
     const searchResults = document.querySelector(".search ul");
-    Axios.get(serverURL[0])
+    Axios.get(serverURL[1])
       .then(({ data }) =>
         setCategories(
           Array.from(new Set(data.map(({ category }) => category))).sort()

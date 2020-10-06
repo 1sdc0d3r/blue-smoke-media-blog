@@ -23,7 +23,7 @@ export default function Article({ history }) {
   );
   useEffect(() => {
     axios
-      .get(`${serverURL[0]}${id}`)
+      .get(`${serverURL[1]}${id}`)
       .then(({ data }) =>
         data[0] ? setPost(data[0]) : setLoadingMessage(data.message)
       )

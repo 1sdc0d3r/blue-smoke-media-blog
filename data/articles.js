@@ -778,7 +778,7 @@ However, not all businesses are aware of the benefits of social media marketing.
 You may ask, <span>“How will my business benefit from an active social media presence?”</span>  Here are just three of the ways your business could benefit:
 
 ◆   Social Media can be a valuable tool as profiles can provide general information and updates about your
-    business.
+business.
 ◆   Businesses can interact and engage with current and future clients in a community-like setting.
 ◆   Your business’ social profiles can also help improve your organic SEO for your website.
 
@@ -849,10 +849,10 @@ Our Coffee Digital Cafe team may decide to incorporate some of the following thi
 <span>**On sign up,</span> Coffee Digital Cafe should ensure customers have the contact information for appropriate personnel to voice their queries or comments. This information should be presented in a way that welcomes customer interaction.
 
 <span>**Building trust with your customers</span> is an incredibly important, and often underestimated, aspect which must be considered. To put it simply, no one is going to buy anything from you on the Internet if they do not trust you.
-    Personalizing a service is an excellent way of gaining this customer trust.
+Personalizing a service is an excellent way of gaining this customer trust.
 
-    Our Coffee Digital Cafe team may decide to incorporate some of the following things to help personalize their
-    service and gain trust from customers.
+Our Coffee Digital Cafe team may decide to incorporate some of the following things to help personalize their
+service and gain trust from customers.
 
 <span>**</span>On sign up, Coffee Digital Cafe should ensure customers have the contact information for appropriate personnel to voice their queries or comments. This information should be presented in a way that welcomes customer interaction.
 
@@ -899,19 +899,19 @@ If someone asks you right now - What company do you really want to work for? Eve
 <span>Appropriate the machine!</span>
 Whoever you chose as the company of your dreams - has attracted strong talent (yes, I mean you).  Let's turn the lens to them - How did they do it?
 
-    <span>1)</span> If you engage in social media - consider making your personal pages private and allow
-    your strategized branded pages to be searched publicly. Being yourself is cool and all- but
-    does your dream job need to know about your obsession with 90's sci-fi?  Probably not.
-    There is potential to use your web print to leave an impression that makes you a more
-    attractive candidate.  Consider it.  Friends you want to invite over for a Cleopatra 2525
-    marathon will still be able to get the invite if you tighten the security on your page.
+<span>1)</span> If you engage in social media - consider making your personal pages private and allow
+your strategized branded pages to be searched publicly. Being yourself is cool and all- but
+does your dream job need to know about your obsession with 90's sci-fi?  Probably not.
+There is potential to use your web print to leave an impression that makes you a more
+attractive candidate.  Consider it.  Friends you want to invite over for a Cleopatra 2525
+marathon will still be able to get the invite if you tighten the security on your page.
 
-    <span>2)</span> Watch the companies you like - what does their web print say about them? Look at
-    their posts, charities they support, what is the impression they offer? Most companies have
-    a strategy for their voice - are they supportive, casual, pedantic, etc. Figure out their voice
-    and utilize it in your posts. Does this company try to educate the consumer - be a thought
-    leader. Offer posts that will attract their attention as someone who is aligned with their
-    objectives and interests.
+<span>2)</span> Watch the companies you like - what does their web print say about them? Look at
+their posts, charities they support, what is the impression they offer? Most companies have
+a strategy for their voice - are they supportive, casual, pedantic, etc. Figure out their voice
+and utilize it in your posts. Does this company try to educate the consumer - be a thought
+leader. Offer posts that will attract their attention as someone who is aligned with their
+objectives and interests.
 
 <span>There are so many opportunities to create your own brand.</span> You can really go down a rabbit
 hole here. Typography, color palette, even the source of information you use when you post are

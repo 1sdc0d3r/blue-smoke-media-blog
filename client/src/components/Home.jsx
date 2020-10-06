@@ -16,7 +16,7 @@ export default function Home() {
   const [newArticles, setNewArticles] = useState([]);
   useEffect(() => {
     axios
-      .get(serverURL[0])
+      .get(serverURL[1])
       .then(({ data }) => {
         // console.log(data.length);
         let random = Math.floor(Math.random() * (data.length - 1));
