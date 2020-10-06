@@ -12,7 +12,8 @@ export default [{
         category: "Custom Website Design",
         tags: "Affordable Custom Website Design, Search Engine Optimization (SEO), Organic SEO, E-Commerce Website Development, Website Usability",
         snippet: "Nowadays, sites are getting better. With minimal design and highly maintained archives they continue to offer comprehensive services. However, prominent mistakes on several websites are still apparent. Here is a list of the website mistakes that scares visitors away and ruins the business reputation.",
-        content: `Nowadays, website designs are getting better and more user-friendly. With minimal design and highly maintained archives, they continue to offer comprehensive services. However, prominent mistakes on several websites are still apparent. Here is a list of the website mistakes that scares visitors away and ruins the business's reputation.
+        content: `
+Nowadays, website designs are getting better and more user-friendly. With minimal design and highly maintained archives, they continue to offer comprehensive services. However, prominent mistakes on several websites are still apparent. Here is a list of the website mistakes that scares visitors away and ruins the business's reputation.
 
 <span>1. The under-construction sign.</span> Putting an 'under construction' sign on your website marks you as a struggling beginner. Websites are supposed to grow in time. If your site is not yet ready to be shown in public, then don’t publish it.
 
@@ -899,23 +900,11 @@ If someone asks you right now - What company do you really want to work for? Eve
 <span>Appropriate the machine!</span>
 Whoever you chose as the company of your dreams - has attracted strong talent (yes, I mean you).  Let's turn the lens to them - How did they do it?
 
-<span>1)</span> If you engage in social media - consider making your personal pages private and allow
-your strategized branded pages to be searched publicly. Being yourself is cool and all- but
-does your dream job need to know about your obsession with 90's sci-fi?  Probably not.
-There is potential to use your web print to leave an impression that makes you a more
-attractive candidate.  Consider it.  Friends you want to invite over for a Cleopatra 2525
-marathon will still be able to get the invite if you tighten the security on your page.
+<span>1)</span> If you engage in social media - consider making your personal pages private and allow your strategized branded pages to be searched publicly. Being yourself is cool and all- but does your dream job need to know about your obsession with 90's sci-fi?  Probably not. There is potential to use your web print to leave an impression that makes you a more attractive candidate.  Consider it.  Friends you want to invite over for a Cleopatra 2525 marathon will still be able to get the invite if you tighten the security on your page.
 
-<span>2)</span> Watch the companies you like - what does their web print say about them? Look at
-their posts, charities they support, what is the impression they offer? Most companies have
-a strategy for their voice - are they supportive, casual, pedantic, etc. Figure out their voice
-and utilize it in your posts. Does this company try to educate the consumer - be a thought
-leader. Offer posts that will attract their attention as someone who is aligned with their
-objectives and interests.
+<span>2)</span> Watch the companies you like - what does their web print say about them? Look at their posts, charities they support, what is the impression they offer? Most companies have a strategy for their voice - are they supportive, casual, pedantic, etc. Figure out their voice and utilize it in your posts. Does this company try to educate the consumer - be a thought leader. Offer posts that will attract their attention as someone who is aligned with their objectives and interests.
 
-<span>There are so many opportunities to create your own brand.</span> You can really go down a rabbit
-hole here. Typography, color palette, even the source of information you use when you post are
-paints to create a more colorful picture. Choose wisely.
+<span>There are so many opportunities to create your own brand.</span> You can really go down a rabbit hole here. Typography, color palette, even the source of information you use when you post are paints to create a more colorful picture. Choose wisely.
 
 <span>Everything you give to the world is a handshake. Make it a memorable one!</span>`
     }
