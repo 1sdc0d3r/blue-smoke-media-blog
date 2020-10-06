@@ -582,7 +582,7 @@ Hopefully, these guidelines will help you build a website that gets you more sal
     snippet: "While optimizing your website to rank well for organic searches takes more effort than simply buying an ad, it can provide your business with one of the highest ROI results that you're likely to find. Numerous studies have placed search engine optimization at the top of the list of the most effective forms of online marketing. Its low cost, high relevancy, and high conversion rates make it an ideal marketing vehicle for almost any business.",
 
     content: `
-The first time I heard the term <span>"organic search"</span> I immediately thought of organic food at the grocery store. So, is this organic search healthier for me? Will it reduce my chances of getting cancer? Not only can the search engines bring most of the world's knowledge to my desktop, but now they can prevent deadly diseases too! Imagine my disappointment when I learned organic search was simply the next new buzzword for the concept of pure, or crawler-based search. As some of our readers may find it challenging to keep up with all of the latest lingo, I thought I'd take a moment to at least explain the concept of organic search.
+The first time I heard the term <span>"organic search"</span> I immediately thought of organic food at the grocery store. So, is this organic search healthier for me? Will it reduce my chances of getting cancer? Not only can the search engines bring most of the world's knowledge to my desktop, but now they can prevent deadly diseases too! Imagine my disappointment when I learned organic search was simply the next new buzzword for the <psan>concept of pure, or crawler-based search.</span> As some of our readers may find it challenging to keep up with all of the latest lingo, I thought I'd take a moment to at least explain the concept of organic search.
 
 Organic describes a search that returns results by indexing pages based on content and keyword relevancy. This is in contrast to listings ranked based on who paid the most money to appear at the top such as those on Bing. Sometimes this is called "pure" or "natural search" as it is supposed to be "untainted" by commercial payments or bids.
 
@@ -612,7 +612,7 @@ CONS:
 
 <span>1. Organic Rankings are Not Automatic:</span> With organic listings, you cannot simply hand over a certain amount of money and be guaranteed to quickly and automatically achieve any ranking you desire. Instead, achieving positions in organic search requires the proper technology, skill, and know-how. There has always been a cloud of mystery around the process of achieving top rankings. How's it done? Where do I start? That's why resources like this newsletter and products like WebPosition Gold are essential to a business's success in search engine marketing.
 
-<span>2. Organic Rankings Require an Investment in Time:</span> The age-old adage of "nothing worthwhile in life ever comes easy" rings true with organic rankings. While they are monetarily free, simply submitting your pages to the search engines is not enough to bring in a flood of new visitors to your website. Far too many businesses have been fooled into spending $100 or $400 to submit their site to "thousands" of sites, 99% of which are obscure names you've probably never heard of. The key is that someone doing a search on a major search engine must be able to easily find your website. If your site is buried at the bottom of the list, or simply fails to appear in the first few pages of search results, you can kiss your chances of being found good-bye. The key is to use responsible best practices to create pages that are highly relevant to the keywords that apply to your website and the products or solutions you have to offer. In other words, optimize your pages for search engine visibility and see how fast your position improves. To do this, you simply need to know what each search engine needs for maximum visibility. Then tweak your Web page's content while paying attention to off-page factors like the number and type of links coming to your page. Tune the pages of your site to the preferences of the major search engines and then watch your rankings and traffic climb.
+<span>2. Organic Rankings Require an Investment in Time:</span> The age-old adage of "nothing worthwhile in life ever comes easy" rings true with organic rankings. While they are monetarily free, simply submitting your pages to the search engines is not enough to bring in a flood of new visitors to your website. Far too many businesses have been fooled into spending $100 or $400 to submit their site to "thousands" of sites, 99% of which are obscure names you've probably never heard of. The key is that someone doing a search on a major search engine must be able to easily find your website. If your site is buried at the bottom of the list, or simply fails to appear in the first few pages of search results, you can kiss your chances of being found good-bye. The point is to use responsible best practices to create pages that are highly relevant to the keywords that apply to your website and the products or solutions you have to offer. In other words, <span>optimize your pages for search engine visibility</span> and see how fast your position improves. To do this, you simply need to know what each search engine needs for maximum visibility. Then tweak your Web page's content while paying attention to off-page factors like the number and type of links coming to your page. Tune the pages of your site to the preferences of the major search engines and then watch your rankings and traffic climb.
 
 While optimizing your website to rank well for organic searches takes more effort than simply buying an ad, it can provide your business with one of the highest ROI results that you're likely to find. Numerous studies have placed search engine optimization at the top of the list of the most effective forms of online marketing. Its low cost, high relevancy, and high conversion rates make it an ideal marketing vehicle for almost any business.
 
@@ -709,12 +709,14 @@ Try to brainstorm a list of topics that might interest your target audience.
 <span>3. Focus on benefits –</span> most web users want to find the information about the product or service they need as fast as possible. If they land on your site, they want to know how they will benefit from buying your product or subscribing to your e-zine. You will need to answer that question as clearly and concisely as possible or you will lose that visitor.
 
 <span>4. Use the inverted pyramid style –</span> provide a summary of your information by clearly communicating the direction of your discussion. Use informative headings and subheadings with a paragraph of 4 to 5 lines that supports them. You only have a few seconds to grab your visitors attention. Most will simply scan for the information they are seeking.
+
 Use bulleted or numbered lists, boldface or colored font to emphasize the points you wish to make. Include links at the end of your paragraph (or within the text) to direct visitors to other pages of your site for more in-depth information.
 
 <span>5. Write in an informal or personal style –</span> write in a unique way that differentiates you from other small businesses in a similar business or niche. It doesn't have to be elaborate or super-creative. You simply provide a style that gets the attention of your visitors.
 
 <span>6. Keep your sentences simple –</span> you are not writing to impress. You are writing to communicate. You want to pre-sell your product or service, therefore write as if you are talking to a 13 year old.
-Don't use large words but opt for strong verbs over weak ones. Use the active voice instead of a passive one. i.e. Instead of "a good score was achieved by the team"...say "the team scored a season high". Speak "to" but not "at" your visitor. Keep your sentences short and snappy.
+
+Don't use large words but opt for strong verbs over weak ones. Use the active voice instead of a passive one. i.e. Instead of "a good score was achieved by the team"...say "the team scored a season high". <span>Speak "to" but not "at" your visitor.</span> Keep your sentences short and snappy.
 
 <span>7. Include searchable keywords –</span> use targeted keywords in your web copy that will allow the search engines to find your site. Include these keywords in your meta tags, links and file names also.
 
@@ -729,7 +731,8 @@ Use the spell checker but don't rely on it. Often it doesn't pick up all incorre
 <span>11. Use images sparingly –</span> images should only be used if they relate and support your web content. If not, they will only distract the visitor from reading your web copy. Too many images will slow down the time it takes for your visitor to load your site in their browser.
 
 <span>12. Use effective navigation –</span> your navigation bar should help visitors easily find the main sections of your site.
-Writing effective web copy is the key to converting visitors into buyers. Getting 1000s of visitors to your website doesn't guarantee sales. Reading your web copy should pre-sell your product with the words you use. Once you achieve this, your website will become very profitable.`
+
+<span>Writing effective web copy is the key to converting visitors into buyers!</span> Getting 1000s of visitors to your website doesn't guarantee sales. Reading your web copy should pre-sell your product with the words you use. Once you achieve this, your website will become very profitable.`
 },
 
 /* ID-16   --->    "How-to-Write-Effective-Website-Copy.jpg"    <----    */
@@ -802,14 +805,15 @@ However, not all businesses are aware of the benefits of social media marketing.
 
 You may ask, <span>“How will my business benefit from an active social media presence?”</span>  Here are just three of the ways your business could benefit:
 
-◆   Social Media can be a valuable tool as profiles can provide general information and updates about your
-business.
+◆   Social Media can be a valuable tool as profiles can provide general information and updates about your business.
 ◆   Businesses can interact and engage with current and future clients in a community-like setting.
-◆   Your business’ social profiles can also help improve your organic SEO for your website.
+◆ Your business’ social profiles can also help improve your organic SEO for your website.
 
 <a href="https://clutch.co/agencies/resources/social-media-2015-small-business-survey">Mike Rosa</a> of 180Fusion, stated that <span>“If small businesses want to compete, if they want to level the playing field with their competitors, if they don’t want to lose ground, they have to be participating in social media.”</span>
 
-The world of digital tech is a constantly moving landscape with social media marketing seeming to move even faster. And because it’s so fast-moving it can be tough to figure out how each piece of the puzzle fits with your small business. Social Media Engagement remains an essential ingredient of business and marketing success. To win over audiences in a world increasingly dominated by instantaneous social media and the 24-hour news cycle, the power of connecting with people can be the difference between success and failure.
+The world of digital tech is a constantly moving landscape with social media marketing seeming to move even faster. And because it’s so fast-moving it can be tough to figure out how each piece of the puzzle fits with your small business. 
+
+Social Media Engagement remains an essential ingredient of business and marketing success. To win over audiences in a world increasingly dominated by instantaneous social media and the 24-hour news cycle, the power of connecting with people can be the difference between success and failure.
 
 If you would like to increase your Social Media Presence or create it, I invite you to give us a call or email us at Blue Smoke Digital and Printed Media. We would welcome the opportunity to help you increase your social presence, improve your branding recognition, and increase your sales.`
 },
@@ -826,9 +830,11 @@ If you would like to increase your Social Media Presence or create it, I invite 
     tags: "Custom Website Design, Search Engine Optimization (SEO), Organic SEO, Website Useability, Strategic Social Media Marketing, Effective Website Copy",
     snippet: "The best thing you can do as a small business or web site starting out on the Internet, is to understand your customers and their needs. You must exploit the advantages many small businesses have over large companies. ",
     content: `
-<span>When starting a business or website on the Internet,</span> it is often easy to become intimidated by large companies or web sites offering similar services to you. While you may not be able to match the million-dollar advertising budgets or employee numbers of your competitors, there are many things you can do to make your business or website stand out from the rest. This article aims to provide you with an approach, and the motivation to take on those competitors you never thought you could match!
+When starting a business or website on the Internet, it is often easy to become intimidated by large companies or web sites offering similar services to you. While you may not be able to match the million-dollar advertising budgets or employee numbers of your competitors, <span>there are many things you can do to make your business or website stand out from the rest.</span> This article aims to provide you with an approach, and the motivation to take on those competitors you never thought you could match!
 
-Throughout the rest of this article, I will be using the example of a hypothetical small web design company called “Coffee Digital Cafe ”. As you may or may not know, the web design industry is an incredibly competitive market, which makes it an excellent example of this article. With the huge amount of large, well-established companies active in the industry, it would be incredibly easy for a small company such as Coffee Digital Cafe to be swallowed and taken under in the first few months of operation. We will explore some of the tactics the owners of Coffee Cafe Digital may use to gain some kind of advantage over their large competitors.
+Throughout the rest of this article, I will be using the example of a hypothetical small web design company called “Coffee Digital Cafe ”. As you may or may not know, the web design industry is an incredibly competitive market, which makes it an excellent example of this article. 
+
+With the huge amount of large, well-established companies active in the industry, it would be incredibly easy for a small company such as Coffee Digital Cafe to be swallowed and taken under in the first few months of operation. We will explore some of the tactics the owners of Coffee Cafe Digital may use to gain some kind of advantage over their large competitors.
 
 <span>What do customers want?</span>
 It is important to get back to basics and ask yourself "What is it that customers purchasing this service require?". Knowing some of the decisive factors in customers' choices is very important. If you know what your customers want, you may be able to tailor your marketing strategies to emphasize these areas.
@@ -856,8 +862,8 @@ Suggestion: If it is feasible for your business, setting up an account on one (o
 
 You may be asking just where you are expected to get a lot of information about your customer's needs. Below is a shortlist of suggestions to get you started.
 
-<span>*</span> Survey customers.
-<span>*</span> Participate in discussion groups relating to the subject. You will often find forums around the Internet with real customers discussing what they like and dislike about certain products and services. Participating in these discussions may also get your business!
+<span>*</span>Survey customers.
+<span>*</span>Participate in discussion groups relating to the subject. You will often find forums around the Internet with real customers discussing what they like and dislike about certain products and services. Participating in these discussions may also get your business!
 <span>*</span>Visit websites and read newsletters that deal with the subject.
 <span>*</span>Put yourself in your customer's shoes and look at it from their perspective.
 
@@ -867,17 +873,15 @@ I don't know about you, but I find it much more appealing when I can actually ta
 
 <span>There are many aspects needed to be considered</span> when personalizing a service. Listening to user feedback, being available to talk, and offering opinions on different issues all contribute to personalizing a service. The common goal of many of these aspects is to build trust with your customers.
 
-<span>Building trust with your customers is an incredibly important</span> and often underestimated aspect, which must be considered. To put it simply, no one is going to buy anything from you on the Internet if they do not trust you. <span>Personalizing a service</span> is an excellent way of gaining this customer trust.
+<span>Building trust with your customers is an incredibly important</span> and often underestimated aspect, which must be considered. To put it simply, no one is going to buy anything from you on the Internet if they do not trust you <span>Personalizing a service</span> is an excellent way of gaining this customer trust.
 
 Our Coffee Digital Cafe team may decide to incorporate some of the following things to help <span>personalize their service and gain trust</span> from their customers.
 
 <span>**On sign up,</span> Coffee Digital Cafe should ensure customers have the contact information for appropriate personnel to voice their queries or comments. This information should be presented in a way that welcomes customer interaction.
 
-<span>**Building trust with your customers</span> is an incredibly important, and often underestimated, aspect which must be considered. To put it simply, no one is going to buy anything from you on the Internet if they do not trust you.
-Personalizing a service is an excellent way of gaining this customer trust.
+<span>**Building trust with your customers</span> is an incredibly important, and often underestimated, aspect which must be considered. To put it simply, no one is going to buy anything from you on the Internet if they do not trust you. Personalizing a service is an excellent way of gaining this customer trust.
 
-Our Coffee Digital Cafe team may decide to incorporate some of the following things to help personalize their
-service and gain trust from customers.
+Our Coffee Digital Cafe team may decide to incorporate some of the following things to help personalize their service and gain trust from customers.
 
 <span>**</span>On sign up, Coffee Digital Cafe should ensure customers have the contact information for appropriate personnel to voice their queries or comments. This information should be presented in a way that welcomes customer interaction.
 
@@ -893,10 +897,9 @@ service and gain trust from customers.
 
 The last point I am going to make in this article is that <span>you must charge reasonable prices.</span> Although you may not be able to match the extremely low prices of big companies in some industries, it is important, that you do not over- charge your customers. <span>Nothing scares customers off quicker than ridiculously high prices.</span>
 
-If you use the techniques described in this article, customers may not mind paying that little bit extra. Especially, if it is
-going to get them a service that the big competitors do not provide so well.
+If you use the techniques described in this article, customers may not mind paying that little bit extra. Especially, if it is going to get them a service that the big competitors do not provide so well.
 
-In conclusion, <span>the best thing you can do as a small business</span> or website starting out on the Internet <span>is to understand your customers and their needs.</span> You must exploit the advantages many small businesses have over large companies. Using the techniques outlined in this article, along with your own initiative and creativity, will help you gain respect, build a reputation, and hopefully reach your goals!`
+In conclusion, <span>the best thing you can do as a small business</span> or website starting out on the Internet, <span>is to understand your customers and their needs.</span> You must exploit the advantages many small businesses have over large companies. Using the techniques outlined in this article, along with your own initiative and creativity, will help you gain respect, build a reputation, and hopefully reach your goals!`
 },
 /* ID-19  --->   How to Market Yourself Like a Corporation"   <----    */
 
@@ -920,7 +923,8 @@ Let's talk about how they did it. <a href="https://www.npr.org/2014/07/28/335288
 Over time as the concept matured and became more sophisticated. We now have company rivalries, million dollar commercials, and fierce consumer loyalty.  When we think of big corporations we are invoking emotional connections. They impress meaning beyond their function. Trash bags are just trash bags - so why do company brands inspire feelings of family, financial status, care, comfort, luxury. When you boil it down, each brand builds rapport and communicates it's worth through carefully placed words and pictures. You can too.
 
 <span>Let's go one step further.</span>
-If someone asks you right now - What company do you really want to work for? Eve
+If someone asks you right now - What company do you really want to work for? Everyone has an answer.  Now ask yourself - how did _______ company make it onto your well thought out success strategy road map?  Did you see a post they made about a social value you hold?  Have you heard great things about the company culture?  Whatever you think you know about this "person" is all built using tools to make a first and lasting impression. 
+ 
 <span>Appropriate the machine!</span>
 Whoever you chose as the company of your dreams - has attracted strong talent (yes, I mean you).  Let's turn the lens to them - How did they do it?
 
