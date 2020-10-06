@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import ReactHtmlParser from "react-html-parser";
 import axios from "axios";
+import { Helmet } from "react-helmet";
+import ReactHtmlParser from "react-html-parser";
 import serverURL from "../utils";
 
 import { FiMail } from "react-icons/fi";
@@ -102,6 +103,12 @@ export default function Article({ history }) {
       ) : (
         <p id="loading">{loadingMessage}</p>
       )}
+      <Helmet>
+        <title>{post.title}</title>
+        <meta name="keywords" content={post.tags} />
+        <meta name="description" content={post.snippet} />
+        <meta name="author" content={post.author} />
+      </Helmet>
     </>
   );
 }
