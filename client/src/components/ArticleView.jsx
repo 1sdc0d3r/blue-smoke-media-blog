@@ -25,10 +25,9 @@ export default function Article({ history }) {
   useEffect(() => {
     axios
       .get(`${serverURL[1]}/${id}`)
-      .then(({ data }) => {
-        console.log({ data });
-        data[0] ? setPost(data[0]) : setLoadingMessage(data.message);
-      })
+      .then(({ data }) =>
+        data[0] ? setPost(data[0]) : setLoadingMessage(data.message)
+      )
       .catch((err) => console.log(err));
   }, [id]);
   return (
