@@ -54,21 +54,21 @@ header #flame {
   }
 }
 
-@media (min-width: 481px) and (max-width: 736px) {
+@media (max-width: 360px) {
   header #flame {
     width: 17%;
   }
 }
 
-@media (max-width: 360px) {
+@media (min-width: 361px) and (max-width: 480px) {
   header #flame {
-    width: 25%;
+    width: 17%;
   }
 }
 
-@media (min-width: 361px) and (max-width: 480px) {
+@media (min-width: 481px) and (max-width: 736px) {
   header #flame {
-    width: 25%;
+    width: 17%;
   }
 }
 
@@ -99,7 +99,6 @@ header .blue-smoke {
 
 header .blue-smoke img {
   width: 100%;
-  height: 11vh;
 }
 
 header .blue-smoke p {
@@ -113,6 +112,24 @@ header .blue-smoke p {
   font-weight: 700;
   line-height: 1.75;
   text-align: center;
+}
+
+@media (max-width: 360px) {
+  header .blue-smoke p {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  header .blue-smoke p {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  header .blue-smoke p {
+    font-size: 1.4em;
+  }
 }
 
 header .blue-smoke span {

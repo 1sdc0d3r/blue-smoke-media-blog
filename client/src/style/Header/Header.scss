@@ -26,11 +26,8 @@ header {
     @include breakpoint(m) {
       width: 12%;
     }
-    @include breakpoint(s) {
+    @include breakpoint(xxs, xs, s) {
       width: 17%;
-    }
-    @include breakpoint(xxs, xs) {
-      width: 25%;
     }
   }
 
@@ -48,7 +45,7 @@ header {
 
     img {
       width: 100%;
-      height: 11vh;
+      // height: 11vh;
     }
 
     p {
@@ -62,6 +59,9 @@ header {
       font-weight: 700;
       line-height: 1.75;
       text-align: center;
+      @include breakpoint(xxs, xs, s) {
+        font-size: 1.4em;
+      }
     }
 
     span {

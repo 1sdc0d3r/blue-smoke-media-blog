@@ -15,6 +15,7 @@ article {
     width: 90%;
     height: 30em;
     margin: 5% auto;
+    border: 2px inset $darkBlue;
     @include breakpoint(m, l) {
       width: 98%;
       height: 20em;
@@ -25,18 +26,23 @@ article {
     }
   }
   h1 {
-    font-size: 1.7em;
+    font-size: 2.5em !important;
     margin: 0;
   }
   .content {
     text-align: justify;
-    color: $darkBlue;
     margin-bottom: 3em;
     white-space: pre-wrap;
     font-family: inherit;
     border: none;
     span {
       font-weight: 700;
+    }
+    a {
+      color: $orange;
+      &:hover {
+        color: $lightBlue;
+      }
     }
   }
   .share-info {

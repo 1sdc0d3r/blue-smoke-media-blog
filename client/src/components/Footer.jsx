@@ -74,14 +74,14 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              about
+              About
             </a>
             <a
               href="https://bluesmokedigitalandprintedmedia.com/contact"
               target="_blank"
               rel="noopener noreferrer"
             >
-              contact
+              Contact
             </a>
           </div>
         </div>
