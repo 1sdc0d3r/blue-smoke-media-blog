@@ -4,6 +4,7 @@ import axios from "axios";
 import serverURL from "../utils";
 // * Components
 import Sidebar from "./Sidebar";
+import CommentForm from "./CommentForm";
 // * Images
 const invertedCommas =
   "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/inverted-commas.png";
@@ -28,6 +29,7 @@ export default function Home() {
       .catch((err) => console.log(err));
   }, []);
   //todo sort date
+  //todo pass articles into commentForm to reduce axios requests
 
   return (
     <>
@@ -162,36 +164,21 @@ export default function Home() {
           <Sidebar articles={newArticles} />
         </div>
 
-        {/* <div className="about">
-        <div className="authors">
-          <h3>Authors</h3>
-          <Link to="/author/Ramona">Ramona Lucius</Link>
-          <Link to="/author/Constance">Constance Beebe</Link>
-        </div>
-        <div className="category">
-          <h3>Category</h3>
-          <Link to="/category/Branding">Branding</Link>
-          <Link to="/category/Social Media">Social Media</Link>
-          <Link to="/category/Website Design">Website Design</Link>
-        </div>
-        <div className="tags">
-          <h3>Tags</h3>
-          <Link to="/tag/Strategic Social Media Marketing">
-            Strategic Social Media Marketing
-          </Link>
-          <Link to="/tag/Affordable Custom Website Design">
-            Affordable Custom Website Design
-          </Link>
-          <Link to="/tag/Consumer Loyalty">Consumer Loyalty</Link>
-          <Link to="/tag/Typography">Typography</Link>
-        </div>
-      </div> */}
-        {/* <div className="comments">
-        <div>
+        <div className="comments">
           <h2>Comments</h2>
-          <button onClick={() => addComment}>Add Your Comment</button>
+          <span className="success" style={{ display: "none" }}>
+            Comment is now under review.
+          </span>
+          <CommentForm />
+          {/* <button
+            onClick={() =>
+              (document.querySelector(".comment-form").style.display = "block")
+            }
+          >
+            Add Your Comment
+          </button> */}
         </div>
-      </div> */}
+
         <div className="new-articles">
           <hr />
           <h2>New Articles</h2>

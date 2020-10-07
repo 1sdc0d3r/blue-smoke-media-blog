@@ -1,0 +1,70 @@
+.comments h2 {
+  margin-bottom: 0;
+}
+
+.comments .success {
+  color: #1e92f6;
+}
+
+.comments .comment-form {
+  background: #f6f6f6;
+  border: 2px solid black;
+  padding: 0.5em 0.5em;
+  margin-top: 0.5em;
+}
+
+.comments .comment-form .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comments .comment-form .top h3 {
+  margin: 0;
+}
+
+.comments .comment-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.comments .comment-form form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.comments .comment-form form .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comments .comment-form form .info label {
+  width: 30%;
+}
+
+.comments .comment-form form .submit {
+  padding: 0.25em;
+  margin-top: 0.5em;
+  background: #04227a;
+  color: #1e92f6;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+/*# sourceMappingURL=CommentForm.css.map */

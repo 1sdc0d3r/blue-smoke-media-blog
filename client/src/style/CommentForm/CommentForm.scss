@@ -1,0 +1,46 @@
+@import "../Utils/Mixins/Mixins.scss";
+
+.comments {
+  h2 {
+    margin-bottom: 0;
+  }
+  .success {
+    color: $lightBlue;
+  }
+  .comment-form {
+    background: #f6f6f6;
+    border: 2px solid black;
+    padding: 0.5em 0.5em;
+    margin-top: 0.5em;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      h3 {
+        margin: 0;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      label {
+        display: flex;
+        flex-direction: column;
+      }
+      .info {
+        display: flex;
+        justify-content: space-between;
+        label {
+          width: 30%;
+        }
+      }
+      .submit {
+        padding: 0.25em;
+        margin-top: 0.5em;
+        background: $royalBlue;
+        color: $lightBlue;
+        align-self: flex-end;
+      }
+    }
+  }
+}
