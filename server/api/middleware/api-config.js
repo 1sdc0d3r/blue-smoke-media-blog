@@ -3,12 +3,12 @@ const morgan = require("morgan");
 const helmet = require("helmet");
 const cors = require("cors");
 const {
-  NODE_ENV
+  DB_ENV
 } = process.env
 
 module.exports = server => {
   server.use(express.json());
-  if (NODE_ENV === 'development') {
+  if (DB_ENV === 'development') {
     server.use(morgan("dev"));
   }
   server.use(helmet());
