@@ -1,11 +1,13 @@
 @import "../Utils/Mixins/Mixins.scss";
 //todo push to bottom on article view (no article)
-footer {
+.footer-wrapper {
+  // width: 100%;
   background: $darkBlue;
-  color: goldenrod;
-  margin-top: 2em;
-  .wrapper {
-    width: 70%;
+  footer {
+    color: goldenrod;
+    margin-top: 2em;
+    width: 85%;
+    margin: auto;
     .top {
       display: flex;
       justify-content: space-between;

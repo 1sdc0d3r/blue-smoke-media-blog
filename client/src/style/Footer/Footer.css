@@ -1,14 +1,15 @@
-footer {
+.footer-wrapper {
   background: #020723;
+}
+
+.footer-wrapper footer {
   color: goldenrod;
   margin-top: 2em;
+  width: 85%;
+  margin: auto;
 }
 
-footer .wrapper {
-  width: 70%;
-}
-
-footer .wrapper .top {
+.footer-wrapper footer .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,7 +20,7 @@ footer .wrapper .top {
 }
 
 @media (max-width: 360px) {
-  footer .wrapper .top {
+  .footer-wrapper footer .top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -32,7 +33,7 @@ footer .wrapper .top {
 }
 
 @media (min-width: 361px) and (max-width: 480px) {
-  footer .wrapper .top {
+  .footer-wrapper footer .top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -45,7 +46,7 @@ footer .wrapper .top {
 }
 
 @media (min-width: 481px) and (max-width: 736px) {
-  footer .wrapper .top {
+  .footer-wrapper footer .top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -58,7 +59,7 @@ footer .wrapper .top {
 }
 
 @media (min-width: 737px) and (max-width: 980px) {
-  footer .wrapper .top {
+  .footer-wrapper footer .top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -70,111 +71,111 @@ footer .wrapper .top {
   }
 }
 
-footer .wrapper .top .about h3 {
+.footer-wrapper footer .top .about h3 {
   color: #1e92f6;
   margin-bottom: 0;
 }
 
-footer .wrapper .top .about span {
+.footer-wrapper footer .top .about span {
   color: #ee3e0e;
 }
 
-footer .wrapper .top .about p {
+.footer-wrapper footer .top .about p {
   width: 80%;
   font-weight: 700;
 }
 
 @media (max-width: 360px) {
-  footer .wrapper .top .about p {
+  .footer-wrapper footer .top .about p {
     margin: auto;
     margin-top: 0.5em;
   }
 }
 
 @media (min-width: 361px) and (max-width: 480px) {
-  footer .wrapper .top .about p {
+  .footer-wrapper footer .top .about p {
     margin: auto;
     margin-top: 0.5em;
   }
 }
 
 @media (min-width: 481px) and (max-width: 736px) {
-  footer .wrapper .top .about p {
+  .footer-wrapper footer .top .about p {
     margin: auto;
     margin-top: 0.5em;
   }
 }
 
 @media (min-width: 737px) and (max-width: 980px) {
-  footer .wrapper .top .about p {
+  .footer-wrapper footer .top .about p {
     margin: auto;
     margin-top: 0.5em;
   }
 }
 
-footer .wrapper .top .newsletter {
+.footer-wrapper footer .top .newsletter {
   width: 30%;
 }
 
 @media (max-width: 360px) {
-  footer .wrapper .top .newsletter {
+  .footer-wrapper footer .top .newsletter {
     width: 50%;
   }
 }
 
 @media (min-width: 361px) and (max-width: 480px) {
-  footer .wrapper .top .newsletter {
+  .footer-wrapper footer .top .newsletter {
     width: 50%;
   }
 }
 
 @media (min-width: 481px) and (max-width: 736px) {
-  footer .wrapper .top .newsletter {
+  .footer-wrapper footer .top .newsletter {
     width: 50%;
   }
 }
 
 @media (min-width: 737px) and (max-width: 980px) {
-  footer .wrapper .top .newsletter {
+  .footer-wrapper footer .top .newsletter {
     width: 50%;
   }
 }
 
-footer .wrapper .top .newsletter h4 {
+.footer-wrapper footer .top .newsletter h4 {
   color: #1e92f6;
   margin-bottom: 0.5em;
 }
 
-footer .wrapper .top .newsletter .ctct-form .ctct-form-footer,
-footer .wrapper .top .newsletter .ctct-form .ctct-gdpr-text,
-footer .wrapper .top .newsletter .ctct-form .ctct-form-required,
-footer .wrapper .top .newsletter .ctct-form .ctct-form-text,
-footer .wrapper .top .newsletter .ctct-form .g-recaptcha,
-footer .wrapper .top .newsletter .ctct-form #gdpr_text {
+.footer-wrapper footer .top .newsletter .ctct-form .ctct-form-footer,
+.footer-wrapper footer .top .newsletter .ctct-form .ctct-gdpr-text,
+.footer-wrapper footer .top .newsletter .ctct-form .ctct-form-required,
+.footer-wrapper footer .top .newsletter .ctct-form .ctct-form-text,
+.footer-wrapper footer .top .newsletter .ctct-form .g-recaptcha,
+.footer-wrapper footer .top .newsletter .ctct-form #gdpr_text {
   display: none;
 }
 
-footer .wrapper .top .newsletter .ctct-form .ctct-form-custom {
+.footer-wrapper footer .top .newsletter .ctct-form .ctct-form-custom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
-footer .wrapper .top .newsletter .ctct-form .ctct-form-defaults {
+.footer-wrapper footer .top .newsletter .ctct-form .ctct-form-defaults {
   height: auto;
   padding: 0;
   background: inherit;
 }
 
-footer .wrapper .top .newsletter .ctct-form .ctct-form-element {
+.footer-wrapper footer .top .newsletter .ctct-form .ctct-form-element {
   background: #020723;
   border: 2px solid #04227a;
   border-right: 0;
   color: goldenrod;
 }
 
-footer .wrapper .top .newsletter .ctct-form .ctct-form-button {
+.footer-wrapper footer .top .newsletter .ctct-form .ctct-form-button {
   padding: 0 0.125em;
   font-size: 1em;
   height: 3em;
@@ -182,12 +183,12 @@ footer .wrapper .top .newsletter .ctct-form .ctct-form-button {
   border-radius: 0;
 }
 
-footer .wrapper .top .newsletter .ctct-form h2 {
+.footer-wrapper footer .top .newsletter .ctct-form h2 {
   color: goldenrod;
   font-size: 1.5em;
 }
 
-footer .wrapper .top .newsletter div {
+.footer-wrapper footer .top .newsletter div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,7 +196,7 @@ footer .wrapper .top .newsletter div {
   width: 100%;
 }
 
-footer .wrapper .top .newsletter div input {
+.footer-wrapper footer .top .newsletter div input {
   border: 2px solid #04227a;
   background: #020723;
   width: 70%;
@@ -204,23 +205,23 @@ footer .wrapper .top .newsletter div input {
   font-size: 1em;
 }
 
-footer .wrapper .top .newsletter div input::-webkit-input-placeholder {
+.footer-wrapper footer .top .newsletter div input::-webkit-input-placeholder {
   color: goldenrod;
 }
 
-footer .wrapper .top .newsletter div input:-ms-input-placeholder {
+.footer-wrapper footer .top .newsletter div input:-ms-input-placeholder {
   color: goldenrod;
 }
 
-footer .wrapper .top .newsletter div input::-ms-input-placeholder {
+.footer-wrapper footer .top .newsletter div input::-ms-input-placeholder {
   color: goldenrod;
 }
 
-footer .wrapper .top .newsletter div input::placeholder {
+.footer-wrapper footer .top .newsletter div input::placeholder {
   color: goldenrod;
 }
 
-footer .wrapper .top .newsletter div button {
+.footer-wrapper footer .top .newsletter div button {
   color: goldenrod;
   background: #04227a;
   border: none;
@@ -229,45 +230,45 @@ footer .wrapper .top .newsletter div button {
   font-weight: 900;
 }
 
-footer .wrapper .top .follow {
+.footer-wrapper footer .top .follow {
   padding: 0.5em 0.25em;
 }
 
 @media (max-width: 360px) {
-  footer .wrapper .top .follow {
+  .footer-wrapper footer .top .follow {
     width: 40%;
     margin: 0.5em auto 1em;
   }
 }
 
 @media (min-width: 361px) and (max-width: 480px) {
-  footer .wrapper .top .follow {
+  .footer-wrapper footer .top .follow {
     width: 40%;
     margin: 0.5em auto 1em;
   }
 }
 
 @media (min-width: 481px) and (max-width: 736px) {
-  footer .wrapper .top .follow {
+  .footer-wrapper footer .top .follow {
     width: 40%;
     margin: 0.5em auto 1em;
   }
 }
 
 @media (min-width: 737px) and (max-width: 980px) {
-  footer .wrapper .top .follow {
+  .footer-wrapper footer .top .follow {
     width: 40%;
     margin: 0.5em auto 1em;
   }
 }
 
-footer .wrapper .top .follow p {
+.footer-wrapper footer .top .follow p {
   color: #1e92f6;
   font-weight: 700;
   text-align: center;
 }
 
-footer .wrapper .top .follow .icons {
+.footer-wrapper footer .top .follow .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,19 +277,19 @@ footer .wrapper .top .follow .icons {
           justify-content: space-between;
 }
 
-footer .wrapper .top .follow .icons a {
+.footer-wrapper footer .top .follow .icons a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 0.25em;
 }
 
-footer .wrapper .top .follow .icons a img {
+.footer-wrapper footer .top .follow .icons a img {
   width: 2em;
   height: 2em;
 }
 
-footer .wrapper .bottom {
+.footer-wrapper footer .bottom {
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,24 +302,24 @@ footer .wrapper .bottom {
           justify-content: space-between;
 }
 
-footer .wrapper .bottom p {
+.footer-wrapper footer .bottom p {
   margin-right: 3%;
 }
 
 @media (max-width: 360px) {
-  footer .wrapper .bottom p {
+  .footer-wrapper footer .bottom p {
     margin-right: 5%;
   }
 }
 
 @media (min-width: 361px) and (max-width: 480px) {
-  footer .wrapper .bottom p {
+  .footer-wrapper footer .bottom p {
     margin-right: 5%;
   }
 }
 
 @media (max-width: 360px) {
-  footer .wrapper .bottom div {
+  .footer-wrapper footer .bottom div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -331,7 +332,7 @@ footer .wrapper .bottom p {
 }
 
 @media (min-width: 361px) and (max-width: 480px) {
-  footer .wrapper .bottom div {
+  .footer-wrapper footer .bottom div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -343,7 +344,7 @@ footer .wrapper .bottom p {
   }
 }
 
-footer .wrapper .bottom div a {
+.footer-wrapper footer .bottom div a {
   text-decoration: none;
   color: goldenrod;
   padding: 0 0.25em;

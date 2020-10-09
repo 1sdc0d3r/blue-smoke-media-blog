@@ -6,6 +6,8 @@ const facebook =
   "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/social+media/facebook.png";
 const linkedIn =
   "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/social+media/linkedIn.png";
+const googleReview =
+  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/social+media/google-review.png";
 
 export default function Footer() {
   // useEffect(() => {
@@ -14,8 +16,8 @@ export default function Footer() {
   // }, []);
 
   return (
-    <footer>
-      <div className="wrapper">
+    <div className="footer-wrapper">
+      <footer>
         <div className="top">
           <div className="about">
             <h3>
@@ -59,6 +61,13 @@ export default function Footer() {
               >
                 <img src={linkedIn} alt="LinkedIn Social Media Button" />
               </a>
+              <a
+                href="https://search.google.com/local/writereview?placeid=ChIJJfs6ZcFvWogRJE1LyrS-E5Y"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={googleReview} alt="Google Social Media Button" />
+              </a>
             </div>
           </div>
         </div>
@@ -85,7 +94,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   );
 }

@@ -204,7 +204,7 @@ Designing your site properly does take time and effort, but the rewards are nume
 
     {
         id: 6,
-        title: "The Local Search Revolution has Arrived!...optimize your online LOCAL presence now - before the learning curve turns expensive.",
+        title: "Optimize your online LOCAL presence now - before the learning curve turns expensive.",
         author: "Esoos Bobnar",
         date: "",
         imageUrl: "ID_6_Advantages of Social Media.jpg",
