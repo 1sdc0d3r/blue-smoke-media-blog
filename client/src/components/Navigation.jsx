@@ -3,6 +3,7 @@ import { NavLink, Link, withRouter } from "react-router-dom";
 import Search from "./Search";
 import Axios from "axios";
 import serverURL from "../utils";
+import { FiChevronDown } from "react-icons/fi";
 
 export default withRouter(function Navigation({ history }) {
   const [categories, setCategories] = useState([]);
@@ -24,11 +25,12 @@ export default withRouter(function Navigation({ history }) {
     });
   }, []);
 
-  const dropArrow = (
-    <svg className="drop-arrow">
-      <polygon points="5,5 13,15 20,5" />
-    </svg>
-  );
+  const dropArrow = <FiChevronDown color="#7ff76f" />;
+  //  (
+  //   <svg className="drop-arrow">
+  //     <polygon points="5,5 13,15 20,5" />
+  //   </svg>
+  // );
   return (
     <nav className="main-nav">
       <NavLink to="/" className="nav-item">
