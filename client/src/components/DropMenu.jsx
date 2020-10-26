@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, withRouter } from "react-router-dom";
+import Axios from "axios";
+import serverURL from "../utils";
+
 import { FiChevronDown } from "react-icons/fi";
 
-export default withRouter(function HamburgerMenu(props) {
-  props.history.listen(() => {
+export default withRouter(function HamburgerMenu({ history }) {
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    const searchInput = document.querySelector("input[name='search']");
+    const searchResults = document.querySelector(".search ul");
+    Axios.get(serverURL[1])
+      .then(({ data }) =>
+        setCategories(
+          Array.from(new Set(data.map(({ category }) => category))).sort()
+        )
+      )
+      .catch((err) => console.log(err));
+
+    history.listen(() => {
+      searchInput.value = "";
+      searchResults.style.display = "none";
+    });
+  }, []);
+  history.listen(() => {
     document.getElementById("menu").classList.remove("show-drop");
   });
   const chevron = <FiChevronDown color="#f52618" />;
@@ -15,7 +36,7 @@ export default withRouter(function HamburgerMenu(props) {
           dropdown("menu");
           if (menu.classList.contains("show-drop"))
             document
-              .getElementById("services-content")
+              .getElementById("categories-content")
               .classList.remove("show-drop");
         }}
       >
@@ -26,114 +47,39 @@ export default withRouter(function HamburgerMenu(props) {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/team">Our Team</Link>
-        </li>
-        <li
-          id="services"
-          className="category"
-          onClick={() => dropdown("services-content", "services")}
-        >
-          Services{chevron}
-        </li>
-        <ul id="services-content" className="drop-content">
-          <li>
-            <Link to="/social-media">Social Media</Link>
-          </li>
-          <li
-            id="seo"
-            onClick={() => dropdown("seo-content", "seo")}
-            className="category sub-category"
-          >
-            SEO{chevron}
-          </li>
-          <ul id="seo-content" className="drop-content sub-drop-content">
-            <li>
-              <Link to="/seo/Friendly">SEO - Search Engine Optimization</Link>
-            </li>
-            <li>
-              <Link to="/seo/seoOrganic">
-                Organic Search Engine Optimization
-              </Link>
-            </li>
-          </ul>
-          <li
-            id="web-design"
-            onClick={() => dropdown("web-content", "web-design")}
-            className="category sub-category"
-          >
-            Website Design{chevron}
-          </li>
-          <ul id="web-content" className="drop-content sub-drop-content">
-            <li>
-              <Link to="/ad-CopyWriting">Website Ad-Copy Writing</Link>
-            </li>
-            <li>
-              <Link to="/website-design/coding">Coding and Programming</Link>
-            </li>
-            <li>
-              <Link to="/website-design/custom-website-design">
-                Custom Website Design
-              </Link>
-            </li>
-            <li>
-              <Link to="/website-design/website-useability">
-                Creating Your Website-Useability
-              </Link>
-            </li>
-            <li>
-              <Link to="/website-design/eCommerce-website-development">
-                E-Commerce Website Development
-              </Link>
-            </li>
-            <li>
-              <Link to="/website-design/inquiry-form">Inquiry/Survey Form</Link>
-            </li>
-            <li>
-              <Link to="/website-design/website-maintenance">
-                Website Maintenance
-              </Link>
-            </li>
-          </ul>
-
-          <li
-            id="graphic-design"
-            onClick={() => dropdown("graphic-content", "graphic-design")}
-            className="category sub-category"
-          >
-            Graphic Design{chevron}
-          </li>
-          <ul id="graphic-content" className="drop-content sub-drop-content">
-            <li>
-              <Link to="/graphic-design/website-logo-design">
-                Website Logo Design
-              </Link>
-            </li>
-            <li>
-              <Link to="/graphic-design/printed-media-logos">
-                Print Logo Design
-              </Link>
-            </li>
-            <li>
-              <Link to="/graphic-design/digital-and-print-graphic-design">
-                Print & Graphic Design Services
-              </Link>
-            </li>
-          </ul>
-        </ul>
-        <li>
-          <Link to="/plans">Pricing</Link>
-        </li>
-        <li>
           <a
-            href="https://bluesmokemedianomads.com"
+            href="https://www.bluesmokedigitalandprintedmedia.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Blog
+            Our Website
           </a>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/articles">Articles</Link>
+        </li>
+        <li
+          id="categories"
+          onClick={() => dropdown("categories-content", "categories")}
+        >
+          Categories{chevron}
+        </li>
+        <ul id="categories-content" className="drop-content">
+          {categories.map((e) => (
+            <li>
+              <Link to={`/category/${e}`}>{e}</Link>
+            </li>
+          ))}
+        </ul>
+        <li>
+          <a
+            href="https://bluesmokedigitalandprintedmedia.com/contact"
+            className="nav-item"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contact
+          </a>
         </li>
       </ul>
     </nav>

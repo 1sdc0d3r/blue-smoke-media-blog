@@ -2,9 +2,13 @@
 .sidebar {
   // border: 1px solid black;
   text-align: center;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   min-width: -webkit-min-content;
   min-width: -moz-min-content;
   min-width: min-content;
+
   @include breakpoint(xxs, xs, s, m) {
     display: none;
   }
