@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import ArticleView from "./components/ArticleView";
 import Articles from "./components/Articles";
 import Navigation from "./components/Navigation";
-import HamburgerMenu from "./components/HamburgerMenu";
+import DropMenu from "./components/DropMenu";
 import ArticleTesting from "./components/ArticleTesting";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Header />
       <Navigation />
-      <HamburgerMenu />
+      <DropMenu />
       <section className="wrapper">
         <Switch>
           <Route path="/" component={Home} exact />
