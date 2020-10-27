@@ -1,9 +1,10 @@
-@import "./Utils/Mixins/Mixins.scss";
+@import "../Utils/Mixins/Mixins.scss";
 
 .App {
   text-align: center;
   background: #f6f6f6;
   color: $royalBlue;
+  font-size: 0.8em;
 
   .wrapper {
     width: 80%;
@@ -19,11 +20,11 @@
       color: $orange;
     }
     @include breakpoint(l, xl, xxl) {
-      font-size: 1.5em;
+      font-size: 1.3em;
     }
     @include breakpoint(s, m) {
       width: 90%;
-      font-size: 1.3em;
+      font-size: 1.1em;
     }
     @include breakpoint(xxs, xs) {
       width: 98%;

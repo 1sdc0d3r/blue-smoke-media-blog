@@ -2,6 +2,7 @@
   text-align: center;
   background: #f6f6f6;
   color: #04227a;
+  font-size: 0.8em;
 }
 
 .App .wrapper {
@@ -23,33 +24,33 @@
 
 @media (min-width: 981px) and (max-width: 1280px) {
   .App .wrapper {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 }
 
 @media (min-width: 1281px) and (max-width: 1680px) {
   .App .wrapper {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 }
 
 @media (min-width: 1681px) {
   .App .wrapper {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 }
 
 @media (min-width: 481px) and (max-width: 736px) {
   .App .wrapper {
     width: 90%;
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 }
 
 @media (min-width: 737px) and (max-width: 980px) {
   .App .wrapper {
     width: 90%;
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 }
 

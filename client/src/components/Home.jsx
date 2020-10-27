@@ -164,7 +164,7 @@ export default function Home() {
           <Sidebar articles={newArticles} />
         </div>
 
-        <div className="comments">
+        {/* <div className="comments">
           <h2>Comments</h2>
           <span className="success" style={{ display: "none" }}>
             Comment is now under review.
@@ -176,8 +176,8 @@ export default function Home() {
             }
           >
             Add Your Comment
-          </button> */}
-        </div>
+          </button>
+        </div> */}
 
         <div className="new-articles">
           <hr />

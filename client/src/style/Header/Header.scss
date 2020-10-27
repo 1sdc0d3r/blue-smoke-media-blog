@@ -18,18 +18,33 @@ header {
   @include breakpoint(xxs, xs, s, m) {
     border-bottom: 2px solid $darkBlue;
   }
-
   #flame {
-    width: 7%;
+    width: 9%;
     padding-top: 1%;
     height: 100%;
-    @include breakpoint(m) {
-      width: 12%;
+    @include breakpoint(s, m) {
+      width: 10%;
+      margin-bottom: 0.125em;
+      margin-right: 1em;
     }
-    @include breakpoint(xxs, xs, s) {
-      width: 17%;
+    // @include breakpoint(s) {
+    //   width: 15%;
+    // }
+    @include breakpoint(xxs, xs) {
+      width: 23%;
     }
   }
+  // #flame {
+  //   width: 7%;
+  //   padding-top: 1%;
+  //   height: 100%;
+  //   @include breakpoint(m) {
+  //     width: 12%;
+  //   }
+  //   @include breakpoint(xxs, xs, s) {
+  //     width: 17%;
+  //   }
+  // }
 
   .blue-smoke {
     width: 35%;
@@ -89,7 +104,7 @@ header {
       }
 
       @include breakpoint(s) {
-        font-size: 0.75em;
+        font-size: 0.9em;
       }
       @include breakpoint(xxs, xs) {
         display: none;
