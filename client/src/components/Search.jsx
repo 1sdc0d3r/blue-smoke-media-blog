@@ -6,7 +6,7 @@ import serverURL from "../utils";
 export default function Search({ history }) {
   // const [queryType, setQueryType] = useState("");
   const [query, setQuery] = useState();
-  // const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([]);
   const [filtered, setFiltered] = useState([]);
   const excludedKeys = ["id", "imageUrl", "imageAlt"];
   const resultsList = document.querySelector(".search ul");

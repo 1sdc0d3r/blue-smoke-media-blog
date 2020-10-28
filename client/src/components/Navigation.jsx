@@ -51,8 +51,8 @@ export default withRouter(function Navigation({ history }) {
         <button className="drop-btn nav-item">Categories{dropArrow}</button>
         <div className="dropdown-content">
           <ul>
-            {categories.map((e) => (
-              <li>
+            {categories.map((e, i) => (
+              <li key={i}>
                 <Link to={`/category/${e}`}>{e}</Link>
               </li>
             ))}

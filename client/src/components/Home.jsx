@@ -183,8 +183,8 @@ export default function Home() {
           <hr />
           <h2>New Articles</h2>
           <div>
-            {newArticles?.map((e) => (
-              <div className="new-article">
+            {newArticles?.map((e, i) => (
+              <div className="new-article" key={i}>
                 <Link to={`/article/${e.id}`}>
                   <img
                     src={`https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/thumbnail/${e.imageUrl}`}

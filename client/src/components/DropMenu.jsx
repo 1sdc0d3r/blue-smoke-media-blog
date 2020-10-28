@@ -5,7 +5,7 @@ import serverURL from "../utils";
 
 import { FiChevronDown } from "react-icons/fi";
 
-export default withRouter(function HamburgerMenu({ history }) {
+export default withRouter(function DropMenu({ history }) {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -65,8 +65,8 @@ export default withRouter(function HamburgerMenu({ history }) {
           Categories{chevron}
         </li>
         <ul id="categories-content" className="drop-content">
-          {categories.map((e) => (
-            <li>
+          {categories.map((e, i) => (
+            <li key={i}>
               <Link to={`/category/${e}`}>{e}</Link>
             </li>
           ))}

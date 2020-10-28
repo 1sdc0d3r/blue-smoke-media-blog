@@ -1,14 +1,14 @@
-import React from "react";
+import React, { lazy } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import "./style/core.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
-import ArticleView from "./components/ArticleView";
-import Articles from "./components/Articles";
 import Navigation from "./components/Navigation";
 import DropMenu from "./components/DropMenu";
-import ArticleTesting from "./components/ArticleTesting";
+const Articles = lazy(() => import("./components/Articles"));
+const ArticleView = lazy(() => import("./components/ArticleView"));
+// import ArticleTesting from "./components/ArticleTesting";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <Route path="/category/:category" component={Articles} />
           <Route path="/tags/:tags" component={Articles} />
           <Route path="/author/:author" component={Articles} />
-          <Route path="/test/:id" component={ArticleTesting} />
+          {/* <Route path="/test/:id" component={ArticleTesting} /> */}
           <Redirect to="/" />
         </Switch>
       </section>
