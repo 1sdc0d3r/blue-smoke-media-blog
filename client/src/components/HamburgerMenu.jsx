@@ -34,9 +34,7 @@ export default withRouter(function HamburgerMenu({ history }) {
           <Link to="/articles">
             <li>Articles</li>
           </Link>
-          <li className="sub-menu-btn" uk-icon="icon: triangle-right">
-            Categories
-          </li>
+          <li className="sub-menu-btn">Categories</li>
           <ul className="sub-drop-menu">
             <div className="dropdown-content">
               <ul>
