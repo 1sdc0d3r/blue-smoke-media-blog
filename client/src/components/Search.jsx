@@ -6,7 +6,7 @@ import serverURL from "../utils";
 export default function Search({ history }) {
   // const [queryType, setQueryType] = useState("");
   const [query, setQuery] = useState();
-  const [posts, setPosts] = useState([]);
+  const [articles, setArticles] = useState([]);
   const [filtered, setFiltered] = useState([]);
   const excludedKeys = ["id", "imageUrl", "imageAlt"];
   const resultsList = document.querySelector(".search ul");
@@ -14,26 +14,29 @@ export default function Search({ history }) {
   useEffect(() => {
     axios
       .get(serverURL[1])
-      .then(({ data }) => {
-        if (query) {
-          resultsList.style.border = "2px solid black";
-          setFiltered(
-            data.filter((e) => {
-              for (var key in e) {
-                if (excludedKeys.indexOf(key) == -1) {
-                  if (e[key].toString().toLowerCase().includes(query)) {
-                    return e;
-                  }
-                }
+      .then(({ data }) => setArticles(data))
+      .catch((err) => console.error(err));
+  }, []);
+
+  useEffect(() => {
+    if (query) {
+      console.log({ query });
+      resultsList.style.border = "2px solid black";
+      setFiltered(
+        articles.filter((e) => {
+          for (var key in e) {
+            if (excludedKeys.indexOf(key) == -1) {
+              if (e[key].toString().toLowerCase().includes(query)) {
+                return e;
               }
-            })
-          );
-        } else {
-          resultsList.style.border = "none";
-          setFiltered([]);
-        }
-      })
-      .catch((err) => console.log(err));
+            }
+          }
+        })
+      );
+    } else {
+      if (resultsList) resultsList.style.border = "none";
+      setFiltered([]);
+    }
   }, [query]);
 
   // if (resultsList) {
