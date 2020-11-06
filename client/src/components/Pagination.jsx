@@ -22,17 +22,33 @@ export default function Pagination({ state, setState, itemLen }) {
     <div className="nav-btns">
       <p className="back">
         {state.page === 1 ? (
-          <IoMdArrowBack color="grey" onClick={() => null} />
+          <IoMdArrowBack
+            color="grey"
+            className="react-icon"
+            onClick={() => null}
+          />
         ) : (
-          <IoMdArrowBack color="red" onClick={() => pageHandler("back")} />
+          <IoMdArrowBack
+            color="red"
+            className="react-icon"
+            onClick={() => pageHandler("back")}
+          />
         )}
       </p>
       <p>{state.page}</p>
       <p className="next">
         {itemLen / state.limit <= state.page ? (
-          <IoMdArrowForward color="grey" onClick={() => null} />
+          <IoMdArrowForward
+            color="grey"
+            className="react-icon"
+            onClick={() => null}
+          />
         ) : (
-          <IoMdArrowForward color="red" onClick={() => pageHandler("next")} />
+          <IoMdArrowForward
+            color="red"
+            className="react-icon"
+            onClick={() => pageHandler("next")}
+          />
         )}
       </p>
     </div>

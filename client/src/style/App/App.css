@@ -67,4 +67,9 @@
     font-size: 1.1em;
   }
 }
+
+.App .react-icon {
+  vertical-align: bottom;
+  padding-bottom: 1px;
+}
 /*# sourceMappingURL=App.css.map */
