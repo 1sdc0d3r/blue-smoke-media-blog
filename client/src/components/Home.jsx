@@ -67,7 +67,7 @@ export default function Home() {
                 <a
                   href="https://www.npr.org/2014/07/28/335288388/when-did-companies-become-people-excavating-the-legal-evolution"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                 >
                   Corporations are people is probably not a new concept to you.
                 </a>{" "}
@@ -77,7 +77,7 @@ export default function Home() {
                 <a
                   href="https://www.theatlantic.com/business/archive/2018/03/corporations-people-adam-winkler/554852/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                 >
                   dubious journey
                 </a>{" "}
@@ -85,7 +85,7 @@ export default function Home() {
                 <a
                   href="https://bluesmokedigitalandprintedmedia.com/contact"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                 >
                   learn more.
                 </a>{" "}

@@ -27,7 +27,7 @@ export default withRouter(function HamburgerMenu({ history }) {
           <a
             href="https://bluesmokedigitalandprintedmedia.com"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
           >
             <li>Our Website</li>
           </a>
@@ -119,7 +119,7 @@ export default withRouter(function HamburgerMenu({ history }) {
           <a
             href="https://bluesmokedigitalandprintedmedia.com/contact"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
           >
             <li>Contact</li>
           </a>

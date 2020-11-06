@@ -45,7 +45,7 @@ export default function Sidebar() {
             <a
               href="https://www.facebook.com/bluesmokemedia/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
             >
               Like Us On Facebook
             </a>
@@ -68,7 +68,7 @@ export default function Sidebar() {
               <a
                 href="https://www.facebook.com/bluesmokemedia/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
               >
                 Blue Smoke Digital Media
               </a>

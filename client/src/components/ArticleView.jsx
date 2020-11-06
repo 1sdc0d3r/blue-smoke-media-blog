@@ -70,7 +70,7 @@ export default function Article({ history }) {
                     <a
                       href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodedURL}`}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener"
                     >
                       <img
                         src={linkedIn}

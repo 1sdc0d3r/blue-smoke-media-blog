@@ -39,7 +39,7 @@ export default withRouter(function Navigation({ history }) {
       <a
         href="https://bluesmokedigitalandprintedmedia.com/"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener"
         className="nav-item"
       >
         Our Website
@@ -63,7 +63,7 @@ export default withRouter(function Navigation({ history }) {
         href="https://bluesmokedigitalandprintedmedia.com/contact"
         className="nav-item"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener"
       >
         Contact
       </a>

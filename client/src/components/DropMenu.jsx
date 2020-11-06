@@ -50,7 +50,7 @@ export default withRouter(function DropMenu({ history }) {
           <a
             href="https://www.bluesmokedigitalandprintedmedia.com/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
           >
             Our Website
           </a>
@@ -76,7 +76,7 @@ export default withRouter(function DropMenu({ history }) {
             href="https://bluesmokedigitalandprintedmedia.com/contact"
             className="nav-item"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
           >
             Contact
           </a>
