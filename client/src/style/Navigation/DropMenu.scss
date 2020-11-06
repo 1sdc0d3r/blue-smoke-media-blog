@@ -44,9 +44,8 @@
       text-align: left;
       cursor: pointer;
       font-size: 1.2em;
-      // &:hover {
-      //   color: $royalBlue;
-      // }
+      display: flex;
+
       a {
         display: block;
         width: 100%;
