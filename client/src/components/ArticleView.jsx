@@ -9,11 +9,11 @@ import { FiMail } from "react-icons/fi";
 
 //* Images
 const twitter =
-  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/social+media/twitter.png";
+  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/social+media/twitter.webp";
 const facebook =
-  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/social+media/facebook.png";
+  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/social+media/facebook.webp";
 const linkedIn =
-  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/social+media/linkedIn.png";
+  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/social+media/linkedIn.webp";
 
 export default function Article({ history }) {
   const { id } = useParams();

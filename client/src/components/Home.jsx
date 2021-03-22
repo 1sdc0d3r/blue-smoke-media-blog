@@ -7,7 +7,7 @@ import Sidebar from "./Sidebar";
 import CommentForm from "./CommentForm";
 // * Images
 const invertedCommas =
-  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/inverted-commas.png";
+  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/inverted-commas.webp";
 const bigGuys =
   "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/competing-with-the-big-guys.jpg";
 const socialMedia =

@@ -1,6 +1,6 @@
 import React from "react";
-import phone from "../assets/phone.png";
-import email from "../assets/Mail Icon.png";
+import phone from "../assets/phone.webp";
+import email from "../assets/Mail Icon.webp";
 
 export default function cta() {
   return (
