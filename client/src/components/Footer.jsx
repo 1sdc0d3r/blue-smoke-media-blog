@@ -1,13 +1,13 @@
 import React from "react";
 //* Images
 const twitter =
-  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/social+media/twitter.png";
+  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/social+media/twitter.png";
 const facebook =
-  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/social+media/facebook.png";
+  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/social+media/facebook.png";
 const linkedIn =
-  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/social+media/linkedIn.png";
+  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/social+media/linkedIn.png";
 const googleReview =
-  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/social+media/google-review.png";
+  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/social+media/google-review.png";
 
 export default function Footer() {
   // useEffect(() => {

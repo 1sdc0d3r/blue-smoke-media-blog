@@ -7,11 +7,11 @@ import Sidebar from "./Sidebar";
 import CommentForm from "./CommentForm";
 // * Images
 const invertedCommas =
-  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/inverted-commas.png";
+  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/inverted-commas.png";
 const bigGuys =
-  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/competing-with-the-big-guys.jpg";
+  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/competing-with-the-big-guys.jpg";
 const socialMedia =
-  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/Social-media-changes-every-small-business-should-know-about.jpeg";
+  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/Social-media-changes-every-small-business-should-know-about.jpeg";
 
 export default function Home() {
   const [newArticles, setNewArticles] = useState([]);
@@ -187,7 +187,7 @@ export default function Home() {
               <div className="new-article" key={i}>
                 <Link to={`/article/${e.id}`}>
                   <img
-                    src={`https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/thumbnail/${e.imageUrl}`}
+                    src={`https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/thumbnail/${e.imageUrl}`}
                     alt={e.imageAlt}
                   />
                   <div className="text">

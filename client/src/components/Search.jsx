@@ -64,7 +64,7 @@ export default function Search({ history }) {
           >
             <li key={e.id}>
               <img
-                src={`https://blue-smoke-media.s3-us-west-1.amazonaws.com/Blog/thumbnail/${e.imageUrl}`}
+                src={`https://bluesmokemedia.s3-us-west-1.amazonaws.com/Blog/thumbnail/${e.imageUrl}`}
                 alt={e.imageAlt}
               />
               <div className="content">

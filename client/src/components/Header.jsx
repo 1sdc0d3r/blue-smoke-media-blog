@@ -1,10 +1,9 @@
 import React from "react";
 const blueSmoke =
-  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Header/blue-smoke.png";
-const flame =
-  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Header/flame.png";
+  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/blue-smoke.webp";
+const flame = "https://bluesmokemedia.s3-us-west-1.amazonaws.com/flame.webp";
 const silhouettes =
-  "https://blue-smoke-media.s3-us-west-1.amazonaws.com/Header/black-silhouettes.png";
+  "https://bluesmokemedia.s3-us-west-1.amazonaws.com/black-silhouettes.webp";
 
 export default function Header() {
   return (
